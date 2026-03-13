@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19008862.svg)](https://doi.org/10.5281/zenodo.19008862)
+
 # Ridda Wars Database
 
 Structured database of **138 tribal reincorporation events** during the Ridda Wars
