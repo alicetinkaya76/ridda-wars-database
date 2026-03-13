@@ -1,0 +1,12 @@
+Metric,Value,Notes
+Dataset Size,91,
+Geocoding Coverage,90/91 (98.9%),1 unmapped
+Mean Confidence,0.890,
+,,
+Cross-Model (Mode),,
+  Fleiss' κ (4 models),0.755,Substantial
+  Unanimous (4/4),24/30 (80%),
+  Consensus (≥3/4),26/30 (87%),
+,,
+Cross-Model (Cause),,
+  Fleiss' κ (4 models),0.566,Moderate

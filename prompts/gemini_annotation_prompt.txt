@@ -1,0 +1,410 @@
+You are an expert in early Islamic history, specializing in the Ridda Wars (حروب الردة, 11–12 AH / 632–633 CE).
+
+I will give you 30 events extracted from al-Ṭabarī's Tārīkh and al-Balādhurī's Futūḥ al-Buldān. For each event, you have: event ID, source, tribe name (Arabic + English), region, year, commander, rebel leader, Arabic evidence passages from the original text, and notes.
+
+For each event, classify TWO things:
+
+## TASK 1: Incorporation Mode
+Based ONLY on the Arabic evidence text, classify how the tribe was reincorporated:
+- **SUBJUGATION** = Military campaign, battle, armed conflict, siege, killing, captives taken. Arabic indicators: قتال، قاتل، حرب، غزا، سيف، قتل، هزم، ظفر، غنم، سبي، فتح، حصار
+- **SUBMISSION** = Voluntary return to Islam, peaceful pledge of allegiance, negotiated peace without fighting. Arabic indicators: طاعة، أطاع، رجع، تاب، أسلم، بايع، صالح، أمان، سلم، أدى الزكاة
+- **MIXED** = Both military AND diplomatic/peaceful elements clearly present in the same event
+
+## TASK 2: Rebellion Cause
+Based on the evidence and context, classify the PRIMARY cause of rebellion:
+- **false_prophet** = Following a false prophet (Musaylima, Ṭulayḥa, Sajāḥ, al-Aswad al-ʿAnsī, Laqīṭ ibn Mālik)
+- **zakat_refusal** = Refused to pay zakāt/ṣadaqa while possibly still claiming Muslim identity
+- **tribal_autonomy** = Withdrew political allegiance, sought tribal independence, general apostasy (ridda) without a specific false prophet
+- **mixed_political** = Multiple causes present or insufficient evidence to determine a single cause
+
+## TASK 3: Confidence
+Rate your confidence in EACH classification from 1 to 5:
+- 1 = Very uncertain (evidence is ambiguous or minimal)
+- 2 = Uncertain
+- 3 = Moderate
+- 4 = Confident
+- 5 = Very confident (evidence clearly supports the classification)
+
+## OUTPUT FORMAT
+Respond ONLY with a JSON array. No explanation, no preamble. Each object must have exactly these fields:
+
+```json
+[
+  {
+    "event_id": "T006",
+    "mode": "SUBJUGATION",
+    "mode_confidence": 4,
+    "cause": "false_prophet",
+    "cause_confidence": 5
+  },
+  ...
+]
+```
+
+---
+
+## THE 30 EVENTS
+
+EVENT 01
+  ID: T006
+  Source: al-Ṭabarī
+  Tribe_AR: بنو العنسي
+  Tribe_EN: Banū al-ʿAnsī
+  Region: al-Yaman
+  Year_AH: 11
+  Commander: not mentioned
+  Rebel_Leader: al-Aswad al-ʿAnsī
+  Evidence_AR: فأول حرب كانت في الردة بعد وفاة النبي(ص) حرب العنسي، وقد كانت حرب العنسي باليمن
+  Notes: First war against apostates after Prophet's death
+
+EVENT 02
+  ID: T035
+  Source: al-Ṭabarī
+  Tribe_AR: بكر بن وائل
+  Tribe_EN: Bakr ibn Wāʾil
+  Region: al-Baḥrayn
+  Year_AH: 11
+  Commander: al-ʿAlāʾ ibn al-Ḥaḍramī
+  Rebel_Leader: al-Ḥuṭam
+  Evidence_AR: وارسل الى عتيبة بن النهاس والى عامر بن عبد الأسود بلزوم ما هم عليه والقعود لأهل الرده بكل سبيل | فمنهم من أناب، فقبلوا منه واشتملوا عليه، ومنهم من ابى ولج فمنع من الرجوع | فاقتتلوا قتالا شديدا، فما تركوا بها مخبرا وسبوا الذراري
+  Notes: Battle against apostate tribes at Dārīn. Mixed mode due to some voluntary submissions and armed conflict.
+
+EVENT 03
+  ID: B001
+  Source: al-Balādhurī
+  Tribe_AR: الأزد
+  Tribe_EN: al-Azd
+  Region: ʿUmān
+  Year_AH: 11
+  Commander: Ḥudhayfa ibn Miḥṣan and ʿIkrima ibn Abī Jahl
+  Rebel_Leader: Laqīṭ ibn Mālik Dhū l-Tāj
+  Evidence_AR: ارتدت الأزد وعليها لقيط بن مالك ذو التاج وانحازت إلى دبا | فوجه أبو بكر رضى الله عنه إليهم حذيفة بن محصن البارقي من الأزد، وعكرمة ابن أبى جهل | فواقعا لقيطا ومن معه فقتلاه وسبيا من أهل دبا سبيا
+  Notes: Primary Ridda rebellion in Oman. Al-Azd tribe apostatized under Laqīṭ ibn Mālik, were defeated militarily at Dabā with their leader killed and captives taken.
+
+EVENT 04
+  ID: B018
+  Source: al-Balādhurī
+  Tribe_AR: مهرة
+  Tribe_EN: Mahra
+  Region: ʿUmān
+  Year_AH: 11
+  Commander: ʿIkrima ibn Abī Jahl
+  Rebel_Leader: None
+  Evidence_AR: وجمع قوم من مهرة بن حيدان جمعا فأتاهم عكرمة فلم يقاتلوه وأدوا الصدقة
+  Notes: Mahra tribe submitted without fighting when ʿIkrima approached
+
+EVENT 05
+  ID: T024
+  Source: al-Ṭabarī
+  Tribe_AR: بنو تميم
+  Tribe_EN: Banū Tamīm
+  Region: al-Biṭāḥ
+  Year_AH: 12
+  Commander: Khālid ibn al-Walīd
+  Rebel_Leader: Sajāḥ bint al-Ḥārith
+  Evidence_AR: فجئتهم سجاح بنت الحارث قد اقبلت من الجزيرة | وكانت ورهطها في بنى تغلب تقود افناء ربيعه | فتنبت بعد موت رسول الله(ص)بالجزيرة في بنى تغلب | راسلت مالك بن نويره ودعته الى الموادعة
+  Notes: Sajāḥ, false prophetess from Jazīra, formed alliance with some Tamīm clans including Mālik ibn Nuwayra before Khālid's arrival
+
+EVENT 06
+  ID: T048
+  Source: al-Ṭabarī
+  Tribe_AR: بنو الحارث بن معاوية
+  Tribe_EN: Banū al-Ḥārith ibn Muʿāwiya
+  Region: Ḥaḍramawt
+  Year_AH: 12
+  Commander: al-Muhājir ibn Abī Umayya
+  Rebel_Leader: al-Ashʿath ibn Qays
+  Evidence_AR: فثار في بنى الحارث فتنقذهم | فجمع اليه بنى الحارث بن معاويه وبنى عمرو بن معاويه، ومن أطاعه من السكاسك | وقد اجتمعت اليه كنده، فتحصنوا فيه
+  Notes: Part of al-Ashʿath's coalition, participated in siege at al-Nujayr fortress
+
+EVENT 07
+  ID: T007
+  Source: al-Ṭabarī
+  Tribe_AR: غطفان
+  Tribe_EN: Ghaṭafān
+  Region: Ghaṭafān
+  Year_AH: 11
+  Commander: Abū Bakr
+  Rebel_Leader: Khārija ibn Ḥiṣn wa-Manẓūr ibn Zabān
+  Evidence_AR: ثم حرب خارجة بن حصن ومنظور بن زبان بن سيار في غطفان، والمسلمون غارون | ثم هزم الله المشركين
+  Notes: Early battle in Ridda Wars against Ghaṭafān tribes
+
+EVENT 08
+  ID: B004
+  Source: al-Balādhurī
+  Tribe_AR: بنو حنيفة
+  Tribe_EN: Banū Ḥanīfa
+  Region: al-Yamāma
+  Year_AH: 12
+  Commander: Khālid ibn al-Walīd
+  Rebel_Leader: Musaylima
+  Evidence_AR: التقى المسلمون والمشركون، فولى المسلمون مدبرين حتى بلغوا الرحال | فهزم الله المشركين وقتل مسيلمة | قال مجاعة لخالد أن أكثر أهل اليمامة لم يخرجوا لقتالكم | فصالحه على نصف السبي ونصف الصفراء والبيضاء والحلقة والكراع | أسلم أهل اليمامة فأخذت منهم الصدقة | كان فتح اليمامة سنة اثنى عشرة
+  Notes: Major battle against Musaylima followed by negotiated settlement through Mujāʿa's deception, ending with submission and zakāt collection
+
+EVENT 09
+  ID: T059
+  Source: al-Ṭabarī
+  Tribe_AR: بنو تميم
+  Tribe_EN: Banū Tamīm
+  Region: al-ʿIrāq
+  Year_AH: 12
+  Commander: Khālid ibn al-Walīd
+  Rebel_Leader: None
+  Evidence_AR: فقال عاصم بن عمرو: يا بنى تميم، حلفاؤكم كلب، آسوهم واجيروهم | الا أسارى كلب، فان عاصما والأقرع وبنى تميم قالوا: قد آمناهم
+  Notes: Banū Tamīm appear to be allied with Muslim forces, intervening to save their tribal allies among Kalb prisoners.
+
+EVENT 10
+  ID: T011
+  Source: al-Ṭabarī
+  Tribe_AR: ثعلبة بن سعد
+  Tribe_EN: Thaʿlaba ibn Saʿd
+  Region: al-Abraq min al-Rabadha
+  Year_AH: 11
+  Commander: Abū Bakr
+  Rebel_Leader: al-Ḥārith
+  Evidence_AR: واجتمعت ثعلبة بن سعد ومن يليهم من مرة وعبس بالأبرق من الربذة | فقاتلهم قبل رجوع أسامة
+  Notes: Gathered at al-Abraq and fought against Abū Bakr
+
+EVENT 11
+  ID: B021
+  Source: al-Balādhurī
+  Tribe_AR: بنو أسد
+  Tribe_EN: Banū Asad
+  Region: Buzākha
+  Year_AH: 12
+  Commander: Khālid ibn al-Walīd
+  Rebel_Leader: Ṭulayḥa ibn Khuwaylid
+  Evidence_AR: وأمر خالدا أن يصمد لطليحة بن خويلد الأسدى، وكان قد أدعى النبوة وهو يومئذ ببزاخة | ثم التقى المسلمون وعدوهم واقتتلوا قتالا شديدا | فانهزم الناس وظهر المسلمون وأسر عيينة بن حصن | وهرب طليحة بن خويلد فدخل خباء له فاغتسل وخرج فركب فرسه وأهل بعمرة ثم مضى إلى مكة ثم أتى المدينة مسلما
+  Notes: Battle against false prophet Ṭulayḥa at Buzākha. ʿUyayna ibn Ḥiṣn captured, Ṭulayḥa fled and later converted to Islam.
+
+EVENT 12
+  ID: T003
+  Source: al-Ṭabarī
+  Tribe_AR: همدان
+  Tribe_EN: Hamdān
+  Region: al-Yaman
+  Year_AH: 11
+  Commander: ʿĀmir ibn Shahr
+  Rebel_Leader: al-Aswad al-ʿAnsī
+  Evidence_AR: جاءنا اعتراض عامر ابن شهر وذي زود وذي مران وذي الكلاع وذي ظليم عليه | وكاتبونا وبذلوا لنا النصر
+  Notes: Hamdānī chiefs opposed al-Aswad and offered support to Muslim resistance
+
+EVENT 13
+  ID: T053
+  Source: al-Ṭabarī
+  Tribe_AR: بنو كنانة
+  Tribe_EN: Banū Kināna
+  Region: al-Shām
+  Year_AH: 12
+  Commander: Khālid ibn Saʿīd ibn al-ʿĀṣ
+  Rebel_Leader: None
+  Evidence_AR: كان جرير بن عبد الله ممن خرج مع خالد بن سعيد بن العاصي الى الشام | فاستأذن خالدا الى ابى بكر ليكلمه في قومه وليجمعهم له، وكانوا اوزاعا في العرب، وليتخلصهم
+  Notes: Jarīr ibn ʿAbd Allāh from Banū Kināna sought permission to gather his scattered tribesmen and bring them under Muslim authority
+
+EVENT 14
+  ID: B029
+  Source: al-Balādhurī
+  Tribe_AR: كندة
+  Tribe_EN: Kinda
+  Region: Ḥaḍramawt
+  Year_AH: 11
+  Commander: Ziyād ibn Labīd and al-Muhājir ibn Abī Umayya
+  Rebel_Leader: al-Ashʿath ibn Qays
+  Evidence_AR: فانتقضت عليه كندة كلها إلا السكون | فاجتمعت عظماء كندة إلى الأشعث بن قيس | ففضا جمعه وأوقعا بأصحابه فقتلا منهم مقتلة عظيمة ثم انهم لجأوا إلى النجير | فحصرهم المسلمون حتى جهدوا
+  Notes: Major Kinda rebellion led by al-Ashʿath ibn Qays, besieged at al-Nujayr fortress before surrendering
+
+EVENT 15
+  ID: T012
+  Source: al-Ṭabarī
+  Tribe_AR: عبس
+  Tribe_EN: ʿAbs
+  Region: al-Abraq min al-Rabadha
+  Year_AH: 11
+  Commander: Abū Bakr
+  Rebel_Leader: al-Ḥārith
+  Evidence_AR: وكان أول من صادم عبس وذبيان، عاجلوه فقاتلهم قبل رجوع أسامة | فهزم الله الحارث وعوفا، وأخذ الحطيئة أسيرا، فطارت عبس
+  Notes: First to attack Abū Bakr, later defeated at al-Abraq
+
+EVENT 16
+  ID: B017
+  Source: al-Balādhurī
+  Tribe_AR: الأزد
+  Tribe_EN: al-Azd
+  Region: ʿUmān
+  Year_AH: 11
+  Commander: Ḥudhayfa ibn Muḥṣin and ʿIkrima ibn Abī Jahl
+  Rebel_Leader: Laqīṭ ibn Mālik Dhū al-Tāj
+  Evidence_AR: ارتدت الأزد وعليها لقيط بن مالك ذو التاج | فواقعا لقيطا ومن معه فقتلاه وسبيا من أهل دبا سبيا | ثم أن الأزد راجعت الإسلام
+  Notes: Major battle at Dabbā; Azd leader killed, tribe later returned to Islam
+
+EVENT 17
+  ID: T031
+  Source: al-Ṭabarī
+  Tribe_AR: بنو حنيفة
+  Tribe_EN: Banū Ḥanīfa
+  Region: al-Yamāma
+  Year_AH: 12
+  Commander: Khālid ibn al-Walīd
+  Rebel_Leader: Musaylima
+  Evidence_AR: لما فرغ خالد من مسيلمة والجند | فصالحه على كل شيء دون النفوس | وقتل من بني حنيفة في الفضاء بعقرباء سبعة آلاف، وفي حديقة الموت سبعة آلاف | فصالحه على الصفراء والبيضاء والحلقة ونصف السبي | وتتابع بنو حنيفة على البراء مما كانوا عليه، وعلى الإسلام
+  Notes: Major battle followed by negotiated peace treaty. Khālid defeated Musaylima in battle, then negotiated surrender terms with Mujāʿa ibn Murāra involving tribute and prisoners.
+
+EVENT 18
+  ID: T025
+  Source: al-Ṭabarī
+  Tribe_AR: بنو يربوع
+  Tribe_EN: Banū Yarbūʿ
+  Region: al-Biṭāḥ
+  Year_AH: 12
+  Commander: Khālid ibn al-Walīd
+  Rebel_Leader: Mālik ibn Nuwayra
+  Evidence_AR: فجاءته الخيل بمالك بن نويره في نفر معه من بنى ثعلبه بن يربوع | فقتل ضرار بن الأزور مالكا | وتزوج خالد أم تميم ابنه المنهال | قتلت امرا مسلما، ثم نزوت على امراته
+  Notes: Mālik ibn Nuwayra executed by Khālid's forces after confusion over his status; controversial incident involving marriage to his widow
+
+EVENT 19
+  ID: T029
+  Source: al-Ṭabarī
+  Tribe_AR: بنو حنيفة
+  Tribe_EN: Banū Ḥanīfa
+  Region: al-Yamāma
+  Year_AH: 12
+  Commander: Khālid ibn al-Walīd
+  Rebel_Leader: Mujāʿa ibn Murāra
+  Evidence_AR: استقبل مجاعه ابن مرارة- وكان سيد بنى حنيفه- في جبل من قومه | فبيتهم خالد في معرسهم | فامر بهم خالد فضربت أعناقهم، واستحيا مجاعه
+  Notes: Pre-battle encounter where Khālid captured Mujāʿa ibn Murāra, chief of Banū Ḥanīfa, and killed his companions
+
+EVENT 20
+  ID: T027
+  Source: al-Ṭabarī
+  Tribe_AR: بنو تغلب
+  Tribe_EN: Banū Taghlib
+  Region: al-Jazīra
+  Year_AH: 12
+  Commander: None
+  Rebel_Leader: Sajāḥ bint al-Ḥārith
+  Evidence_AR: وكانت ورهطها في بنى تغلب تقود افناء ربيعه | فتنبت بعد موت رسول الله(ص)بالجزيرة في بنى تغلب | فلم تزل سجاح في بنى تغلب، حتى نقلهم معاويه عام الجماعه | وجاءت معهم وحسن إسلامها
+  Notes: Sajāḥ's base tribe; later returned to Islam under Muʿāwiya and were relocated to Kūfa
+
+EVENT 21
+  ID: B013
+  Source: al-Balādhurī
+  Tribe_AR: بنو عمرو بن معاوية
+  Tribe_EN: Banū ʿAmr ibn Muʿāwiya
+  Region: al-Yaman
+  Year_AH: 11
+  Commander: Ziyād ibn Labīd
+  Rebel_Leader: None
+  Evidence_AR: فجمع بنو عمرو بن معاوية جمعا | فبيتهم فأتى على أكثرهم وجعل بعضهم يقتل بعضا
+  Notes: Night raid by Ziyād ibn Labīd against this Kindite sub-tribe
+
+EVENT 22
+  ID: T045
+  Source: al-Ṭabarī
+  Tribe_AR: حمير
+  Tribe_EN: Ḥimyar
+  Region: Abyan
+  Year_AH: 12
+  Commander: ʿIkrima
+  Rebel_Leader: None
+  Evidence_AR: واستبرأ النخع وحمير، واقام لاجتماعهم
+  Notes: Ḥimyar examined and cleared by ʿIkrima alongside al-Nakhaʿ
+
+EVENT 23
+  ID: T037
+  Source: al-Ṭabarī
+  Tribe_AR: مهره
+  Tribe_EN: Mahra
+  Region: al-Najd
+  Year_AH: 11
+  Commander: ʿIkrima
+  Rebel_Leader: al-Muṣbiḥ
+  Evidence_AR: فكانا مختلفين، كل واحد من الرئيسين يدعو الآخر الى نفسه | ولما راى عكرمه قله من مع شخريت دعاه الى الرجوع الى الاسلام، فكان لاول الدعاء، فأجابه | فالتقوا هم والمصبح بالنجد، فاقتتلوا أشد من قتال دبا | ثم ان الله كشف جنود المرتدين، وقتل رئيسهم
+  Notes: Mixed incorporation: some tribal leaders like Shukhrīt submitted voluntarily, while al-Muṣbiḥ's faction was defeated militarily.
+
+EVENT 24
+  ID: T026
+  Source: al-Ṭabarī
+  Tribe_AR: بنو حنيفة
+  Tribe_EN: Banū Ḥanīfa
+  Region: al-Yamāma
+  Year_AH: 12
+  Commander: Khālid ibn al-Walīd
+  Rebel_Leader: Musaylima
+  Evidence_AR: ووجهه الى مسيلمه واوعب معه الناس | فسار خالد حتى اتى اليمامه وبنو حنيفه يومئذ كثير | كان عدد بنى حنيفه يومئذ اربعين الف مقاتل | وكان مسيلمه يصانع كل احد ويتالفه
+  Notes: Major campaign against Musaylima and Banū Ḥanīfa; 40,000 fighters mentioned; text ends before describing the final battle
+
+EVENT 25
+  ID: B009
+  Source: al-Balādhurī
+  Tribe_AR: بنو تميم
+  Tribe_EN: Banū Tamīm
+  Region: al-Biṭāḥ wa-l-Baʿūḍa
+  Year_AH: 12
+  Commander: Khālid ibn al-Walīd
+  Rebel_Leader: Mālik ibn Nuwayra
+  Evidence_AR: سار خالد إلى سن بالبطاح والبعوضة من بنى تميم فقاتلوه ففض جمعهم | وقتل مالك بن نويرة أخا متمم بن نويرة | فلما قبض صلى الله عليه وسلم خلى ما كان فى يده من الفرائض وقال: شأنكم بأموالكم يا بنى حنظلة | فأمر بهم فضربت أعناقهم وتولى ضرار ضرب عنق مالك
+  Notes: Controversial campaign against Banū Tamīm, execution of Mālik ibn Nuwayra who had been Prophet's zakāt collector
+
+EVENT 26
+  ID: B028
+  Source: al-Balādhurī
+  Tribe_AR: خولان
+  Tribe_EN: Khawlān
+  Region: al-Yaman
+  Year_AH: 11
+  Commander: Yaʿlā ibn Muniya
+  Rebel_Leader: None
+  Evidence_AR: وارتدت خولان باليمن فوجه أبو بكر إليهم يعلى بن منية | نظفر بهم وأصاب منهم غنيمة وسبابا
+  Notes: Khawlān tribe in Yemen apostatized and were defeated by Yaʿlā ibn Muniya with captives and booty taken
+
+EVENT 27
+  ID: B015
+  Source: al-Balādhurī
+  Tribe_AR: خولان
+  Tribe_EN: Khawlān
+  Region: al-Yaman
+  Year_AH: 11
+  Commander: Yaʿlā ibn Munayya
+  Rebel_Leader: None
+  Evidence_AR: وارتدت خولان فوجه إليهم أبو بكر يعلى بن منية فقاتلهم حتى أذعنوا وأقروا بالصدقة
+  Notes: Khawlān tribe fought until they submitted and agreed to pay zakāt
+
+EVENT 28
+  ID: B005
+  Source: al-Balādhurī
+  Tribe_AR: بنو أسد
+  Tribe_EN: Banū Asad
+  Region: Buzākha
+  Year_AH: 12
+  Commander: Khālid ibn al-Walīd
+  Rebel_Leader: Ṭulayḥa ibn Khuwaylid
+  Evidence_AR: أمر خالدا أن يصمد لطليحة بن خويلد الأسدى، وكان قد أدعى النبوة وهو يومئذ ببزاخة | التقى المسلمون وعدوهم واقتتلوا قتالا شديدا | انهزم الناس وظهر المسلمون | هرب طليحة بن خويلد فدخل خباء له فاغتسل وخرج فركب فرسه وأهل بعمرة
+  Notes: Battle against false prophet Ṭulayḥa at Buzākha, resulting in his defeat and flight, later conversion to Islam
+
+EVENT 29
+  ID: T013
+  Source: al-Ṭabarī
+  Tribe_AR: ذبيان
+  Tribe_EN: Dhubyān
+  Region: al-Abraq min al-Rabadha
+  Year_AH: 11
+  Commander: Abū Bakr
+  Rebel_Leader: Ḥibāl
+  Evidence_AR: وكان أول من صادم عبس وذبيان، عاجلوه فقاتلهم قبل رجوع أسامة | فما ذر قرن الشمس حتى ولوهم الأدبار، وغلبوهم على عامة ظهرهم، وقتل حبال
+  Notes: Defeated by Abū Bakr at Dhū al-Qaṣṣa, their leader Ḥibāl was killed
+
+EVENT 30
+  ID: T010
+  Source: al-Ṭabarī
+  Tribe_AR: فزارة
+  Tribe_EN: Fazāra
+  Region: janūb Ṭayba
+  Year_AH: 11
+  Commander: not specified
+  Rebel_Leader: Ṭulayḥa
+  Evidence_AR: وفزارة ومن يليهم من غطفان بجنوب طيبة
+  Notes: Part of Ghaṭafān confederation that rebelled
+
+---
+
+Now respond with ONLY the JSON array for all 30 events. No explanation.

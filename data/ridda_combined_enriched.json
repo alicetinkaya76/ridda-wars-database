@@ -1,0 +1,5871 @@
+{
+  "title": "Ridda Wars Database",
+  "title_ar": "قاعدة بيانات حروب الردة",
+  "description": "Combined extraction of tribal interaction events during the Ridda Wars (11-12 AH / 632-633 CE)",
+  "period": {
+    "start_ah": 11,
+    "end_ah": 12,
+    "start_ce": 632,
+    "end_ce": 633,
+    "description": "Wars of Apostasy during the Caliphate of Abū Bakr al-Ṣiddīq"
+  },
+  "sources": {
+    "tabari": {
+      "name": "al-Ṭabarī",
+      "name_ar": "الطبري",
+      "full_title": "Tārīkh al-Rusul wa-l-Mulūk",
+      "full_title_ar": "تاريخ الرسل والملوك",
+      "death_year": 310,
+      "event_count": 60
+    },
+    "baladhuri": {
+      "name": "al-Balādhurī",
+      "name_ar": "البلاذري",
+      "full_title": "Futūḥ al-Buldān",
+      "full_title_ar": "فتوح البلدان",
+      "death_year": 279,
+      "event_count": 31
+    },
+    "waqidi": {
+      "name": "al-Wāqidī",
+      "name_ar": "الواقدي",
+      "full_title": "Kitāb al-Ridda",
+      "full_title_ar": "كتاب الردة",
+      "death_year": 207,
+      "structure": "narrative",
+      "event_count": 48,
+      "notes": "Dedicated Ridda monograph. Earliest of three sources. Ibn al-Aʿtham redaction."
+    }
+  },
+  "terminology": {
+    "SUBJUGATION": {
+      "transliteration": "qitāl / ikhḍāʿ",
+      "arabic": "قتال / إخضاع",
+      "description": "Military campaign resulting in forced submission"
+    },
+    "SUBMISSION": {
+      "transliteration": "ṭāʿa",
+      "arabic": "طاعة",
+      "description": "Voluntary return to Islamic authority"
+    },
+    "MIXED": {
+      "transliteration": "mukhtalaṭ",
+      "arabic": "مختلط",
+      "description": "Combined military and diplomatic resolution"
+    }
+  },
+  "statistics": {
+    "total_events": 138,
+    "by_source": {
+      "tabari": 60,
+      "baladhuri": 31,
+      "waqidi": 47
+    },
+    "geocoded": 137,
+    "geocoded_pct": 99.3
+  },
+  "extracted_at": "2026-01-07T14:12:15.857451",
+  "version": "2.0",
+  "events": [
+    {
+      "tribe_arabic": "مذحج",
+      "tribe_english": "Madḥij",
+      "region_arabic": "اليمن",
+      "region_english": "al-Yaman",
+      "year_ah": 11,
+      "incorporation_mode": "SUBMISSION",
+      "commander_arabic": "عامر بن شهر الهمداني",
+      "commander_english": "ʿĀmir ibn Shahr al-Hamdānī",
+      "rebel_leader_arabic": "الأسود العنسي",
+      "rebel_leader_english": "al-Aswad al-ʿAnsī",
+      "battle_site_arabic": null,
+      "battle_site_english": null,
+      "evidence": [
+        "أول من اعترض على العنسي وكاثره عامر بن شهر الهمداني في ناحيته",
+        "طابقه عوام مذحج"
+      ],
+      "confidence": 0.85,
+      "notes": "Madḥij initially supported al-Aswad but ʿĀmir ibn Shahr opposed him",
+      "_source": "tabari",
+      "_detected_terms": {
+        "qital_terms": [],
+        "taa_terms": [],
+        "ridda_terms": []
+      },
+      "_term_mode": "UNKNOWN",
+      "_source_name": "al-Ṭabarī",
+      "_event_id": "T001",
+      "_lat": 15.35,
+      "_lon": 44.2,
+      "_region_key": "yaman",
+      "_region_en": "al-Yaman (Yemen)",
+      "_tribe_normalized": "Madhḥij",
+      "_commander_normalized": "ʿĀmir ibn Shahr al-Hamdānī",
+      "_rebel_normalized": "al-Aswad al-ʿAnsī"
+    },
+    {
+      "tribe_arabic": "عك",
+      "tribe_english": "ʿAkk",
+      "region_arabic": "تهامة",
+      "region_english": "Tihāma",
+      "year_ah": 11,
+      "incorporation_mode": "SUBMISSION",
+      "commander_arabic": null,
+      "commander_english": null,
+      "rebel_leader_arabic": "الأسود العنسي",
+      "rebel_leader_english": "al-Aswad al-ʿAnsī",
+      "battle_site_arabic": null,
+      "battle_site_english": null,
+      "evidence": [
+        "وعك بتهامة معترضون عليه"
+      ],
+      "confidence": 0.8,
+      "notes": "Tribe of ʿAkk opposed al-Aswad al-ʿAnsī",
+      "_source": "tabari",
+      "_detected_terms": {
+        "qital_terms": [],
+        "taa_terms": [],
+        "ridda_terms": []
+      },
+      "_term_mode": "UNKNOWN",
+      "_source_name": "al-Ṭabarī",
+      "_event_id": "T002",
+      "_lat": 14.8,
+      "_lon": 43.3,
+      "_region_key": "tihama",
+      "_region_en": "Tihāma",
+      "_tribe_normalized": "ʿIkrima ibn Abī Jahl",
+      "_rebel_normalized": "al-Aswad al-ʿAnsī"
+    },
+    {
+      "tribe_arabic": "همدان",
+      "tribe_english": "Hamdān",
+      "region_arabic": "اليمن",
+      "region_english": "al-Yaman",
+      "year_ah": 11,
+      "incorporation_mode": "MIXED",
+      "commander_arabic": "عامر بن شهر",
+      "commander_english": "ʿĀmir ibn Shahr",
+      "rebel_leader_arabic": "الأسود العنسي",
+      "rebel_leader_english": "al-Aswad al-ʿAnsī",
+      "battle_site_arabic": "صنعاء",
+      "battle_site_english": "Ṣanʿāʾ",
+      "evidence": [
+        "جاءنا اعتراض عامر ابن شهر وذي زود وذي مران وذي الكلاع وذي ظليم عليه",
+        "وكاتبونا وبذلوا لنا النصر"
+      ],
+      "confidence": 0.9,
+      "notes": "Hamdānī chiefs opposed al-Aswad and offered support to Muslim resistance",
+      "_source": "tabari",
+      "_lat": 15.35,
+      "_lon": 44.21,
+      "_detected_terms": {
+        "qital_terms": [],
+        "taa_terms": [],
+        "ridda_terms": []
+      },
+      "_term_mode": "UNKNOWN",
+      "_source_name": "al-Ṭabarī",
+      "_event_id": "T003",
+      "_region_key": "yaman",
+      "_region_en": "al-Yaman (Yemen)",
+      "_tribe_normalized": "Hamdān",
+      "_commander_normalized": "ʿĀmir ibn Shahr",
+      "_rebel_normalized": "al-Aswad al-ʿAnsī"
+    },
+    {
+      "tribe_arabic": "حمير",
+      "tribe_english": "Ḥimyar",
+      "region_arabic": "اليمن",
+      "region_english": "al-Yaman",
+      "year_ah": 11,
+      "incorporation_mode": "SUBMISSION",
+      "commander_arabic": null,
+      "commander_english": null,
+      "rebel_leader_arabic": "الأسود العنسي",
+      "rebel_leader_english": "al-Aswad al-ʿAnsī",
+      "battle_site_arabic": null,
+      "battle_site_english": null,
+      "evidence": [
+        "وعجلنا عن مراسلة الهمدانيين والحميريين"
+      ],
+      "confidence": 0.75,
+      "notes": "Ḥimyarī tribes were being contacted for resistance against al-Aswad",
+      "_source": "tabari",
+      "_detected_terms": {
+        "qital_terms": [],
+        "taa_terms": [],
+        "ridda_terms": []
+      },
+      "_term_mode": "UNKNOWN",
+      "_source_name": "al-Ṭabarī",
+      "_event_id": "T004",
+      "_lat": 15.35,
+      "_lon": 44.2,
+      "_region_key": "yaman",
+      "_region_en": "al-Yaman (Yemen)",
+      "_tribe_normalized": "Ḥimyar",
+      "_rebel_normalized": "al-Aswad al-ʿAnsī"
+    },
+    {
+      "tribe_arabic": "مراد",
+      "tribe_english": "Murād",
+      "region_arabic": "اليمن",
+      "region_english": "al-Yaman",
+      "year_ah": 11,
+      "incorporation_mode": "SUBJUGATION",
+      "commander_arabic": "قيس بن عبد يغوث المرادي",
+      "commander_english": "Qays ibn ʿAbd Yaghūth al-Murādī",
+      "rebel_leader_arabic": "الأسود العنسي",
+      "rebel_leader_english": "al-Aswad al-ʿAnsī",
+      "battle_site_arabic": null,
+      "battle_site_english": null,
+      "evidence": [
+        "وكان قواده قيس بن عبد يغوث المرادي",
+        "قتلنا الأسود، وعاد أمرنا كما كان"
+      ],
+      "confidence": 0.85,
+      "notes": "Qays ibn ʿAbd Yaghūth from Murād initially served al-Aswad but later joined the conspiracy to kill him",
+      "_source": "tabari",
+      "_detected_terms": {
+        "qital_terms": [
+          "قتل"
+        ],
+        "taa_terms": [],
+        "ridda_terms": []
+      },
+      "_term_mode": "SUBJUGATION",
+      "_source_name": "al-Ṭabarī",
+      "_event_id": "T005",
+      "_lat": 15.35,
+      "_lon": 44.2,
+      "_region_key": "yaman",
+      "_region_en": "al-Yaman (Yemen)",
+      "_tribe_normalized": "Murād",
+      "_commander_normalized": "Murād",
+      "_rebel_normalized": "al-Aswad al-ʿAnsī"
+    },
+    {
+      "tribe_arabic": "بنو العنسي",
+      "tribe_english": "Banū al-ʿAnsī",
+      "region_arabic": "اليمن",
+      "region_english": "al-Yaman",
+      "year_ah": 11,
+      "incorporation_mode": "SUBJUGATION",
+      "commander_arabic": "غير مذكور",
+      "commander_english": "not mentioned",
+      "rebel_leader_arabic": "الأسود العنسي",
+      "rebel_leader_english": "al-Aswad al-ʿAnsī",
+      "battle_site_arabic": "اليمن",
+      "battle_site_english": "al-Yaman",
+      "evidence": [
+        "فأول حرب كانت في الردة بعد وفاة النبي(ص) حرب العنسي، وقد كانت حرب العنسي باليمن"
+      ],
+      "confidence": 0.9,
+      "notes": "First war against apostates after Prophet's death",
+      "_source": "tabari",
+      "_detected_terms": {
+        "qital_terms": [
+          "حرب"
+        ],
+        "taa_terms": [],
+        "ridda_terms": [
+          "ردة"
+        ]
+      },
+      "_term_mode": "SUBJUGATION",
+      "_source_name": "al-Ṭabarī",
+      "_event_id": "T006",
+      "_lat": 15.35,
+      "_lon": 44.2,
+      "_region_key": "yaman",
+      "_region_en": "al-Yaman (Yemen)",
+      "_tribe_normalized": "ʿAns",
+      "_rebel_normalized": "al-Aswad al-ʿAnsī"
+    },
+    {
+      "tribe_arabic": "غطفان",
+      "tribe_english": "Ghaṭafān",
+      "region_arabic": "غطفان",
+      "region_english": "Ghaṭafān",
+      "year_ah": 11,
+      "incorporation_mode": "SUBJUGATION",
+      "commander_arabic": "أبو بكر",
+      "commander_english": "Abū Bakr",
+      "rebel_leader_arabic": "خارجة بن حصن ومنظور بن زبان",
+      "rebel_leader_english": "Khārija ibn Ḥiṣn wa-Manẓūr ibn Zabān",
+      "battle_site_arabic": "غطفان",
+      "battle_site_english": "Ghaṭafān",
+      "evidence": [
+        "ثم حرب خارجة بن حصن ومنظور بن زبان بن سيار في غطفان، والمسلمون غارون",
+        "ثم هزم الله المشركين"
+      ],
+      "confidence": 0.95,
+      "notes": "Early battle in Ridda Wars against Ghaṭafān tribes",
+      "_source": "tabari",
+      "_detected_terms": {
+        "qital_terms": [
+          "حرب",
+          "هزم"
+        ],
+        "taa_terms": [
+          "سلم"
+        ],
+        "ridda_terms": []
+      },
+      "_term_mode": "MIXED",
+      "_source_name": "al-Ṭabarī",
+      "_event_id": "T007",
+      "_lat": 26.0,
+      "_lon": 42.0,
+      "_region_key": "najd",
+      "_region_en": "Najd (Central Arabia)",
+      "_tribe_normalized": "Ghaṭafān",
+      "_commander_normalized": "Abū Bakr al-Ṣiddīq"
+    },
+    {
+      "tribe_arabic": "بنو أسد",
+      "tribe_english": "Banū Asad",
+      "region_arabic": "سميراء",
+      "region_english": "Samīrāʾ",
+      "year_ah": 11,
+      "incorporation_mode": "SUBJUGATION",
+      "commander_arabic": "غير محدد",
+      "commander_english": "not specified",
+      "rebel_leader_arabic": "طليحة",
+      "rebel_leader_english": "Ṭulayḥa",
+      "battle_site_arabic": "سميراء",
+      "battle_site_english": "Samīrāʾ",
+      "evidence": [
+        "واجتمع على طليحة عوام طيئ وأسد",
+        "اجتمعت أسد بسميراء"
+      ],
+      "confidence": 0.9,
+      "notes": "Banū Asad joined the false prophet Ṭulayḥa",
+      "_source": "tabari",
+      "_tribe_region": "Najd",
+      "_tribe_leader": "Ṭulayḥa",
+      "_detected_terms": {
+        "qital_terms": [],
+        "taa_terms": [],
+        "ridda_terms": []
+      },
+      "_term_mode": "UNKNOWN",
+      "_source_name": "al-Ṭabarī",
+      "_event_id": "T008",
+      "_lat": 26.5,
+      "_lon": 42.8,
+      "_region_key": "najd",
+      "_region_en": "Najd (Central Arabia)",
+      "_tribe_normalized": "Banū Asad",
+      "_rebel_normalized": "Ṭulayḥa ibn Khuwaylid"
+    },
+    {
+      "tribe_arabic": "طيئ",
+      "tribe_english": "Ṭayyiʾ",
+      "region_arabic": "حدود أرضهم",
+      "region_english": "ḥudūd arḍihim",
+      "year_ah": 11,
+      "incorporation_mode": "SUBJUGATION",
+      "commander_arabic": "غير محدد",
+      "commander_english": "not specified",
+      "rebel_leader_arabic": "طليحة",
+      "rebel_leader_english": "Ṭulayḥa",
+      "battle_site_arabic": "حدود أرضهم",
+      "battle_site_english": "ḥudūd arḍihim",
+      "evidence": [
+        "واجتمع على طليحة عوام طيئ وأسد",
+        "وطيئ على حدود أرضهم"
+      ],
+      "confidence": 0.9,
+      "notes": "Ṭayyiʾ tribe joined Ṭulayḥa's rebellion",
+      "_source": "tabari",
+      "_detected_terms": {
+        "qital_terms": [],
+        "taa_terms": [],
+        "ridda_terms": []
+      },
+      "_term_mode": "UNKNOWN",
+      "_source_name": "al-Ṭabarī",
+      "_event_id": "T009",
+      "_lat": 24.5,
+      "_lon": 40.0,
+      "_region_key": "hijaz",
+      "_region_en": "al-Ḥijāz",
+      "_rebel_normalized": "Ṭulayḥa ibn Khuwaylid"
+    },
+    {
+      "tribe_arabic": "فزارة",
+      "tribe_english": "Fazāra",
+      "region_arabic": "جنوب طيبة",
+      "region_english": "janūb Ṭayba",
+      "year_ah": 11,
+      "incorporation_mode": "SUBJUGATION",
+      "commander_arabic": "غير محدد",
+      "commander_english": "not specified",
+      "rebel_leader_arabic": "طليحة",
+      "rebel_leader_english": "Ṭulayḥa",
+      "battle_site_arabic": "جنوب طيبة",
+      "battle_site_english": "janūb Ṭayba",
+      "evidence": [
+        "وفزارة ومن يليهم من غطفان بجنوب طيبة"
+      ],
+      "confidence": 0.85,
+      "notes": "Part of Ghaṭafān confederation that rebelled",
+      "_source": "tabari",
+      "_detected_terms": {
+        "qital_terms": [],
+        "taa_terms": [],
+        "ridda_terms": []
+      },
+      "_term_mode": "UNKNOWN",
+      "_source_name": "al-Ṭabarī",
+      "_event_id": "T010",
+      "_lat": 24.3,
+      "_lon": 39.5,
+      "_region_key": "hijaz",
+      "_region_en": "al-Ḥijāz",
+      "_tribe_normalized": "Banū Fazāra",
+      "_rebel_normalized": "Ṭulayḥa ibn Khuwaylid"
+    },
+    {
+      "tribe_arabic": "ثعلبة بن سعد",
+      "tribe_english": "Thaʿlaba ibn Saʿd",
+      "region_arabic": "الأبرق من الربذة",
+      "region_english": "al-Abraq min al-Rabadha",
+      "year_ah": 11,
+      "incorporation_mode": "SUBJUGATION",
+      "commander_arabic": "أبو بكر",
+      "commander_english": "Abū Bakr",
+      "rebel_leader_arabic": "الحارث",
+      "rebel_leader_english": "al-Ḥārith",
+      "battle_site_arabic": "الأبرق",
+      "battle_site_english": "al-Abraq",
+      "evidence": [
+        "واجتمعت ثعلبة بن سعد ومن يليهم من مرة وعبس بالأبرق من الربذة",
+        "فقاتلهم قبل رجوع أسامة"
+      ],
+      "confidence": 0.9,
+      "notes": "Gathered at al-Abraq and fought against Abū Bakr",
+      "_source": "tabari",
+      "_detected_terms": {
+        "qital_terms": [
+          "قاتل",
+          "قاتلهم"
+        ],
+        "taa_terms": [],
+        "ridda_terms": []
+      },
+      "_term_mode": "SUBJUGATION",
+      "_source_name": "al-Ṭabarī",
+      "_event_id": "T011",
+      "_lat": 25.0,
+      "_lon": 42.5,
+      "_region_key": "najd",
+      "_region_en": "Najd (Central Arabia)",
+      "_commander_normalized": "Abū Bakr al-Ṣiddīq"
+    },
+    {
+      "tribe_arabic": "عبس",
+      "tribe_english": "ʿAbs",
+      "region_arabic": "الأبرق من الربذة",
+      "region_english": "al-Abraq min al-Rabadha",
+      "year_ah": 11,
+      "incorporation_mode": "SUBJUGATION",
+      "commander_arabic": "أبو بكر",
+      "commander_english": "Abū Bakr",
+      "rebel_leader_arabic": "الحارث",
+      "rebel_leader_english": "al-Ḥārith",
+      "battle_site_arabic": "الأبرق",
+      "battle_site_english": "al-Abraq",
+      "evidence": [
+        "وكان أول من صادم عبس وذبيان، عاجلوه فقاتلهم قبل رجوع أسامة",
+        "فهزم الله الحارث وعوفا، وأخذ الحطيئة أسيرا، فطارت عبس"
+      ],
+      "confidence": 0.95,
+      "notes": "First to attack Abū Bakr, later defeated at al-Abraq",
+      "_source": "tabari",
+      "_detected_terms": {
+        "qital_terms": [
+          "قاتل",
+          "قاتلهم",
+          "هزم"
+        ],
+        "taa_terms": [],
+        "ridda_terms": []
+      },
+      "_term_mode": "SUBJUGATION",
+      "_source_name": "al-Ṭabarī",
+      "_event_id": "T012",
+      "_lat": 25.0,
+      "_lon": 42.5,
+      "_region_key": "najd",
+      "_region_en": "Najd (Central Arabia)",
+      "_tribe_normalized": "ʿAbs",
+      "_commander_normalized": "Abū Bakr al-Ṣiddīq"
+    },
+    {
+      "tribe_arabic": "ذبيان",
+      "tribe_english": "Dhubyān",
+      "region_arabic": "الأبرق من الربذة",
+      "region_english": "al-Abraq min al-Rabadha",
+      "year_ah": 11,
+      "incorporation_mode": "SUBJUGATION",
+      "commander_arabic": "أبو بكر",
+      "commander_english": "Abū Bakr",
+      "rebel_leader_arabic": "حبال",
+      "rebel_leader_english": "Ḥibāl",
+      "battle_site_arabic": "ذو القصة",
+      "battle_site_english": "Dhū al-Qaṣṣa",
+      "evidence": [
+        "وكان أول من صادم عبس وذبيان، عاجلوه فقاتلهم قبل رجوع أسامة",
+        "فما ذر قرن الشمس حتى ولوهم الأدبار، وغلبوهم على عامة ظهرهم، وقتل حبال"
+      ],
+      "confidence": 0.95,
+      "notes": "Defeated by Abū Bakr at Dhū al-Qaṣṣa, their leader Ḥibāl was killed",
+      "_source": "tabari",
+      "_detected_terms": {
+        "qital_terms": [
+          "قاتل",
+          "قاتلهم",
+          "قتل"
+        ],
+        "taa_terms": [],
+        "ridda_terms": []
+      },
+      "_term_mode": "SUBJUGATION",
+      "_source_name": "al-Ṭabarī",
+      "_event_id": "T013",
+      "_lat": 24.8,
+      "_lon": 40.5,
+      "_region_key": "najd",
+      "_region_en": "Najd (Central Arabia)",
+      "_tribe_normalized": "Dhubyān",
+      "_commander_normalized": "Abū Bakr al-Ṣiddīq"
+    },
+    {
+      "tribe_arabic": "كلب",
+      "tribe_english": "Kalb",
+      "region_arabic": "قضاعة",
+      "region_english": "Quḍāʿa",
+      "year_ah": 11,
+      "incorporation_mode": "MIXED",
+      "commander_arabic": "أسامة",
+      "commander_english": "Usāma",
+      "rebel_leader_arabic": "وديعة الكلبي",
+      "rebel_leader_english": "Wadīʿa al-Kalbī",
+      "battle_site_arabic": "دومة",
+      "battle_site_english": "Dūma",
+      "evidence": [
+        "فارتد وديعة الكلبي فيمن آزره من كلب، وبقي امرؤ القيس على دينه",
+        "فخرجوا هرابا، حتى أرزوا إلى دومة"
+      ],
+      "confidence": 0.85,
+      "notes": "Part of Kalb apostatized under Wadīʿa, but Imruʾ al-Qays remained Muslim",
+      "_source": "tabari",
+      "_detected_terms": {
+        "qital_terms": [],
+        "taa_terms": [],
+        "ridda_terms": [
+          "ارتد"
+        ]
+      },
+      "_term_mode": "UNKNOWN",
+      "_source_name": "al-Ṭabarī",
+      "_event_id": "T014",
+      "_lat": 29.81,
+      "_lon": 39.87,
+      "_region_key": "sham",
+      "_region_en": "al-Shām",
+      "_tribe_normalized": "Kalb",
+      "_rebel_normalized": "Kalb"
+    },
+    {
+      "tribe_arabic": "بنو القين",
+      "tribe_english": "Banū al-Qayn",
+      "region_arabic": "قضاعة",
+      "region_english": "Quḍāʿa",
+      "year_ah": 11,
+      "incorporation_mode": "MIXED",
+      "commander_arabic": "أسامة",
+      "commander_english": "Usāma",
+      "rebel_leader_arabic": "زميل بن قطبة القيني",
+      "rebel_leader_english": "Zumayl ibn Quṭba al-Qaynī",
+      "battle_site_arabic": "قضاعة",
+      "battle_site_english": "Quḍāʿa",
+      "evidence": [
+        "وارتد زميل بن قطبة القيني فيمن آزره من بني القين وبقي عمرو"
+      ],
+      "confidence": 0.8,
+      "notes": "Part apostatized under Zumayl, but ʿAmr remained loyal",
+      "_source": "tabari",
+      "_detected_terms": {
+        "qital_terms": [],
+        "taa_terms": [],
+        "ridda_terms": [
+          "ارتد"
+        ]
+      },
+      "_term_mode": "UNKNOWN",
+      "_source_name": "al-Ṭabarī",
+      "_event_id": "T015",
+      "_lat": 28.0,
+      "_lon": 37.0,
+      "_region_key": "sham",
+      "_region_en": "al-Shām"
+    },
+    {
+      "tribe_arabic": "سعد هذيم",
+      "tribe_english": "Saʿd Hudhaym",
+      "region_arabic": "قضاعة",
+      "region_english": "Quḍāʿa",
+      "year_ah": 11,
+      "incorporation_mode": "SUBJUGATION",
+      "commander_arabic": "أسامة",
+      "commander_english": "Usāma",
+      "rebel_leader_arabic": "معاوية",
+      "rebel_leader_english": "Muʿāwiya",
+      "battle_site_arabic": "قضاعة",
+      "battle_site_english": "Quḍāʿa",
+      "evidence": [
+        "وارتد معاوية فيمن آزره من سعد هذيم"
+      ],
+      "confidence": 0.8,
+      "notes": "Apostatized under Muʿāwiya during Usāma's campaign",
+      "_source": "tabari",
+      "_detected_terms": {
+        "qital_terms": [],
+        "taa_terms": [],
+        "ridda_terms": [
+          "ارتد"
+        ]
+      },
+      "_term_mode": "UNKNOWN",
+      "_source_name": "al-Ṭabarī",
+      "_event_id": "T016",
+      "_lat": 28.0,
+      "_lon": 37.0,
+      "_region_key": "sham",
+      "_region_en": "al-Shām"
+    },
+    {
+      "tribe_arabic": "بنو أسد",
+      "tribe_english": "Banū Asad",
+      "region_arabic": "الغمر",
+      "region_english": "al-Ghamir",
+      "year_ah": 11,
+      "incorporation_mode": "SUBJUGATION",
+      "commander_arabic": "خالد بن الوليد",
+      "commander_english": "Khālid ibn al-Walīd",
+      "rebel_leader_arabic": "طليحة",
+      "rebel_leader_english": "Ṭulayḥa",
+      "battle_site_arabic": "البزاخة",
+      "battle_site_english": "al-Bazākha",
+      "evidence": [
+        "قاتل عيينه مع طليحة في سبعمائة من بنى فزاره قتالا شديدا",
+        "ضرس القتال وهزته الحرب",
+        "فانصرفوا وانهزم الناس فغشوا طليحة",
+        "وقتل الله من قتل منهم"
+      ],
+      "confidence": 0.95,
+      "notes": "Major battle at al-Bazākha where Ṭulayḥa was defeated by Khālid, with ʿUyayna ibn Ḥiṣn fighting alongside the false prophet",
+      "_source": "tabari",
+      "_tribe_region": "Najd",
+      "_tribe_leader": "Ṭulayḥa",
+      "_detected_terms": {
+        "qital_terms": [
+          "قتال",
+          "قاتل",
+          "قتالا شديدا",
+          "حرب",
+          "قتل",
+          "قتل منهم",
+          "هزم"
+        ],
+        "taa_terms": [],
+        "ridda_terms": []
+      },
+      "_term_mode": "SUBJUGATION",
+      "_source_name": "al-Ṭabarī",
+      "_event_id": "T017",
+      "_lat": 27.5,
+      "_lon": 43.5,
+      "_region_key": "najd",
+      "_region_en": "Najd (Central Arabia)",
+      "_tribe_normalized": "Banū Asad",
+      "_commander_normalized": "Khālid ibn al-Walīd",
+      "_rebel_normalized": "Ṭulayḥa ibn Khuwaylid"
+    },
+    {
+      "tribe_arabic": "بنو فزارة",
+      "tribe_english": "Banū Fazāra",
+      "region_arabic": "البزاخة",
+      "region_english": "al-Bazākha",
+      "year_ah": 11,
+      "incorporation_mode": "SUBJUGATION",
+      "commander_arabic": "خالد بن الوليد",
+      "commander_english": "Khālid ibn al-Walīd",
+      "rebel_leader_arabic": "عيينة بن حصن",
+      "rebel_leader_english": "ʿUyayna ibn Ḥiṣn",
+      "battle_site_arabic": "البزاخة",
+      "battle_site_english": "al-Bazākha",
+      "evidence": [
+        "قاتل عيينه مع طليحة في سبعمائة من بنى فزاره قتالا شديدا",
+        "فانصرفوا وانهزم الناس",
+        "اوثق عيينه بن حصن"
+      ],
+      "confidence": 0.9,
+      "notes": "Fazāra fought with 700 men under ʿUyayna ibn Ḥiṣn supporting Ṭulayḥa, later defeated and ʿUyayna was captured",
+      "_source": "tabari",
+      "_detected_terms": {
+        "qital_terms": [
+          "قتال",
+          "قاتل",
+          "قتالا شديدا",
+          "هزم"
+        ],
+        "taa_terms": [],
+        "ridda_terms": []
+      },
+      "_term_mode": "SUBJUGATION",
+      "_source_name": "al-Ṭabarī",
+      "_event_id": "T018",
+      "_lat": 27.5,
+      "_lon": 43.5,
+      "_region_key": "najd",
+      "_region_en": "Najd (Central Arabia)",
+      "_tribe_normalized": "Banū Fazāra",
+      "_commander_normalized": "Khālid ibn al-Walīd",
+      "_rebel_normalized": "ʿUyayna ibn Ḥiṣn",
+      "_cross_refs": [
+        "W016",
+        "W021"
+      ]
+    },
+    {
+      "tribe_arabic": "بنو عامر",
+      "tribe_english": "Banū ʿĀmir",
+      "region_arabic": "نجد",
+      "region_english": "Najd",
+      "year_ah": 11,
+      "incorporation_mode": "MIXED",
+      "commander_arabic": "خالد بن الوليد",
+      "commander_english": "Khālid ibn al-Walīd",
+      "rebel_leader_arabic": "قرة بن هبيرة",
+      "rebel_leader_english": "Qura ibn Hubayra",
+      "battle_site_arabic": "",
+      "battle_site_english": "",
+      "evidence": [
+        "اقبلت بنو عامر بعد هزيمه اهل بزاخه يقولون: ندخل فيما خرجنا منه",
+        "فبايعهم على ما بايع عليه اهل البزاخه",
+        "اوثق عيينه بن حصن وقره بن هبيرة"
+      ],
+      "confidence": 0.85,
+      "notes": "Banū ʿĀmir submitted after the defeat at al-Bazākha, with their leader Qura ibn Hubayra captured but later pardoned",
+      "_source": "tabari",
+      "_tribe_region": "Najd",
+      "_tribe_leader": null,
+      "_detected_terms": {
+        "qital_terms": [
+          "هزيمة"
+        ],
+        "taa_terms": [
+          "بايع"
+        ],
+        "ridda_terms": []
+      },
+      "_term_mode": "MIXED",
+      "_source_name": "al-Ṭabarī",
+      "_event_id": "T019",
+      "_lat": 25.0,
+      "_lon": 45.0,
+      "_region_key": "najd",
+      "_region_en": "Najd (Central Arabia)",
+      "_tribe_normalized": "Banū ʿĀmir",
+      "_commander_normalized": "Khālid ibn al-Walīd"
+    },
+    {
+      "tribe_arabic": "غطفان",
+      "tribe_english": "Ghaṭafān",
+      "region_arabic": "ظفر",
+      "region_english": "Ẓafar",
+      "year_ah": 11,
+      "incorporation_mode": "SUBJUGATION",
+      "commander_arabic": "خالد بن الوليد",
+      "commander_english": "Khālid ibn al-Walīd",
+      "rebel_leader_arabic": "أم زمل سلمى",
+      "rebel_leader_english": "Umm Zaml Salmā",
+      "battle_site_arabic": "ظفر",
+      "battle_site_english": "Ẓafar",
+      "evidence": [
+        "اجتمعت فلال غطفان الى ظفر",
+        "فاقتتلوا قتالا شديدا",
+        "فعقروه وقتلوها",
+        "وقتل حول جملها مائه رجل"
+      ],
+      "confidence": 0.9,
+      "notes": "Remnants of Ghaṭafān gathered around Umm Zaml at Ẓafar, fought fiercely but were defeated with 100 men killed around her camel",
+      "_source": "tabari",
+      "_detected_terms": {
+        "qital_terms": [
+          "قتال",
+          "قتالا شديدا",
+          "قتل",
+          "ظفر"
+        ],
+        "taa_terms": [],
+        "ridda_terms": []
+      },
+      "_term_mode": "SUBJUGATION",
+      "_source_name": "al-Ṭabarī",
+      "_event_id": "T020",
+      "_lat": 14.2,
+      "_lon": 44.4,
+      "_region_key": "yaman",
+      "_region_en": "al-Yaman (Yemen)",
+      "_tribe_normalized": "Ghaṭafān",
+      "_commander_normalized": "Khālid ibn al-Walīd"
+    },
+    {
+      "tribe_arabic": "طيء",
+      "tribe_english": "Ṭayyiʾ",
+      "region_arabic": "نجد",
+      "region_english": "Najd",
+      "year_ah": 11,
+      "incorporation_mode": "MIXED",
+      "commander_arabic": "خالد بن الوليد",
+      "commander_english": "Khālid ibn al-Walīd",
+      "rebel_leader_arabic": "عوف الجذمي",
+      "rebel_leader_english": "ʿAwf al-Jadhamī",
+      "battle_site_arabic": "",
+      "battle_site_english": "",
+      "evidence": [
+        "ان خيل طيئ كانت تلقى خيل بنى اسد وفزاره قبل قدوم خالد عليهم فيتشامون",
+        "وارسل اليه ثمامة بن أوس بن لام الطائي",
+        "فبايعهم على ما بايع عليه اهل البزاخه من اسد وغطفان وطيئ"
+      ],
+      "confidence": 0.8,
+      "notes": "Ṭayyiʾ cavalry initially skirmished with Asad and Fazāra, then submitted after the Battle of al-Bazākha",
+      "_source": "tabari",
+      "_detected_terms": {
+        "qital_terms": [],
+        "taa_terms": [
+          "بايع"
+        ],
+        "ridda_terms": []
+      },
+      "_term_mode": "SUBMISSION",
+      "_source_name": "al-Ṭabarī",
+      "_event_id": "T021",
+      "_lat": 25.0,
+      "_lon": 45.0,
+      "_region_key": "najd",
+      "_region_en": "Najd (Central Arabia)",
+      "_tribe_normalized": "Ṭayyiʾ",
+      "_commander_normalized": "Khālid ibn al-Walīd"
+    },
+    {
+      "tribe_arabic": "بنو سليم",
+      "tribe_english": "Banū Sulaym",
+      "region_arabic": "الجواء",
+      "region_english": "al-Jawāʾ",
+      "year_ah": 11,
+      "incorporation_mode": "SUBJUGATION",
+      "commander_arabic": "طريفة بن حاجز",
+      "commander_english": "Ṭarīfa ibn Ḥājiz",
+      "rebel_leader_arabic": "الفجاءة إياس",
+      "rebel_leader_english": "al-Fujāʾa Iyās",
+      "battle_site_arabic": "الجواء",
+      "battle_site_english": "al-Jawāʾ",
+      "evidence": [
+        "فشنها غاره على كل مسلم في سليم وعامر وهوازن",
+        "فاقتتلوا، فقتل نجبه، وهرب الفجاءه",
+        "فحرقه فيه بالنار"
+      ],
+      "confidence": 0.9,
+      "notes": "Al-Fujāʾa Iyās raided Muslims among Sulaym, was defeated at al-Jawāʾ and burned alive by order of Abū Bakr",
+      "_source": "tabari",
+      "_tribe_region": "Najd",
+      "_tribe_leader": null,
+      "_detected_terms": {
+        "qital_terms": [
+          "قتل"
+        ],
+        "taa_terms": [
+          "سلم"
+        ],
+        "ridda_terms": []
+      },
+      "_term_mode": "MIXED",
+      "_source_name": "al-Ṭabarī",
+      "_event_id": "T022",
+      "_lat": 26.2,
+      "_lon": 43.8,
+      "_region_key": "najd",
+      "_region_en": "Najd (Central Arabia)",
+      "_tribe_normalized": "Banū Sulaym"
+    },
+    {
+      "tribe_arabic": "بنو تميم",
+      "tribe_english": "Banū Tamīm",
+      "region_arabic": "البحرين",
+      "region_english": "al-Baḥrayn",
+      "year_ah": 11,
+      "incorporation_mode": "MIXED",
+      "commander_arabic": "",
+      "commander_english": "",
+      "rebel_leader_arabic": "مالك بن نويرة",
+      "rebel_leader_english": "Mālik ibn Nuwayra",
+      "battle_site_arabic": "",
+      "battle_site_english": "",
+      "evidence": [
+        "ومالك بن نويره على بنى حنظله",
+        "فضرب صفوان الى ابى بكر حين وقع اليه الخبر بموت النبي(ص)بصدقات بنى عمرو",
+        "واقام سبره في قومه لحدث ان ناب القوم"
+      ],
+      "confidence": 0.75,
+      "notes": "Various Tamīm sub-tribes had different responses - some governors remained loyal while others like Mālik ibn Nuwayra rebelled",
+      "_source": "tabari",
+      "_tribe_region": "Najd",
+      "_tribe_leader": "Mālik ibn Nuwayra (disputed)",
+      "_detected_terms": {
+        "qital_terms": [],
+        "taa_terms": [],
+        "ridda_terms": []
+      },
+      "_term_mode": "UNKNOWN",
+      "_source_name": "al-Ṭabarī",
+      "_event_id": "T023",
+      "_lat": 26.0,
+      "_lon": 50.55,
+      "_region_key": "bahrayn",
+      "_region_en": "al-Baḥrayn",
+      "_tribe_normalized": "Banū Tamīm",
+      "_rebel_normalized": "Mālik ibn Nuwayra"
+    },
+    {
+      "tribe_arabic": "بنو تميم",
+      "tribe_english": "Banū Tamīm",
+      "region_arabic": "البطاح",
+      "region_english": "al-Biṭāḥ",
+      "year_ah": 12,
+      "incorporation_mode": "MIXED",
+      "commander_arabic": "خالد بن الوليد",
+      "commander_english": "Khālid ibn al-Walīd",
+      "rebel_leader_arabic": "سجاح بنت الحارث",
+      "rebel_leader_english": "Sajāḥ bint al-Ḥārith",
+      "battle_site_arabic": "البطاح",
+      "battle_site_english": "al-Biṭāḥ",
+      "evidence": [
+        "فجئتهم سجاح بنت الحارث قد اقبلت من الجزيرة",
+        "وكانت ورهطها في بنى تغلب تقود افناء ربيعه",
+        "فتنبت بعد موت رسول الله(ص)بالجزيرة في بنى تغلب",
+        "راسلت مالك بن نويره ودعته الى الموادعة"
+      ],
+      "confidence": 0.9,
+      "notes": "Sajāḥ, false prophetess from Jazīra, formed alliance with some Tamīm clans including Mālik ibn Nuwayra before Khālid's arrival",
+      "_source": "tabari",
+      "_tribe_region": "Najd",
+      "_tribe_leader": "Mālik ibn Nuwayra (disputed)",
+      "_lat": 26.0,
+      "_lon": 44.0,
+      "_detected_terms": {
+        "qital_terms": [],
+        "taa_terms": [
+          "بيعة"
+        ],
+        "ridda_terms": []
+      },
+      "_term_mode": "SUBMISSION",
+      "_source_name": "al-Ṭabarī",
+      "_event_id": "T024",
+      "_region_key": "najd",
+      "_region_en": "Najd (Central Arabia)",
+      "_tribe_normalized": "Banū Tamīm",
+      "_commander_normalized": "Khālid ibn al-Walīd",
+      "_rebel_normalized": "Sajāḥ bint al-Ḥārith"
+    },
+    {
+      "tribe_arabic": "بنو يربوع",
+      "tribe_english": "Banū Yarbūʿ",
+      "region_arabic": "البطاح",
+      "region_english": "al-Biṭāḥ",
+      "year_ah": 12,
+      "incorporation_mode": "SUBJUGATION",
+      "commander_arabic": "خالد بن الوليد",
+      "commander_english": "Khālid ibn al-Walīd",
+      "rebel_leader_arabic": "مالك بن نويره",
+      "rebel_leader_english": "Mālik ibn Nuwayra",
+      "battle_site_arabic": "البطاح",
+      "battle_site_english": "al-Biṭāḥ",
+      "evidence": [
+        "فجاءته الخيل بمالك بن نويره في نفر معه من بنى ثعلبه بن يربوع",
+        "فقتل ضرار بن الأزور مالكا",
+        "وتزوج خالد أم تميم ابنه المنهال",
+        "قتلت امرا مسلما، ثم نزوت على امراته"
+      ],
+      "confidence": 0.95,
+      "notes": "Mālik ibn Nuwayra executed by Khālid's forces after confusion over his status; controversial incident involving marriage to his widow",
+      "_source": "tabari",
+      "_lat": 26.0,
+      "_lon": 44.0,
+      "_detected_terms": {
+        "qital_terms": [
+          "قتل"
+        ],
+        "taa_terms": [
+          "سلم"
+        ],
+        "ridda_terms": []
+      },
+      "_term_mode": "MIXED",
+      "_source_name": "al-Ṭabarī",
+      "_event_id": "T025",
+      "_region_key": "najd",
+      "_region_en": "Najd (Central Arabia)",
+      "_commander_normalized": "Khālid ibn al-Walīd",
+      "_cross_refs": [
+        "W022"
+      ]
+    },
+    {
+      "tribe_arabic": "بنو حنيفة",
+      "tribe_english": "Banū Ḥanīfa",
+      "region_arabic": "اليمامة",
+      "region_english": "al-Yamāma",
+      "year_ah": 12,
+      "incorporation_mode": "SUBJUGATION",
+      "commander_arabic": "خالد بن الوليد",
+      "commander_english": "Khālid ibn al-Walīd",
+      "rebel_leader_arabic": "مسيلمة",
+      "rebel_leader_english": "Musaylima",
+      "battle_site_arabic": "اليمامة",
+      "battle_site_english": "al-Yamāma",
+      "evidence": [
+        "ووجهه الى مسيلمه واوعب معه الناس",
+        "فسار خالد حتى اتى اليمامه وبنو حنيفه يومئذ كثير",
+        "كان عدد بنى حنيفه يومئذ اربعين الف مقاتل",
+        "وكان مسيلمه يصانع كل احد ويتالفه"
+      ],
+      "confidence": 0.95,
+      "notes": "Major campaign against Musaylima and Banū Ḥanīfa; 40,000 fighters mentioned; text ends before describing the final battle",
+      "_source": "tabari",
+      "_tribe_region": "al-Yamāma",
+      "_tribe_leader": "Musaylima",
+      "_detected_terms": {
+        "qital_terms": [
+          "قاتل"
+        ],
+        "taa_terms": [],
+        "ridda_terms": []
+      },
+      "_term_mode": "SUBJUGATION",
+      "_source_name": "al-Ṭabarī",
+      "_event_id": "T026",
+      "_lat": 24.15,
+      "_lon": 47.3,
+      "_region_key": "yamama",
+      "_region_en": "al-Yamāma",
+      "_tribe_normalized": "Banū Ḥanīfa",
+      "_commander_normalized": "Khālid ibn al-Walīd",
+      "_rebel_normalized": "Musaylima ibn Ḥabīb",
+      "_cross_refs": [
+        "T028",
+        "T031",
+        "T051",
+        "B004",
+        "W024",
+        "W026",
+        "W027"
+      ]
+    },
+    {
+      "tribe_arabic": "بنو تغلب",
+      "tribe_english": "Banū Taghlib",
+      "region_arabic": "الجزيرة",
+      "region_english": "al-Jazīra",
+      "year_ah": 12,
+      "incorporation_mode": "SUBMISSION",
+      "commander_arabic": null,
+      "commander_english": null,
+      "rebel_leader_arabic": "سجاح بنت الحارث",
+      "rebel_leader_english": "Sajāḥ bint al-Ḥārith",
+      "battle_site_arabic": null,
+      "battle_site_english": null,
+      "evidence": [
+        "وكانت ورهطها في بنى تغلب تقود افناء ربيعه",
+        "فتنبت بعد موت رسول الله(ص)بالجزيرة في بنى تغلب",
+        "فلم تزل سجاح في بنى تغلب، حتى نقلهم معاويه عام الجماعه",
+        "وجاءت معهم وحسن إسلامها"
+      ],
+      "confidence": 0.85,
+      "notes": "Sajāḥ's base tribe; later returned to Islam under Muʿāwiya and were relocated to Kūfa",
+      "_source": "tabari",
+      "_detected_terms": {
+        "qital_terms": [],
+        "taa_terms": [
+          "بيعة"
+        ],
+        "ridda_terms": []
+      },
+      "_term_mode": "SUBMISSION",
+      "_source_name": "al-Ṭabarī",
+      "_event_id": "T027",
+      "_lat": 36.0,
+      "_lon": 41.0,
+      "_region_key": "jazira",
+      "_region_en": "al-Jazīra",
+      "_rebel_normalized": "Sajāḥ bint al-Ḥārith"
+    },
+    {
+      "tribe_arabic": "بنو حنيفة",
+      "tribe_english": "Banū Ḥanīfa",
+      "region_arabic": "اليمامة",
+      "region_english": "al-Yamāma",
+      "year_ah": 12,
+      "incorporation_mode": "SUBJUGATION",
+      "commander_arabic": "خالد بن الوليد",
+      "commander_english": "Khālid ibn al-Walīd",
+      "rebel_leader_arabic": "مسيلمة",
+      "rebel_leader_english": "Musaylima",
+      "battle_site_arabic": "عقرباء",
+      "battle_site_english": "ʿAqrabāʾ",
+      "evidence": [
+        "فبعث اليهم ابو بكر خالدا، فسار حتى إذا بلغ ثنية اليمامه",
+        "فخرج مسيلمه وبنو حنيفه حين سمعوا بخالد، فنزلوا بعقرباء",
+        "فاقتتلوا بعقرباء",
+        "فانهزمت بنو حنيفه",
+        "وقتل وحشى مسيلمه"
+      ],
+      "confidence": 0.95,
+      "notes": "Major battle of ʿAqrabāʾ where Musaylima was killed and Banū Ḥanīfa was decisively defeated by Khālid's forces",
+      "_source": "tabari",
+      "_tribe_region": "al-Yamāma",
+      "_tribe_leader": "Musaylima",
+      "_lat": 24.2,
+      "_lon": 47.35,
+      "_detected_terms": {
+        "qital_terms": [
+          "قتل",
+          "هزم"
+        ],
+        "taa_terms": [],
+        "ridda_terms": []
+      },
+      "_term_mode": "SUBJUGATION",
+      "_source_name": "al-Ṭabarī",
+      "_event_id": "T028",
+      "_region_key": "yamama",
+      "_region_en": "al-Yamāma",
+      "_tribe_normalized": "Banū Ḥanīfa",
+      "_commander_normalized": "Khālid ibn al-Walīd",
+      "_rebel_normalized": "Musaylima ibn Ḥabīb",
+      "_cross_refs": [
+        "T026",
+        "T031",
+        "T051",
+        "B004",
+        "W024",
+        "W026",
+        "W027"
+      ]
+    },
+    {
+      "tribe_arabic": "بنو حنيفة",
+      "tribe_english": "Banū Ḥanīfa",
+      "region_arabic": "اليمامة",
+      "region_english": "al-Yamāma",
+      "year_ah": 12,
+      "incorporation_mode": "SUBJUGATION",
+      "commander_arabic": "خالد بن الوليد",
+      "commander_english": "Khālid ibn al-Walīd",
+      "rebel_leader_arabic": "مجاعة بن مرارة",
+      "rebel_leader_english": "Mujāʿa ibn Murāra",
+      "battle_site_arabic": "ثنية اليمامة",
+      "battle_site_english": "Thaniyyat al-Yamāma",
+      "evidence": [
+        "استقبل مجاعه ابن مرارة- وكان سيد بنى حنيفه- في جبل من قومه",
+        "فبيتهم خالد في معرسهم",
+        "فامر بهم خالد فضربت أعناقهم، واستحيا مجاعه"
+      ],
+      "confidence": 0.9,
+      "notes": "Pre-battle encounter where Khālid captured Mujāʿa ibn Murāra, chief of Banū Ḥanīfa, and killed his companions",
+      "_source": "tabari",
+      "_tribe_region": "al-Yamāma",
+      "_tribe_leader": "Musaylima",
+      "_detected_terms": {
+        "qital_terms": [],
+        "taa_terms": [],
+        "ridda_terms": []
+      },
+      "_term_mode": "UNKNOWN",
+      "_source_name": "al-Ṭabarī",
+      "_event_id": "T029",
+      "_lat": 24.15,
+      "_lon": 47.3,
+      "_region_key": "yamama",
+      "_region_en": "al-Yamāma",
+      "_tribe_normalized": "Banū Ḥanīfa",
+      "_commander_normalized": "Khālid ibn al-Walīd",
+      "_cross_refs": [
+        "W024",
+        "W026",
+        "W028"
+      ]
+    },
+    {
+      "tribe_arabic": "بنو عامر",
+      "tribe_english": "Banū ʿĀmir",
+      "region_arabic": "اليمامة",
+      "region_english": "al-Yamāma",
+      "year_ah": 12,
+      "incorporation_mode": "SUBJUGATION",
+      "commander_arabic": "خالد بن الوليد",
+      "commander_english": "Khālid ibn al-Walīd",
+      "rebel_leader_arabic": "الأغلب بن عامر",
+      "rebel_leader_english": "al-Aghlab ibn ʿĀmir",
+      "battle_site_arabic": "عقرباء",
+      "battle_site_english": "ʿAqrabāʾ",
+      "evidence": [
+        "كان رجل من بنى عامر بن حنيفه يدعى الاغلب بن عامر بن حنيفه",
+        "فلما انهزم المشركون يومئذ، واحاط المسلمون بهم، تماوت"
+      ],
+      "confidence": 0.8,
+      "notes": "Sub-tribe of Banū Ḥanīfa that participated in the battle of ʿAqrabāʾ; al-Aghlab feigned death during the defeat",
+      "_source": "tabari",
+      "_tribe_region": "Najd",
+      "_tribe_leader": null,
+      "_lat": 24.2,
+      "_lon": 47.35,
+      "_detected_terms": {
+        "qital_terms": [
+          "هزم"
+        ],
+        "taa_terms": [
+          "سلم"
+        ],
+        "ridda_terms": []
+      },
+      "_term_mode": "MIXED",
+      "_source_name": "al-Ṭabarī",
+      "_event_id": "T030",
+      "_region_key": "yamama",
+      "_region_en": "al-Yamāma",
+      "_tribe_normalized": "Banū ʿĀmir",
+      "_commander_normalized": "Khālid ibn al-Walīd"
+    },
+    {
+      "tribe_arabic": "بنو حنيفة",
+      "tribe_english": "Banū Ḥanīfa",
+      "region_arabic": "اليمامة",
+      "region_english": "al-Yamāma",
+      "year_ah": 12,
+      "incorporation_mode": "MIXED",
+      "commander_arabic": "خالد بن الوليد",
+      "commander_english": "Khālid ibn al-Walīd",
+      "rebel_leader_arabic": "مسيلمة",
+      "rebel_leader_english": "Musaylima",
+      "battle_site_arabic": "عقرباء",
+      "battle_site_english": "ʿAqrabāʾ",
+      "evidence": [
+        "لما فرغ خالد من مسيلمة والجند",
+        "فصالحه على كل شيء دون النفوس",
+        "وقتل من بني حنيفة في الفضاء بعقرباء سبعة آلاف، وفي حديقة الموت سبعة آلاف",
+        "فصالحه على الصفراء والبيضاء والحلقة ونصف السبي",
+        "وتتابع بنو حنيفة على البراء مما كانوا عليه، وعلى الإسلام"
+      ],
+      "confidence": 0.95,
+      "notes": "Major battle followed by negotiated peace treaty. Khālid defeated Musaylima in battle, then negotiated surrender terms with Mujāʿa ibn Murāra involving tribute and prisoners.",
+      "_source": "tabari",
+      "_tribe_region": "al-Yamāma",
+      "_tribe_leader": "Musaylima",
+      "_lat": 24.2,
+      "_lon": 47.35,
+      "_detected_terms": {
+        "qital_terms": [
+          "قتل",
+          "سبي"
+        ],
+        "taa_terms": [
+          "تاب",
+          "صالح"
+        ],
+        "ridda_terms": []
+      },
+      "_term_mode": "MIXED",
+      "_source_name": "al-Ṭabarī",
+      "_event_id": "T031",
+      "_region_key": "yamama",
+      "_region_en": "al-Yamāma",
+      "_tribe_normalized": "Banū Ḥanīfa",
+      "_commander_normalized": "Khālid ibn al-Walīd",
+      "_rebel_normalized": "Musaylima ibn Ḥabīb",
+      "_cross_refs": [
+        "T026",
+        "T028",
+        "T051",
+        "B004",
+        "W024",
+        "W026",
+        "W027"
+      ]
+    },
+    {
+      "tribe_arabic": "عبد القيس",
+      "tribe_english": "ʿAbd al-Qays",
+      "region_arabic": "البحرين",
+      "region_english": "al-Baḥrayn",
+      "year_ah": 11,
+      "incorporation_mode": "SUBMISSION",
+      "commander_arabic": "العلاء بن الحضرمي",
+      "commander_english": "al-ʿAlāʾ ibn al-Ḥaḍramī",
+      "rebel_leader_arabic": null,
+      "rebel_leader_english": null,
+      "battle_site_arabic": null,
+      "battle_site_english": null,
+      "evidence": [
+        "فأما عبد القيس ففاءت، وأما بكر فتمت على ردتها",
+        "وكان الذي ثنى عبد القيس الجارود حتى فاءوا",
+        "فثبت على الإسلام ومن معه من قومه",
+        "ولم يبسطوا ولم يبسط إليهم"
+      ],
+      "confidence": 0.9,
+      "notes": "ʿAbd al-Qays returned to Islam voluntarily under leadership of al-Jārūd ibn al-Muʿallā, without military conflict.",
+      "_source": "tabari",
+      "_tribe_region": "al-Baḥrayn",
+      "_tribe_leader": "al-Jārūd",
+      "_detected_terms": {
+        "qital_terms": [],
+        "taa_terms": [],
+        "ridda_terms": []
+      },
+      "_term_mode": "UNKNOWN",
+      "_source_name": "al-Ṭabarī",
+      "_event_id": "T032",
+      "_lat": 26.0,
+      "_lon": 50.55,
+      "_region_key": "bahrayn",
+      "_region_en": "al-Baḥrayn",
+      "_tribe_normalized": "ʿAbd al-Qays",
+      "_commander_normalized": "al-ʿAlāʾ ibn al-Ḥaḍramī",
+      "_cross_refs": [
+        "W031"
+      ]
+    },
+    {
+      "tribe_arabic": "بكر بن وائل",
+      "tribe_english": "Bakr ibn Wāʾil",
+      "region_arabic": "البحرين",
+      "region_english": "al-Baḥrayn",
+      "year_ah": 11,
+      "incorporation_mode": "SUBJUGATION",
+      "commander_arabic": "العلاء بن الحضرمي",
+      "commander_english": "al-ʿAlāʾ ibn al-Ḥaḍramī",
+      "rebel_leader_arabic": "الحطم بن ضبيعة",
+      "rebel_leader_english": "al-Ḥuṭam ibn Ḍubayʿa",
+      "battle_site_arabic": "هجر",
+      "battle_site_english": "Hajar",
+      "evidence": [
+        "خرج الحطم بن ضبيعة أخو بني قيس بن ثعلبة فيمن اتبعه من بكر بن وائل على الردة",
+        "وخندق المسلمون والمشركون، وكانوا يتراوحون القتال",
+        "فخرج المسلمون عليهم حتى اقتحموا عليهم عسكرهم، فوضعوا السيوف فيهم حيث شاءوا",
+        "فقتله قيس بن عاصم"
+      ],
+      "confidence": 0.95,
+      "notes": "Major military campaign against al-Ḥuṭam ibn Ḍubayʿa and Bakr tribe. Extended siege warfare ending with night assault and killing of rebel leader.",
+      "_source": "tabari",
+      "_tribe_region": "al-Baḥrayn",
+      "_tribe_leader": "al-Ḥuṭam",
+      "_detected_terms": {
+        "qital_terms": [
+          "قتال",
+          "قتل",
+          "اقتحم",
+          "اقتحموا"
+        ],
+        "taa_terms": [
+          "بيعة",
+          "سلم"
+        ],
+        "ridda_terms": [
+          "ردة"
+        ]
+      },
+      "_term_mode": "MIXED",
+      "_source_name": "al-Ṭabarī",
+      "_event_id": "T033",
+      "_lat": 25.38,
+      "_lon": 49.6,
+      "_region_key": "bahrayn",
+      "_region_en": "al-Baḥrayn",
+      "_tribe_normalized": "Bakr ibn Wāʾil",
+      "_commander_normalized": "al-ʿAlāʾ ibn al-Ḥaḍramī",
+      "_rebel_normalized": "al-Ḥuṭam ibn Ḍubayʿa",
+      "_cross_refs": [
+        "W011",
+        "W030"
+      ]
+    },
+    {
+      "tribe_arabic": "الرباب",
+      "tribe_english": "al-Ribāb",
+      "region_arabic": "نجد",
+      "region_english": "Najd",
+      "year_ah": 11,
+      "incorporation_mode": "SUBMISSION",
+      "commander_arabic": "العلاء بن الحضرمي",
+      "commander_english": "al-ʿAlāʾ ibn al-Ḥaḍramī",
+      "rebel_leader_arabic": null,
+      "rebel_leader_english": null,
+      "battle_site_arabic": null,
+      "battle_site_english": null,
+      "evidence": [
+        "فلما دنا منا ونحن في عليا البلاد لم يكن أحد له فرس من الرباب وعمرو بن تميم إلا جنبه، ثم استقبله",
+        "وخرج معه من عمرو وسعد الرباب مثل عسكره",
+        "فأكرمه العلاء، وخرج مع العلاء من عمرو وسعد الرباب مثل عسكره"
+      ],
+      "confidence": 0.85,
+      "notes": "al-Ribāb tribal confederation joined al-ʿAlāʾ's forces voluntarily, providing significant military support equal to his existing army.",
+      "_source": "tabari",
+      "_detected_terms": {
+        "qital_terms": [],
+        "taa_terms": [],
+        "ridda_terms": []
+      },
+      "_term_mode": "UNKNOWN",
+      "_source_name": "al-Ṭabarī",
+      "_event_id": "T034",
+      "_lat": 25.0,
+      "_lon": 45.0,
+      "_region_key": "najd",
+      "_region_en": "Najd (Central Arabia)",
+      "_commander_normalized": "al-ʿAlāʾ ibn al-Ḥaḍramī"
+    },
+    {
+      "tribe_arabic": "بكر بن وائل",
+      "tribe_english": "Bakr ibn Wāʾil",
+      "region_arabic": "البحرين",
+      "region_english": "al-Baḥrayn",
+      "year_ah": 11,
+      "incorporation_mode": "MIXED",
+      "commander_arabic": "العلاء بن الحضرمي",
+      "commander_english": "al-ʿAlāʾ ibn al-Ḥaḍramī",
+      "rebel_leader_arabic": "الحطم",
+      "rebel_leader_english": "al-Ḥuṭam",
+      "battle_site_arabic": "دارين",
+      "battle_site_english": "Dārīn",
+      "evidence": [
+        "وارسل الى عتيبة بن النهاس والى عامر بن عبد الأسود بلزوم ما هم عليه والقعود لأهل الرده بكل سبيل",
+        "فمنهم من أناب، فقبلوا منه واشتملوا عليه، ومنهم من ابى ولج فمنع من الرجوع",
+        "فاقتتلوا قتالا شديدا، فما تركوا بها مخبرا وسبوا الذراري"
+      ],
+      "confidence": 0.9,
+      "notes": "Battle against apostate tribes at Dārīn. Mixed mode due to some voluntary submissions and armed conflict.",
+      "_source": "tabari",
+      "_tribe_region": "al-Baḥrayn",
+      "_tribe_leader": "al-Ḥuṭam",
+      "_detected_terms": {
+        "qital_terms": [
+          "قتال",
+          "قتالا شديدا",
+          "سبي"
+        ],
+        "taa_terms": [],
+        "ridda_terms": [
+          "ردة"
+        ]
+      },
+      "_term_mode": "SUBJUGATION",
+      "_source_name": "al-Ṭabarī",
+      "_event_id": "T035",
+      "_lat": 26.0,
+      "_lon": 50.55,
+      "_region_key": "bahrayn",
+      "_region_en": "al-Baḥrayn",
+      "_tribe_normalized": "Bakr ibn Wāʾil",
+      "_commander_normalized": "al-ʿAlāʾ ibn al-Ḥaḍramī",
+      "_rebel_normalized": "al-Ḥuṭam ibn Ḍubayʿa",
+      "_cross_refs": [
+        "W011",
+        "W030"
+      ]
+    },
+    {
+      "tribe_arabic": "الأزد",
+      "tribe_english": "al-Azd",
+      "region_arabic": "عمان",
+      "region_english": "ʿUmān",
+      "year_ah": 11,
+      "incorporation_mode": "SUBJUGATION",
+      "commander_arabic": "حذيفة بن محصن",
+      "commander_english": "Ḥudhayfa ibn Muḥṣin",
+      "rebel_leader_arabic": "لقيط بن مالك",
+      "rebel_leader_english": "Laqīṭ ibn Mālik",
+      "battle_site_arabic": "دبا",
+      "battle_site_english": "Dabā",
+      "evidence": [
+        "نبغ بعمان ذو التاج لقيط بن مالك الأزدي، وكان يسامى في الجاهلية الجلندى، وادعى بمثل ما ادعى به من كان نبيا",
+        "فالتقوا على دبا، وقد جمع لقيط العيالات، فجعلهم وراء صفوفهم",
+        "فاقتتلوا بدبا قتالا شديدا، وكاد لقيط يستعلى الناس",
+        "فقتلوا منهم في المعركة عشره آلاف"
+      ],
+      "confidence": 1.0,
+      "notes": "Major battle at Dabā against the false prophet Laqīṭ ibn Mālik. Clear military subjugation with 10,000 enemy killed.",
+      "_source": "tabari",
+      "_tribe_region": "Oman",
+      "_tribe_leader": "Laqīṭ ibn Mālik",
+      "_lat": 25.62,
+      "_lon": 56.27,
+      "_detected_terms": {
+        "qital_terms": [
+          "قتال",
+          "قتالا شديدا",
+          "قتل",
+          "قتلوا"
+        ],
+        "taa_terms": [],
+        "ridda_terms": []
+      },
+      "_term_mode": "SUBJUGATION",
+      "_source_name": "al-Ṭabarī",
+      "_event_id": "T036",
+      "_region_key": "uman",
+      "_region_en": "ʿUmān (Oman)",
+      "_tribe_normalized": "al-Azd",
+      "_commander_normalized": "Ḥudhayfa ibn Miḥṣan",
+      "_rebel_normalized": "Laqīṭ ibn Mālik Dhū l-Tāj"
+    },
+    {
+      "tribe_arabic": "مهره",
+      "tribe_english": "Mahra",
+      "region_arabic": "النجد",
+      "region_english": "al-Najd",
+      "year_ah": 11,
+      "incorporation_mode": "MIXED",
+      "commander_arabic": "عكرمة",
+      "commander_english": "ʿIkrima",
+      "rebel_leader_arabic": "المصبح",
+      "rebel_leader_english": "al-Muṣbiḥ",
+      "battle_site_arabic": "النجد",
+      "battle_site_english": "al-Najd",
+      "evidence": [
+        "فكانا مختلفين، كل واحد من الرئيسين يدعو الآخر الى نفسه",
+        "ولما راى عكرمه قله من مع شخريت دعاه الى الرجوع الى الاسلام، فكان لاول الدعاء، فأجابه",
+        "فالتقوا هم والمصبح بالنجد، فاقتتلوا أشد من قتال دبا",
+        "ثم ان الله كشف جنود المرتدين، وقتل رئيسهم"
+      ],
+      "confidence": 0.9,
+      "notes": "Mixed incorporation: some tribal leaders like Shukhrīt submitted voluntarily, while al-Muṣbiḥ's faction was defeated militarily.",
+      "_source": "tabari",
+      "_detected_terms": {
+        "qital_terms": [
+          "قتال",
+          "قتل"
+        ],
+        "taa_terms": [],
+        "ridda_terms": [
+          "مرتد"
+        ]
+      },
+      "_term_mode": "SUBJUGATION",
+      "_source_name": "al-Ṭabarī",
+      "_event_id": "T037",
+      "_lat": 25.0,
+      "_lon": 45.0,
+      "_region_key": "najd",
+      "_region_en": "Najd (Central Arabia)",
+      "_commander_normalized": "ʿIkrima ibn Abī Jahl"
+    },
+    {
+      "tribe_arabic": "عك",
+      "tribe_english": "ʿAkk",
+      "region_arabic": "تهامة",
+      "region_english": "Tihāma",
+      "year_ah": 11,
+      "incorporation_mode": "SUBJUGATION",
+      "commander_arabic": "الطاهر بن أبي هالة",
+      "commander_english": "al-Ṭāhir ibn Abī Hāla",
+      "rebel_leader_arabic": null,
+      "rebel_leader_english": null,
+      "battle_site_arabic": "الأعلاب",
+      "battle_site_english": "al-Aʿlāb",
+      "evidence": [
+        "تجمع منهم طخارير، فاقبل اليهم طخارير من الاشعرين وخضم فانضموا اليهم",
+        "فالتقوا فاقتتلوا، فهزمهم الله، وقتلوهم كل قتله، وانتنت السبل لقتلهم",
+        "وكان مقتلهم فتحا عظيما",
+        "فسميت تلك الجموع من عك ومن تأشب اليهم الى اليوم الأخابث"
+      ],
+      "confidence": 1.0,
+      "notes": "Battle against the 'Akhabāth (wicked ones) of ʿAkk and allied tribes. Complete military victory with heavy enemy casualties.",
+      "_source": "tabari",
+      "_detected_terms": {
+        "qital_terms": [
+          "قتل",
+          "هزم",
+          "هزمهم",
+          "فتح"
+        ],
+        "taa_terms": [],
+        "ridda_terms": []
+      },
+      "_term_mode": "SUBJUGATION",
+      "_source_name": "al-Ṭabarī",
+      "_event_id": "T038",
+      "_lat": 14.8,
+      "_lon": 43.3,
+      "_region_key": "tihama",
+      "_region_en": "Tihāma",
+      "_tribe_normalized": "ʿIkrima ibn Abī Jahl"
+    },
+    {
+      "tribe_arabic": "مدلج",
+      "tribe_english": "Mudlij",
+      "region_arabic": "تهامة",
+      "region_english": "Tihāma",
+      "year_ah": 11,
+      "incorporation_mode": "SUBJUGATION",
+      "commander_arabic": "خالد بن أسيد",
+      "commander_english": "Khālid ibn Usayd",
+      "rebel_leader_arabic": "جندب بن سلمى",
+      "rebel_leader_english": "Jundab ibn Salmā",
+      "battle_site_arabic": "الأبارق",
+      "battle_site_english": "al-Abāriq",
+      "evidence": [
+        "وقد تجمعت بها جماع من مدلج، وتأشب اليهم شذاذ من خزاعة وافناء كنانه، عليهم جندب بن سلمى",
+        "فالتقوا بالابارق، ففرقهم وقتلهم، واستحر القتل في بنى شنوق"
+      ],
+      "confidence": 0.9,
+      "notes": "Military campaign against Mudlij and allied tribes under Jundab ibn Salmā. Heavy casualties inflicted on Banū Shanūq.",
+      "_source": "tabari",
+      "_detected_terms": {
+        "qital_terms": [
+          "قتل"
+        ],
+        "taa_terms": [
+          "سلم"
+        ],
+        "ridda_terms": []
+      },
+      "_term_mode": "MIXED",
+      "_source_name": "al-Ṭabarī",
+      "_event_id": "T039",
+      "_lat": 14.8,
+      "_lon": 43.3,
+      "_region_key": "tihama",
+      "_region_en": "Tihāma",
+      "_commander_normalized": "Khālid ibn al-Walīd"
+    },
+    {
+      "tribe_arabic": "خولان",
+      "tribe_english": "Khawlān",
+      "region_arabic": "اليمن",
+      "region_english": "al-Yaman",
+      "year_ah": 11,
+      "incorporation_mode": "SUBMISSION",
+      "commander_arabic": null,
+      "commander_english": null,
+      "rebel_leader_arabic": "فيروز",
+      "rebel_leader_english": "Fīrūz",
+      "battle_site_arabic": "جبل خولان",
+      "battle_site_english": "Jabal Khawlān",
+      "evidence": [
+        "فانتهيا الى خولان وامتنع فيروز بأخواله",
+        "ولما أوى فيروز الى أخواله خولان فمنعوه وتأشب اليه الناس"
+      ],
+      "confidence": 0.85,
+      "notes": "Khawlān tribe provided protection to Fīrūz after al-Aswad al-ʿAnsī's death, acting as his maternal uncles",
+      "_source": "tabari",
+      "_detected_terms": {
+        "qital_terms": [],
+        "taa_terms": [],
+        "ridda_terms": []
+      },
+      "_term_mode": "UNKNOWN",
+      "_source_name": "al-Ṭabarī",
+      "_event_id": "T040",
+      "_lat": 15.35,
+      "_lon": 44.2,
+      "_region_key": "yaman",
+      "_region_en": "al-Yaman (Yemen)",
+      "_tribe_normalized": "Khawlān",
+      "_rebel_normalized": "Fayrūz al-Daylamī"
+    },
+    {
+      "tribe_arabic": "بنو عقيل بن ربيعة بن عامر بن صعصعة",
+      "tribe_english": "Banū ʿAqīl ibn Rabīʿa ibn ʿĀmir ibn Ṣaʿṣaʿa",
+      "region_arabic": "اليمن",
+      "region_english": "al-Yaman",
+      "year_ah": 11,
+      "incorporation_mode": "SUBJUGATION",
+      "commander_arabic": null,
+      "commander_english": null,
+      "rebel_leader_arabic": "فيروز",
+      "rebel_leader_english": "Fīrūz",
+      "battle_site_arabic": null,
+      "battle_site_english": null,
+      "evidence": [
+        "وارسل الى بنى عقيل بن ربيعه بن عامر بن صعصعة رسولا بانه متخفر بهم، يستمدهم ويستنصرهم",
+        "فركبت عقيل وعليهم رجل من الحلفاء يقال له معاويه، فاعترضوا خيل قيس فتنقذوا أولئك العيال، وقتلوا الذين سيروهم"
+      ],
+      "confidence": 0.9,
+      "notes": "Banū ʿAqīl allied with Fīrūz against Qays, engaging in military action to rescue families",
+      "_source": "tabari",
+      "_detected_terms": {
+        "qital_terms": [
+          "قتل",
+          "قتلوا"
+        ],
+        "taa_terms": [
+          "بيعة"
+        ],
+        "ridda_terms": []
+      },
+      "_term_mode": "MIXED",
+      "_source_name": "al-Ṭabarī",
+      "_event_id": "T041",
+      "_lat": 15.35,
+      "_lon": 44.2,
+      "_region_key": "yaman",
+      "_region_en": "al-Yaman (Yemen)",
+      "_tribe_normalized": "Rabīʿa",
+      "_rebel_normalized": "Fayrūz al-Daylamī"
+    },
+    {
+      "tribe_arabic": "عك",
+      "tribe_english": "ʿAkk",
+      "region_arabic": "اليمن",
+      "region_english": "al-Yaman",
+      "year_ah": 11,
+      "incorporation_mode": "SUBJUGATION",
+      "commander_arabic": null,
+      "commander_english": null,
+      "rebel_leader_arabic": "فيروز",
+      "rebel_leader_english": "Fīrūz",
+      "battle_site_arabic": null,
+      "battle_site_english": null,
+      "evidence": [
+        "وارسل الى عك رسولا يستمدهم ويستنصرهم على الذين يزعجون اثقال الأبناء",
+        "ووثبت عك، وعليهم مسروق، فساروا حتى تنقذوا عيالات الأبناء"
+      ],
+      "confidence": 0.9,
+      "notes": "ʿAkk tribe under Masrūq allied with Fīrūz in military operations against Qays",
+      "_source": "tabari",
+      "_detected_terms": {
+        "qital_terms": [],
+        "taa_terms": [],
+        "ridda_terms": []
+      },
+      "_term_mode": "UNKNOWN",
+      "_source_name": "al-Ṭabarī",
+      "_event_id": "T042",
+      "_lat": 15.35,
+      "_lon": 44.2,
+      "_region_key": "yaman",
+      "_region_en": "al-Yaman (Yemen)",
+      "_tribe_normalized": "ʿIkrima ibn Abī Jahl",
+      "_rebel_normalized": "Fayrūz al-Daylamī"
+    },
+    {
+      "tribe_arabic": "مراد",
+      "tribe_english": "Murād",
+      "region_arabic": "اليمن",
+      "region_english": "al-Yaman",
+      "year_ah": 11,
+      "incorporation_mode": "MIXED",
+      "commander_arabic": null,
+      "commander_english": null,
+      "rebel_leader_arabic": "الأسود العنسي",
+      "rebel_leader_english": "al-Aswad al-ʿAnsī",
+      "battle_site_arabic": null,
+      "battle_site_english": null,
+      "evidence": [
+        "فاستعمله رسول الله (صلى الله عليه وسلم) على صدقات مراد ومن نازلهم او نزل دارهم",
+        "فلما ارتد العنسي واتبعه عوام مذحج، اعتزل فروه فيمن اقام معه على الاسلام"
+      ],
+      "confidence": 0.85,
+      "notes": "Murād had mixed loyalties - some remained with Farwa ibn Masīk on Islam, others followed al-Aswad",
+      "_source": "tabari",
+      "_detected_terms": {
+        "qital_terms": [],
+        "taa_terms": [
+          "سلم"
+        ],
+        "ridda_terms": [
+          "ارتد"
+        ]
+      },
+      "_term_mode": "SUBMISSION",
+      "_source_name": "al-Ṭabarī",
+      "_event_id": "T043",
+      "_lat": 15.35,
+      "_lon": 44.2,
+      "_region_key": "yaman",
+      "_region_en": "al-Yaman (Yemen)",
+      "_tribe_normalized": "Murād",
+      "_rebel_normalized": "al-Aswad al-ʿAnsī"
+    },
+    {
+      "tribe_arabic": "النخع",
+      "tribe_english": "al-Nakhaʿ",
+      "region_arabic": "أبين",
+      "region_english": "Abyan",
+      "year_ah": 12,
+      "incorporation_mode": "SUBMISSION",
+      "commander_arabic": "عكرمة",
+      "commander_english": "ʿIkrima",
+      "rebel_leader_arabic": null,
+      "rebel_leader_english": null,
+      "battle_site_arabic": "أبين",
+      "battle_site_english": "Abyan",
+      "evidence": [
+        "فجمع النخع بعد من أصاب من مدبريهم فقال لهم: كيف كنتم في هذا الأمر؟ فقالوا له: كنا في الجاهلية اهل دين",
+        "واستبرأ النخع وحمير، واقام لاجتماعهم"
+      ],
+      "confidence": 0.9,
+      "notes": "Al-Nakhaʿ submitted voluntarily to ʿIkrima, claiming they maintained religious principles",
+      "_source": "tabari",
+      "_detected_terms": {
+        "qital_terms": [],
+        "taa_terms": [],
+        "ridda_terms": []
+      },
+      "_term_mode": "UNKNOWN",
+      "_source_name": "al-Ṭabarī",
+      "_event_id": "T044",
+      "_lat": 13.05,
+      "_lon": 45.37,
+      "_region_key": "yaman",
+      "_region_en": "al-Yaman (Yemen)",
+      "_tribe_normalized": "al-Nakhaʿ",
+      "_commander_normalized": "ʿIkrima ibn Abī Jahl"
+    },
+    {
+      "tribe_arabic": "حمير",
+      "tribe_english": "Ḥimyar",
+      "region_arabic": "أبين",
+      "region_english": "Abyan",
+      "year_ah": 12,
+      "incorporation_mode": "SUBMISSION",
+      "commander_arabic": "عكرمة",
+      "commander_english": "ʿIkrima",
+      "rebel_leader_arabic": null,
+      "rebel_leader_english": null,
+      "battle_site_arabic": "أبين",
+      "battle_site_english": "Abyan",
+      "evidence": [
+        "واستبرأ النخع وحمير، واقام لاجتماعهم"
+      ],
+      "confidence": 0.8,
+      "notes": "Ḥimyar examined and cleared by ʿIkrima alongside al-Nakhaʿ",
+      "_source": "tabari",
+      "_detected_terms": {
+        "qital_terms": [],
+        "taa_terms": [],
+        "ridda_terms": []
+      },
+      "_term_mode": "UNKNOWN",
+      "_source_name": "al-Ṭabarī",
+      "_event_id": "T045",
+      "_lat": 13.05,
+      "_lon": 45.37,
+      "_region_key": "yaman",
+      "_region_en": "al-Yaman (Yemen)",
+      "_tribe_normalized": "Ḥimyar",
+      "_commander_normalized": "ʿIkrima ibn Abī Jahl"
+    },
+    {
+      "tribe_arabic": "كندة",
+      "tribe_english": "Kinda",
+      "region_arabic": "حضرموت",
+      "region_english": "Ḥaḍramawt",
+      "year_ah": 12,
+      "incorporation_mode": "SUBJUGATION",
+      "commander_arabic": "المهاجر بن أبي أمية",
+      "commander_english": "al-Muhājir ibn Abī Umayya",
+      "rebel_leader_arabic": "الأشعث بن قيس",
+      "rebel_leader_english": "al-Ashʿath ibn Qays",
+      "battle_site_arabic": "محجر الزرقان",
+      "battle_site_english": "Miḥjar al-Zurqān",
+      "evidence": [
+        "كان سبب رده كنده اجابتهم الأسود العنسي",
+        "فالتقوا بمحجر الزرقان فاقتتلوا به فهزمت كنده، وقتلت وخرجوا هرابا",
+        "والتجأت الى النجير وقد رموه وحصنوه"
+      ],
+      "confidence": 0.95,
+      "notes": "Major Ridda campaign against Kinda under al-Ashʿath, involving siege at al-Nujayr fortress",
+      "_source": "tabari",
+      "_tribe_region": "Ḥaḍramawt",
+      "_tribe_leader": "al-Ashʿath ibn Qays",
+      "_detected_terms": {
+        "qital_terms": [
+          "قتل",
+          "هزم"
+        ],
+        "taa_terms": [],
+        "ridda_terms": [
+          "ردة"
+        ]
+      },
+      "_term_mode": "SUBJUGATION",
+      "_source_name": "al-Ṭabarī",
+      "_event_id": "T046",
+      "_lat": 24.1,
+      "_lon": 47.28,
+      "_region_key": "yamama",
+      "_region_en": "al-Yamāma",
+      "_tribe_normalized": "Kinda",
+      "_commander_normalized": "al-Muhājir ibn Abī Umayya",
+      "_rebel_normalized": "al-Ashʿath ibn Qays",
+      "_cross_refs": [
+        "T050",
+        "B010",
+        "B029",
+        "W034",
+        "W035",
+        "W043",
+        "W046",
+        "W047",
+        "W048"
+      ]
+    },
+    {
+      "tribe_arabic": "بنو عمرو بن معاوية",
+      "tribe_english": "Banū ʿAmr ibn Muʿāwiya",
+      "region_arabic": "حضرموت",
+      "region_english": "Ḥaḍramawt",
+      "year_ah": 12,
+      "incorporation_mode": "SUBJUGATION",
+      "commander_arabic": "زياد بن لبيد",
+      "commander_english": "Ziyād ibn Labīd",
+      "rebel_leader_arabic": null,
+      "rebel_leader_english": null,
+      "battle_site_arabic": "الرياض",
+      "battle_site_english": "al-Riyāḍ",
+      "evidence": [
+        "ونادوا بمنع الصدقه",
+        "فأصابوا مشرحا ومخوصا وجمدا وابضعه وأختهم العمردة، أدركتهم اللعنه، وقتلوا فأكثروا",
+        "ووهنت بنو عمرو بن معاويه، فلم يأتوا بخير بعدها"
+      ],
+      "confidence": 0.9,
+      "notes": "Refused to pay zakāt, suffered major defeat with many leaders killed in night raid",
+      "_source": "tabari",
+      "_detected_terms": {
+        "qital_terms": [
+          "قتل",
+          "قتلوا"
+        ],
+        "taa_terms": [],
+        "ridda_terms": [
+          "ردة"
+        ]
+      },
+      "_term_mode": "SUBJUGATION",
+      "_source_name": "al-Ṭabarī",
+      "_event_id": "T047",
+      "_lat": 15.95,
+      "_lon": 48.78,
+      "_region_key": "hadramawt",
+      "_region_en": "Ḥaḍramawt",
+      "_commander_normalized": "Ziyād ibn Labīd"
+    },
+    {
+      "tribe_arabic": "بنو الحارث بن معاوية",
+      "tribe_english": "Banū al-Ḥārith ibn Muʿāwiya",
+      "region_arabic": "حضرموت",
+      "region_english": "Ḥaḍramawt",
+      "year_ah": 12,
+      "incorporation_mode": "SUBJUGATION",
+      "commander_arabic": "المهاجر بن أبي أمية",
+      "commander_english": "al-Muhājir ibn Abī Umayya",
+      "rebel_leader_arabic": "الأشعث بن قيس",
+      "rebel_leader_english": "al-Ashʿath ibn Qays",
+      "battle_site_arabic": "النجير",
+      "battle_site_english": "al-Nujayr",
+      "evidence": [
+        "فثار في بنى الحارث فتنقذهم",
+        "فجمع اليه بنى الحارث بن معاويه وبنى عمرو بن معاويه، ومن أطاعه من السكاسك",
+        "وقد اجتمعت اليه كنده، فتحصنوا فيه"
+      ],
+      "confidence": 0.9,
+      "notes": "Part of al-Ashʿath's coalition, participated in siege at al-Nujayr fortress",
+      "_source": "tabari",
+      "_detected_terms": {
+        "qital_terms": [
+          "فتح"
+        ],
+        "taa_terms": [
+          "طاعة",
+          "أطاع"
+        ],
+        "ridda_terms": []
+      },
+      "_term_mode": "MIXED",
+      "_source_name": "al-Ṭabarī",
+      "_event_id": "T048",
+      "_lat": 15.8,
+      "_lon": 48.5,
+      "_region_key": "hadramawt",
+      "_region_en": "Ḥaḍramawt",
+      "_commander_normalized": "al-Muhājir ibn Abī Umayya",
+      "_rebel_normalized": "al-Ashʿath ibn Qays",
+      "_cross_refs": [
+        "W034",
+        "W035",
+        "W043",
+        "W046",
+        "W047",
+        "W048"
+      ]
+    },
+    {
+      "tribe_arabic": "السكاسك",
+      "tribe_english": "al-Sakāsik",
+      "region_arabic": "حضرموت",
+      "region_english": "Ḥaḍramawt",
+      "year_ah": 12,
+      "incorporation_mode": "MIXED",
+      "commander_arabic": "عكاشة بن محصن",
+      "commander_english": "ʿUkāsha ibn Miḥṣan",
+      "rebel_leader_arabic": null,
+      "rebel_leader_english": null,
+      "battle_site_arabic": null,
+      "battle_site_english": null,
+      "evidence": [
+        "وعكاشة بن محصن على السكاسك والسكون",
+        "فان أقواما من السكاسك قد انضموا اليهم",
+        "ومن أطاعه من السكاسك والخصائص من قبائل ما حولهم"
+      ],
+      "confidence": 0.8,
+      "notes": "Mixed loyalties - some remained loyal, others joined the rebellion under al-Ashʿath",
+      "_source": "tabari",
+      "_detected_terms": {
+        "qital_terms": [],
+        "taa_terms": [
+          "طاعة",
+          "أطاع"
+        ],
+        "ridda_terms": []
+      },
+      "_term_mode": "SUBMISSION",
+      "_source_name": "al-Ṭabarī",
+      "_event_id": "T049",
+      "_lat": 15.95,
+      "_lon": 48.78,
+      "_region_key": "hadramawt",
+      "_region_en": "Ḥaḍramawt"
+    },
+    {
+      "tribe_arabic": "كندة",
+      "tribe_english": "Kinda",
+      "region_arabic": "حضرموت",
+      "region_english": "Ḥaḍramawt",
+      "year_ah": 11,
+      "incorporation_mode": "SUBJUGATION",
+      "commander_arabic": "المهاجر بن أبي أمية",
+      "commander_english": "al-Muhājir ibn Abī Umayya",
+      "rebel_leader_arabic": "الأشعث بن قيس",
+      "rebel_leader_english": "al-Ashʿath ibn Qays",
+      "battle_site_arabic": "النجير",
+      "battle_site_english": "al-Najīr",
+      "evidence": [
+        "فلما فتح الباب اقتحمه المسلمون فلم يدعوا فيه مقاتلا الا قتلوه، ضربوا أعناقهم صبرا",
+        "واحصى الف امراه ممن في النجير والخندق",
+        "ووضع على السبى والفيء الاحراس"
+      ],
+      "confidence": 0.95,
+      "notes": "Final subjugation of Kinda tribe at al-Najīr fortress. Al-Ashʿath negotiated amnesty for selected individuals but forgot to include himself, leading to his capture.",
+      "_source": "tabari",
+      "_tribe_region": "Ḥaḍramawt",
+      "_tribe_leader": "al-Ashʿath ibn Qays",
+      "_detected_terms": {
+        "qital_terms": [
+          "قاتل",
+          "قتل",
+          "سبي",
+          "فتح",
+          "اقتحم"
+        ],
+        "taa_terms": [
+          "سلم"
+        ],
+        "ridda_terms": []
+      },
+      "_term_mode": "MIXED",
+      "_source_name": "al-Ṭabarī",
+      "_event_id": "T050",
+      "_lat": 15.8,
+      "_lon": 48.5,
+      "_region_key": "hadramawt",
+      "_region_en": "Ḥaḍramawt",
+      "_tribe_normalized": "Kinda",
+      "_commander_normalized": "al-Muhājir ibn Abī Umayya",
+      "_rebel_normalized": "al-Ashʿath ibn Qays",
+      "_cross_refs": [
+        "T046",
+        "B010",
+        "B029",
+        "W034",
+        "W035",
+        "W043",
+        "W046",
+        "W047",
+        "W048"
+      ]
+    },
+    {
+      "tribe_arabic": "بنو حنيفة",
+      "tribe_english": "Banū Ḥanīfa",
+      "region_arabic": "اليمامة",
+      "region_english": "al-Yamāma",
+      "year_ah": 12,
+      "incorporation_mode": "SUBJUGATION",
+      "commander_arabic": "خالد بن الوليد",
+      "commander_english": "Khālid ibn al-Walīd",
+      "rebel_leader_arabic": "مسيلمة",
+      "rebel_leader_english": "Musaylima",
+      "battle_site_arabic": null,
+      "battle_site_english": null,
+      "evidence": [
+        "لما فرغ خالد من امر اليمامه، كتب اليه ابو بكر الصديق",
+        "فان خفف عنهم لقتل رجالهم"
+      ],
+      "confidence": 0.9,
+      "notes": "Reference to completion of Yamāma campaign against Banū Ḥanīfa and Musaylima, with subsequent assignment to Iraq.",
+      "_source": "tabari",
+      "_tribe_region": "al-Yamāma",
+      "_tribe_leader": "Musaylima",
+      "_detected_terms": {
+        "qital_terms": [
+          "قتل"
+        ],
+        "taa_terms": [],
+        "ridda_terms": []
+      },
+      "_term_mode": "SUBJUGATION",
+      "_source_name": "al-Ṭabarī",
+      "_event_id": "T051",
+      "_lat": 24.15,
+      "_lon": 47.3,
+      "_region_key": "yamama",
+      "_region_en": "al-Yamāma",
+      "_tribe_normalized": "Banū Ḥanīfa",
+      "_commander_normalized": "Khālid ibn al-Walīd",
+      "_rebel_normalized": "Musaylima ibn Ḥabīb",
+      "_cross_refs": [
+        "T026",
+        "T028",
+        "T031",
+        "B004",
+        "W024",
+        "W026",
+        "W027"
+      ]
+    },
+    {
+      "tribe_arabic": "بنو شيبان",
+      "tribe_english": "Banū Shaybān",
+      "region_arabic": "العراق",
+      "region_english": "al-ʿIrāq",
+      "year_ah": 12,
+      "incorporation_mode": "SUBMISSION",
+      "commander_arabic": "المثنى بن حارثة",
+      "commander_english": "al-Muthannā ibn Ḥāritha",
+      "rebel_leader_arabic": null,
+      "rebel_leader_english": null,
+      "battle_site_arabic": null,
+      "battle_site_english": null,
+      "evidence": [
+        "ان المثنى بن حارثة الشيبانى، سار حتى قدم على ابى بكر",
+        "فقال: أمرني على من قبلي من قومى، اقاتل من يليني من اهل فارس، واكفيك ناحيتي، ففعل ذلك"
+      ],
+      "confidence": 0.85,
+      "notes": "Al-Muthannā al-Shaybānī voluntarily came to Abū Bakr seeking appointment to fight Persians, indicating tribal submission and cooperation.",
+      "_source": "tabari",
+      "_detected_terms": {
+        "qital_terms": [
+          "قاتل"
+        ],
+        "taa_terms": [],
+        "ridda_terms": []
+      },
+      "_term_mode": "SUBJUGATION",
+      "_source_name": "al-Ṭabarī",
+      "_event_id": "T052",
+      "_lat": 33.0,
+      "_lon": 44.0,
+      "_region_key": "iraq",
+      "_region_en": "al-ʿIrāq"
+    },
+    {
+      "tribe_arabic": "بنو كنانة",
+      "tribe_english": "Banū Kināna",
+      "region_arabic": "الشام",
+      "region_english": "al-Shām",
+      "year_ah": 12,
+      "incorporation_mode": "SUBMISSION",
+      "commander_arabic": "خالد بن سعيد بن العاص",
+      "commander_english": "Khālid ibn Saʿīd ibn al-ʿĀṣ",
+      "rebel_leader_arabic": null,
+      "rebel_leader_english": null,
+      "battle_site_arabic": null,
+      "battle_site_english": null,
+      "evidence": [
+        "كان جرير بن عبد الله ممن خرج مع خالد بن سعيد بن العاصي الى الشام",
+        "فاستأذن خالدا الى ابى بكر ليكلمه في قومه وليجمعهم له، وكانوا اوزاعا في العرب، وليتخلصهم"
+      ],
+      "confidence": 0.7,
+      "notes": "Jarīr ibn ʿAbd Allāh from Banū Kināna sought permission to gather his scattered tribesmen and bring them under Muslim authority",
+      "_source": "tabari",
+      "_detected_terms": {
+        "qital_terms": [],
+        "taa_terms": [],
+        "ridda_terms": []
+      },
+      "_term_mode": "UNKNOWN",
+      "_source_name": "al-Ṭabarī",
+      "_event_id": "T053",
+      "_lat": 33.5,
+      "_lon": 36.3,
+      "_region_key": "sham",
+      "_region_en": "al-Shām",
+      "_commander_normalized": "Khālid ibn al-Walīd"
+    },
+    {
+      "tribe_arabic": "النمر وتغلب وإياد",
+      "tribe_english": "al-Namir wa-Taghlib wa-Iyād",
+      "region_arabic": "عين التمر",
+      "region_english": "ʿAyn al-Tamr",
+      "year_ah": 12,
+      "incorporation_mode": "SUBJUGATION",
+      "commander_arabic": "خالد بن الوليد",
+      "commander_english": "Khālid ibn al-Walīd",
+      "rebel_leader_arabic": "عقة بن أبي عقة",
+      "rebel_leader_english": "ʿAqqa ibn Abī ʿAqqa",
+      "battle_site_arabic": "عين التمر",
+      "battle_site_english": "ʿAyn al-Tamr",
+      "evidence": [
+        "وبها يومئذ مهران بن بهرام جوبين في جمع عظيم من العجم، وعقه بن ابى عقه في جمع عظيم من العرب من النمر وتغلب واياد ومن لافهم",
+        "فاحتضنه فأخذه أسيرا، وانهزم صفه من غير قتال",
+        "وامر خالد بعقه وكان خفير القوم فضربت عنقه",
+        "وضرب اعناق اهل الحصن اجمعين وسبى كل من حوى حصنهم"
+      ],
+      "confidence": 0.9,
+      "notes": "Major battle at ʿAyn al-Tamr where apostate Arab tribes allied with Persians were defeated by Khālid, with mass executions following",
+      "_source": "tabari",
+      "_detected_terms": {
+        "qital_terms": [
+          "قتال",
+          "هزم",
+          "سبي"
+        ],
+        "taa_terms": [],
+        "ridda_terms": []
+      },
+      "_term_mode": "SUBJUGATION",
+      "_source_name": "al-Ṭabarī",
+      "_event_id": "T054",
+      "_lat": 32.47,
+      "_lon": 43.6,
+      "_region_key": "iraq",
+      "_region_en": "al-ʿIrāq",
+      "_commander_normalized": "Khālid ibn al-Walīd"
+    },
+    {
+      "tribe_arabic": "بهراء وكلب وغسان وتنوخ والضجاعم",
+      "tribe_english": "Bahrāʾ, Kalb, Ghassān, Tanūkh, and al-Ḍajāʿim",
+      "region_arabic": "دومة الجندل",
+      "region_english": "Dūmat al-Jandal",
+      "year_ah": 12,
+      "incorporation_mode": "SUBJUGATION",
+      "commander_arabic": "خالد بن الوليد",
+      "commander_english": "Khālid ibn al-Walīd",
+      "rebel_leader_arabic": "أكيدر بن عبد الملك والجودي بن ربيعة",
+      "rebel_leader_english": "Ukaydir ibn ʿAbd al-Malik and al-Jūdī ibn Rabīʿa",
+      "battle_site_arabic": "دومة الجندل",
+      "battle_site_english": "Dūmat al-Jandal",
+      "evidence": [
+        "بعثوا الى أحزابهم من بهراء وكلب وغسان وتنوخ والضجاعم",
+        "فاقتتلوا، فهزم الله الجودي ووديعة على يدي خالد",
+        "اقبل خالد على الذين ارزوا الى الحصن فقتلهم حتى سد بهم باب الحصن",
+        "دعا خالد بالجودي فضرب عنقه، ودعا بالأسرى فضرب أعناقهم"
+      ],
+      "confidence": 0.95,
+      "notes": "Major battle at Dūmat al-Jandal where multiple tribes allied against Khālid. Clear subjugation through military conquest, execution of leaders, and taking of captives.",
+      "_source": "tabari",
+      "_detected_terms": {
+        "qital_terms": [
+          "قتل",
+          "هزم"
+        ],
+        "taa_terms": [],
+        "ridda_terms": []
+      },
+      "_term_mode": "SUBJUGATION",
+      "_source_name": "al-Ṭabarī",
+      "_event_id": "T055",
+      "_lat": 29.81,
+      "_lon": 39.87,
+      "_region_key": "sham",
+      "_region_en": "al-Shām",
+      "_tribe_normalized": "Kalb",
+      "_commander_normalized": "Khālid ibn al-Walīd",
+      "_rebel_normalized": "Rabīʿa"
+    },
+    {
+      "tribe_arabic": "كلب",
+      "tribe_english": "Kalb",
+      "region_arabic": "دومة الجندل",
+      "region_english": "Dūmat al-Jandal",
+      "year_ah": 12,
+      "incorporation_mode": "MIXED",
+      "commander_arabic": "خالد بن الوليد",
+      "commander_english": "Khālid ibn al-Walīd",
+      "rebel_leader_arabic": "وديعة الكلبي",
+      "rebel_leader_english": "Wadīʿa al-Kalbī",
+      "battle_site_arabic": "دومة الجندل",
+      "battle_site_english": "Dūmat al-Jandal",
+      "evidence": [
+        "أخذ الأقرع بن حابس وديعة",
+        "الا أسارى كلب، فان عاصما والأقرع وبنى تميم قالوا: قد آمناهم، فاطلقهم لهم خالد",
+        "فقال عاصم بن عمرو: يا بنى تميم، حلفاؤكم كلب، آسوهم واجيروهم"
+      ],
+      "confidence": 0.9,
+      "notes": "Kalb initially fought against Khālid but their prisoners were spared due to tribal alliance with Banū Tamīm, showing mixed outcome.",
+      "_source": "tabari",
+      "_detected_terms": {
+        "qital_terms": [],
+        "taa_terms": [
+          "أمن"
+        ],
+        "ridda_terms": []
+      },
+      "_term_mode": "SUBMISSION",
+      "_source_name": "al-Ṭabarī",
+      "_event_id": "T056",
+      "_lat": 29.81,
+      "_lon": 39.87,
+      "_region_key": "sham",
+      "_region_en": "al-Shām",
+      "_tribe_normalized": "Kalb",
+      "_commander_normalized": "Khālid ibn al-Walīd",
+      "_rebel_normalized": "Kalb"
+    },
+    {
+      "tribe_arabic": "ربيعة",
+      "tribe_english": "Rabīʿa",
+      "region_arabic": "العراق والجزيرة",
+      "region_english": "al-ʿIrāq and al-Jazīra",
+      "year_ah": 12,
+      "incorporation_mode": "SUBJUGATION",
+      "commander_arabic": "خالد بن الوليد",
+      "commander_english": "Khālid ibn al-Walīd",
+      "rebel_leader_arabic": null,
+      "rebel_leader_english": null,
+      "battle_site_arabic": "المصيخ",
+      "battle_site_english": "al-Maṣīkh",
+      "evidence": [
+        "وانتظر روزبه وزرمهر بالمسلمين اجتماع من كاتبهما من ربيعه، وقد كانوا تكاتبوا واتعدوا",
+        "ونزل ربيعه بن بجير بالثنى وبالبشر في عسكر غضبا لعقه"
+      ],
+      "confidence": 0.8,
+      "notes": "Rabīʿa tribes allied with Persian forces against Muslims in anger over ʿUqqa's fate.",
+      "_source": "tabari",
+      "_detected_terms": {
+        "qital_terms": [],
+        "taa_terms": [
+          "بيعة",
+          "سلم"
+        ],
+        "ridda_terms": []
+      },
+      "_term_mode": "SUBMISSION",
+      "_source_name": "al-Ṭabarī",
+      "_event_id": "T057",
+      "_lat": 33.5,
+      "_lon": 43.0,
+      "_region_key": "iraq",
+      "_region_en": "al-ʿIrāq",
+      "_tribe_normalized": "Rabīʿa",
+      "_commander_normalized": "Khālid ibn al-Walīd"
+    },
+    {
+      "tribe_arabic": "تغلب واياد والنمر",
+      "tribe_english": "Taghlib, Iyād, and al-Namir",
+      "region_arabic": "الفراض",
+      "region_english": "al-Firāḍ",
+      "year_ah": 12,
+      "incorporation_mode": "SUBJUGATION",
+      "commander_arabic": "خالد بن الوليد",
+      "commander_english": "Khālid ibn al-Walīd",
+      "rebel_leader_arabic": null,
+      "rebel_leader_english": null,
+      "battle_site_arabic": "الفراض",
+      "battle_site_english": "al-Firāḍ",
+      "evidence": [
+        "واستمدوا تغلب واياد والنمر، فامدوهم، ثم ناهدوا خالدا",
+        "فقتل يوم الفراض في المعركة وفي الطلب مائه الف",
+        "وكانت على خالد يمين: ليبغتن تغلب في دارها"
+      ],
+      "confidence": 0.9,
+      "notes": "Major battle at al-Firāḍ where these tribes supported Romans and Persians. Massive casualties reported (100,000 killed). Khālid had sworn to surprise Taghlib in their homeland.",
+      "_source": "tabari",
+      "_detected_terms": {
+        "qital_terms": [
+          "قتل"
+        ],
+        "taa_terms": [],
+        "ridda_terms": []
+      },
+      "_term_mode": "SUBJUGATION",
+      "_source_name": "al-Ṭabarī",
+      "_event_id": "T058",
+      "_lat": 33.2,
+      "_lon": 42.0,
+      "_region_key": "iraq",
+      "_region_en": "al-ʿIrāq",
+      "_commander_normalized": "Khālid ibn al-Walīd"
+    },
+    {
+      "tribe_arabic": "بنو تميم",
+      "tribe_english": "Banū Tamīm",
+      "region_arabic": "العراق",
+      "region_english": "al-ʿIrāq",
+      "year_ah": 12,
+      "incorporation_mode": "SUBMISSION",
+      "commander_arabic": "خالد بن الوليد",
+      "commander_english": "Khālid ibn al-Walīd",
+      "rebel_leader_arabic": null,
+      "rebel_leader_english": null,
+      "battle_site_arabic": null,
+      "battle_site_english": null,
+      "evidence": [
+        "فقال عاصم بن عمرو: يا بنى تميم، حلفاؤكم كلب، آسوهم واجيروهم",
+        "الا أسارى كلب، فان عاصما والأقرع وبنى تميم قالوا: قد آمناهم"
+      ],
+      "confidence": 0.85,
+      "notes": "Banū Tamīm appear to be allied with Muslim forces, intervening to save their tribal allies among Kalb prisoners.",
+      "_source": "tabari",
+      "_tribe_region": "Najd",
+      "_tribe_leader": "Mālik ibn Nuwayra (disputed)",
+      "_detected_terms": {
+        "qital_terms": [],
+        "taa_terms": [
+          "أمن"
+        ],
+        "ridda_terms": []
+      },
+      "_term_mode": "SUBMISSION",
+      "_source_name": "al-Ṭabarī",
+      "_event_id": "T059",
+      "_lat": 33.0,
+      "_lon": 44.0,
+      "_region_key": "iraq",
+      "_region_en": "al-ʿIrāq",
+      "_tribe_normalized": "Banū Tamīm",
+      "_commander_normalized": "Khālid ibn al-Walīd"
+    },
+    {
+      "tribe_arabic": "بهراء وكلب وسليح وتنوخ ولخم وجذام وغسان",
+      "tribe_english": "Bahrāʾ, Kalb, Salīḥ, Tanūkh, Lakhm, Judhām, and Ghassān",
+      "region_arabic": "الشام",
+      "region_english": "al-Shām",
+      "year_ah": 12,
+      "incorporation_mode": "MIXED",
+      "commander_arabic": "خالد بن سعيد",
+      "commander_english": "Khālid ibn Saʿīd",
+      "rebel_leader_arabic": null,
+      "rebel_leader_english": null,
+      "battle_site_arabic": "زيزاء",
+      "battle_site_english": "Zayzāʾ",
+      "evidence": [
+        "ونفر اليهم من بهراء وكلب وسليح وتنوخ ولخم وجذام وغسان من دون زيزاء بثلاث",
+        "فلما دنا منهم تفرقوا واعروا منزلهم، فنزله ودخل عامه من كان تجمع له في الاسلام"
+      ],
+      "confidence": 0.8,
+      "notes": "These Syrian Arab tribes initially mobilized with Romans against Khālid ibn Saʿīd but then dispersed and many entered Islam voluntarily.",
+      "_source": "tabari",
+      "_detected_terms": {
+        "qital_terms": [],
+        "taa_terms": [],
+        "ridda_terms": []
+      },
+      "_term_mode": "UNKNOWN",
+      "_source_name": "al-Ṭabarī",
+      "_event_id": "T060",
+      "_lat": 33.5,
+      "_lon": 36.3,
+      "_region_key": "sham",
+      "_region_en": "al-Shām",
+      "_tribe_normalized": "Kalb",
+      "_commander_normalized": "Khālid ibn al-Walīd"
+    },
+    {
+      "tribe_arabic": "الأزد",
+      "tribe_english": "al-Azd",
+      "region_arabic": "عمان",
+      "region_english": "ʿUmān",
+      "year_ah": 11,
+      "incorporation_mode": "SUBJUGATION",
+      "commander_arabic": "حذيفة بن محصن وعكرمة بن أبي جهل",
+      "commander_english": "Ḥudhayfa ibn Miḥṣan and ʿIkrima ibn Abī Jahl",
+      "rebel_leader_arabic": "لقيط بن مالك ذو التاج",
+      "rebel_leader_english": "Laqīṭ ibn Mālik Dhū l-Tāj",
+      "battle_site_arabic": "دبا",
+      "battle_site_english": "Dabā",
+      "evidence": [
+        "ارتدت الأزد وعليها لقيط بن مالك ذو التاج وانحازت إلى دبا",
+        "فوجه أبو بكر رضى الله عنه إليهم حذيفة بن محصن البارقي من الأزد، وعكرمة ابن أبى جهل",
+        "فواقعا لقيطا ومن معه فقتلاه وسبيا من أهل دبا سبيا"
+      ],
+      "confidence": 0.95,
+      "notes": "Primary Ridda rebellion in Oman. Al-Azd tribe apostatized under Laqīṭ ibn Mālik, were defeated militarily at Dabā with their leader killed and captives taken.",
+      "_source": "baladhuri",
+      "_tribe_region": "Oman",
+      "_tribe_leader": "Laqīṭ ibn Mālik",
+      "_lat": 25.62,
+      "_lon": 56.27,
+      "_detected_terms": {
+        "qital_terms": [
+          "قتل",
+          "سبي"
+        ],
+        "taa_terms": [],
+        "ridda_terms": [
+          "ارتد"
+        ]
+      },
+      "_term_mode": "SUBJUGATION",
+      "_source_name": "al-Balādhurī",
+      "_event_id": "B001",
+      "_region_key": "uman",
+      "_region_en": "ʿUmān (Oman)",
+      "_tribe_normalized": "al-Azd",
+      "_commander_normalized": "ʿIkrima ibn Abī Jahl",
+      "_rebel_normalized": "Laqīṭ ibn Mālik Dhū l-Tāj"
+    },
+    {
+      "tribe_arabic": "ربيعة",
+      "tribe_english": "Rabīʿa",
+      "region_arabic": "البحرين",
+      "region_english": "al-Baḥrayn",
+      "year_ah": 11,
+      "incorporation_mode": "SUBJUGATION",
+      "commander_arabic": "العلاء بن الحضرمي",
+      "commander_english": "al-ʿAlāʾ ibn al-Ḥaḍramī",
+      "rebel_leader_arabic": "الحطم (شريح بن ضبيعة) والمنذر بن النعمان",
+      "rebel_leader_english": "al-Ḥuṭam (Sharīḥ ibn Ḍubayʿa) and al-Mundhir ibn al-Nuʿmān",
+      "battle_site_arabic": "جواثا",
+      "battle_site_english": "Jawāthā",
+      "evidence": [
+        "ارتد من البحرين من ولد قيس بن ثعلبة بن عكابة مع الحطم",
+        "وارتد سائر من بالبحرين من ربيعة",
+        "فدلفت إليه ربيعة فخرج إليها بمن معه من العرب والعجم فقاتلها قتالا شديدا",
+        "ثم إن العلاء خرج بالمسلمين ذات ليلة فبيت ربيعة فقاتلوا قتالا شديدا وقتل الحطم"
+      ],
+      "confidence": 0.9,
+      "notes": "Major Ridda rebellion in Bahrain. Rabīʿa tribe apostatized with al-Ḥuṭam and al-Mundhir, besieged Muslims at Jawāthā fortress, eventually defeated with leaders killed.",
+      "_source": "baladhuri",
+      "_detected_terms": {
+        "qital_terms": [
+          "قتال",
+          "قاتل",
+          "قاتلوا",
+          "قتالا شديدا",
+          "قتل"
+        ],
+        "taa_terms": [
+          "بيعة",
+          "سلم"
+        ],
+        "ridda_terms": [
+          "ارتد"
+        ]
+      },
+      "_term_mode": "MIXED",
+      "_source_name": "al-Balādhurī",
+      "_event_id": "B002",
+      "_lat": 26.0,
+      "_lon": 50.55,
+      "_region_key": "bahrayn",
+      "_region_en": "al-Baḥrayn",
+      "_tribe_normalized": "Rabīʿa",
+      "_commander_normalized": "al-ʿAlāʾ ibn al-Ḥaḍramī"
+    },
+    {
+      "tribe_arabic": "بنو حنيفة",
+      "tribe_english": "Banū Ḥanīfa",
+      "region_arabic": "اليمامة",
+      "region_english": "al-Yamāma",
+      "year_ah": 12,
+      "incorporation_mode": "SUBJUGATION",
+      "commander_arabic": "خالد بن الوليد",
+      "commander_english": "Khālid ibn al-Walīd",
+      "rebel_leader_arabic": "مسيلمة الكذاب",
+      "rebel_leader_english": "Musaylima al-Kadhdhāb",
+      "battle_site_arabic": "حديقة الموت",
+      "battle_site_english": "Ḥadīqat al-Mawt",
+      "evidence": [
+        "فاتبعه بنو حيفة وغيرهم ممن باليمامة",
+        "بعث خالد بن الوليد بن المغيرة المخزومي إلى اليمامة وأمره بمحاربة الكذاب مسيلمة",
+        "ثم التقى الناس فكان أو من لقيهم الرجال بن عنفوة فقتله الله",
+        "وهزم أهل اليمامة فأتبعوهم يقتلونهم قتلا ذريعا",
+        "وقتل الله مسيلمة فى الحديقة"
+      ],
+      "confidence": 1.0,
+      "notes": "Most famous Ridda rebellion. Banū Ḥanīfa followed false prophet Musaylima, decisive battle at 'Garden of Death', Musaylima killed, major military campaign by Khālid.",
+      "_source": "baladhuri",
+      "_tribe_region": "al-Yamāma",
+      "_tribe_leader": "Musaylima",
+      "_detected_terms": {
+        "qital_terms": [
+          "حارب",
+          "قتل",
+          "هزم"
+        ],
+        "taa_terms": [],
+        "ridda_terms": [
+          "الكذاب",
+          "كذاب"
+        ]
+      },
+      "_term_mode": "SUBJUGATION",
+      "_source_name": "al-Balādhurī",
+      "_event_id": "B003",
+      "_lat": 24.18,
+      "_lon": 47.32,
+      "_region_key": "yamama",
+      "_region_en": "al-Yamāma",
+      "_tribe_normalized": "Banū Ḥanīfa",
+      "_commander_normalized": "Khālid ibn al-Walīd",
+      "_rebel_normalized": "Musaylima ibn Ḥabīb",
+      "_cross_refs": [
+        "W002",
+        "W012",
+        "W024",
+        "W026"
+      ]
+    },
+    {
+      "tribe_arabic": "بنو حنيفة",
+      "tribe_english": "Banū Ḥanīfa",
+      "region_arabic": "اليمامة",
+      "region_english": "al-Yamāma",
+      "year_ah": 12,
+      "incorporation_mode": "MIXED",
+      "commander_arabic": "خالد بن الوليد",
+      "commander_english": "Khālid ibn al-Walīd",
+      "rebel_leader_arabic": "مسيلمة",
+      "rebel_leader_english": "Musaylima",
+      "battle_site_arabic": "اليمامة",
+      "battle_site_english": "al-Yamāma",
+      "evidence": [
+        "التقى المسلمون والمشركون، فولى المسلمون مدبرين حتى بلغوا الرحال",
+        "فهزم الله المشركين وقتل مسيلمة",
+        "قال مجاعة لخالد أن أكثر أهل اليمامة لم يخرجوا لقتالكم",
+        "فصالحه على نصف السبي ونصف الصفراء والبيضاء والحلقة والكراع",
+        "أسلم أهل اليمامة فأخذت منهم الصدقة",
+        "كان فتح اليمامة سنة اثنى عشرة"
+      ],
+      "confidence": 0.95,
+      "notes": "Major battle against Musaylima followed by negotiated settlement through Mujāʿa's deception, ending with submission and zakāt collection",
+      "_source": "baladhuri",
+      "_tribe_region": "al-Yamāma",
+      "_tribe_leader": "Musaylima",
+      "_detected_terms": {
+        "qital_terms": [
+          "قتال",
+          "قتل",
+          "هزم",
+          "سبي",
+          "فتح"
+        ],
+        "taa_terms": [
+          "أسلم",
+          "صالح",
+          "سلم"
+        ],
+        "ridda_terms": []
+      },
+      "_term_mode": "MIXED",
+      "_source_name": "al-Balādhurī",
+      "_event_id": "B004",
+      "_lat": 24.15,
+      "_lon": 47.3,
+      "_region_key": "yamama",
+      "_region_en": "al-Yamāma",
+      "_tribe_normalized": "Banū Ḥanīfa",
+      "_commander_normalized": "Khālid ibn al-Walīd",
+      "_rebel_normalized": "Musaylima ibn Ḥabīb",
+      "_cross_refs": [
+        "T026",
+        "T028",
+        "T031",
+        "T051",
+        "W024",
+        "W026",
+        "W027"
+      ]
+    },
+    {
+      "tribe_arabic": "بنو أسد",
+      "tribe_english": "Banū Asad",
+      "region_arabic": "بزاخة",
+      "region_english": "Buzākha",
+      "year_ah": 12,
+      "incorporation_mode": "SUBJUGATION",
+      "commander_arabic": "خالد بن الوليد",
+      "commander_english": "Khālid ibn al-Walīd",
+      "rebel_leader_arabic": "طليحة بن خويلد",
+      "rebel_leader_english": "Ṭulayḥa ibn Khuwaylid",
+      "battle_site_arabic": "بزاخة",
+      "battle_site_english": "Buzākha",
+      "evidence": [
+        "أمر خالدا أن يصمد لطليحة بن خويلد الأسدى، وكان قد أدعى النبوة وهو يومئذ ببزاخة",
+        "التقى المسلمون وعدوهم واقتتلوا قتالا شديدا",
+        "انهزم الناس وظهر المسلمون",
+        "هرب طليحة بن خويلد فدخل خباء له فاغتسل وخرج فركب فرسه وأهل بعمرة"
+      ],
+      "confidence": 0.9,
+      "notes": "Battle against false prophet Ṭulayḥa at Buzākha, resulting in his defeat and flight, later conversion to Islam",
+      "_source": "baladhuri",
+      "_tribe_region": "Najd",
+      "_tribe_leader": "Ṭulayḥa",
+      "_lat": 27.5,
+      "_lon": 43.5,
+      "_detected_terms": {
+        "qital_terms": [
+          "قتال",
+          "قتالا شديدا",
+          "هزم"
+        ],
+        "taa_terms": [
+          "سلم"
+        ],
+        "ridda_terms": [
+          "ادعى النبوة"
+        ]
+      },
+      "_term_mode": "MIXED",
+      "_source_name": "al-Balādhurī",
+      "_event_id": "B005",
+      "_region_key": "najd",
+      "_region_en": "Najd (Central Arabia)",
+      "_tribe_normalized": "Banū Asad",
+      "_commander_normalized": "Khālid ibn al-Walīd",
+      "_rebel_normalized": "Ṭulayḥa ibn Khuwaylid"
+    },
+    {
+      "tribe_arabic": "بنو فزارة",
+      "tribe_english": "Banū Fazāra",
+      "region_arabic": "بزاخة",
+      "region_english": "Buzākha",
+      "year_ah": 12,
+      "incorporation_mode": "SUBJUGATION",
+      "commander_arabic": "خالد بن الوليد",
+      "commander_english": "Khālid ibn al-Walīd",
+      "rebel_leader_arabic": "عيينة بن حصن",
+      "rebel_leader_english": "ʿUyayna ibn Ḥiṣn",
+      "battle_site_arabic": "بزاخة",
+      "battle_site_english": "Buzākha",
+      "evidence": [
+        "كان عيينة بن حصن ابن حذيفة بن بدر مع طلحة فى سبعمائة من بنى فزارة",
+        "فلما رأى سيوف المسلمين قد استحملت المشركين",
+        "وولى عن عسكره، منف انهزم الناس وظهر المسلمون",
+        "وأسر عيينة بن حصن فقدم به المدينة فحقن أبو بكر دمه وخلى سبيله"
+      ],
+      "confidence": 0.85,
+      "notes": "Banū Fazāra fought alongside Ṭulayḥa, their leader ʿUyayna was captured but pardoned by Abū Bakr",
+      "_source": "baladhuri",
+      "_lat": 27.5,
+      "_lon": 43.5,
+      "_detected_terms": {
+        "qital_terms": [
+          "هزم",
+          "سبي"
+        ],
+        "taa_terms": [
+          "سلم"
+        ],
+        "ridda_terms": []
+      },
+      "_term_mode": "MIXED",
+      "_source_name": "al-Balādhurī",
+      "_event_id": "B006",
+      "_region_key": "najd",
+      "_region_en": "Najd (Central Arabia)",
+      "_tribe_normalized": "Banū Fazāra",
+      "_commander_normalized": "Khālid ibn al-Walīd",
+      "_rebel_normalized": "ʿUyayna ibn Ḥiṣn"
+    },
+    {
+      "tribe_arabic": "بنو عامر بن صعصعة",
+      "tribe_english": "Banū ʿĀmir ibn Ṣaʿṣaʿa",
+      "region_arabic": null,
+      "region_english": null,
+      "year_ah": 12,
+      "incorporation_mode": "SUBMISSION",
+      "commander_arabic": "هشام بن العاص",
+      "commander_english": "Hishām ibn al-ʿĀṣ",
+      "rebel_leader_arabic": null,
+      "rebel_leader_english": null,
+      "battle_site_arabic": null,
+      "battle_site_english": null,
+      "evidence": [
+        "بعث خالد بن الوليد هشام بن العاصي بن وائل السهمي... إلى بنى عامر بن صعصعة",
+        "فلم يقاتلوه وأظهروا الإسلام والأذان فانصرف عنهم"
+      ],
+      "confidence": 0.8,
+      "notes": "Peaceful submission without battle, demonstrated Islam through adhān",
+      "_source": "baladhuri",
+      "_detected_terms": {
+        "qital_terms": [
+          "قاتل"
+        ],
+        "taa_terms": [],
+        "ridda_terms": []
+      },
+      "_term_mode": "SUBJUGATION",
+      "_source_name": "al-Balādhurī",
+      "_event_id": "B007",
+      "_tribe_normalized": "Banū ʿĀmir"
+    },
+    {
+      "tribe_arabic": "بنو سليم",
+      "tribe_english": "Banū Sulaym",
+      "region_arabic": "جو قراقر",
+      "region_english": "Jaww Qarāqir",
+      "year_ah": 12,
+      "incorporation_mode": "SUBJUGATION",
+      "commander_arabic": "خالد بن الوليد",
+      "commander_english": "Khālid ibn al-Walīd",
+      "rebel_leader_arabic": "أبو شجرة عمرو بن عبد العزى",
+      "rebel_leader_english": "Abū Shajara ʿAmr ibn ʿAbd al-ʿUzzā",
+      "battle_site_arabic": "جو قراقر",
+      "battle_site_english": "Jaww Qarāqir",
+      "evidence": [
+        "أتى خالد جو قراقر، ويقال أتى النقرة وكان هناك جمع لبنى سليم عليهم أبو شجرة عمرو بن عبد العزى السلمى",
+        "فقاتلوه فاستشهد رجل من المسلمين ثم فض الله جمع المشركين",
+        "وجعل خالد يومئذ يحرق المرتدين",
+        "وأسلم أبو شجرة فقدم على عمر"
+      ],
+      "confidence": 0.85,
+      "notes": "Battle at Jaww Qarāqir, Khālid burned apostates, leader Abū Shajara later converted and met ʿUmar",
+      "_source": "baladhuri",
+      "_tribe_region": "Najd",
+      "_tribe_leader": null,
+      "_detected_terms": {
+        "qital_terms": [
+          "قاتل"
+        ],
+        "taa_terms": [
+          "أسلم",
+          "سلم"
+        ],
+        "ridda_terms": [
+          "مرتد"
+        ]
+      },
+      "_term_mode": "MIXED",
+      "_source_name": "al-Balādhurī",
+      "_event_id": "B008",
+      "_lat": 25.5,
+      "_lon": 44.5,
+      "_region_key": "najd",
+      "_region_en": "Najd (Central Arabia)",
+      "_tribe_normalized": "Banū Sulaym",
+      "_commander_normalized": "Khālid ibn al-Walīd"
+    },
+    {
+      "tribe_arabic": "بنو تميم",
+      "tribe_english": "Banū Tamīm",
+      "region_arabic": "البطاح والبعوضة",
+      "region_english": "al-Biṭāḥ wa-l-Baʿūḍa",
+      "year_ah": 12,
+      "incorporation_mode": "SUBJUGATION",
+      "commander_arabic": "خالد بن الوليد",
+      "commander_english": "Khālid ibn al-Walīd",
+      "rebel_leader_arabic": "مالك بن نويرة",
+      "rebel_leader_english": "Mālik ibn Nuwayra",
+      "battle_site_arabic": "البطاح والبعوضة",
+      "battle_site_english": "al-Biṭāḥ wa-l-Baʿūḍa",
+      "evidence": [
+        "سار خالد إلى سن بالبطاح والبعوضة من بنى تميم فقاتلوه ففض جمعهم",
+        "وقتل مالك بن نويرة أخا متمم بن نويرة",
+        "فلما قبض صلى الله عليه وسلم خلى ما كان فى يده من الفرائض وقال: شأنكم بأموالكم يا بنى حنظلة",
+        "فأمر بهم فضربت أعناقهم وتولى ضرار ضرب عنق مالك"
+      ],
+      "confidence": 0.9,
+      "notes": "Controversial campaign against Banū Tamīm, execution of Mālik ibn Nuwayra who had been Prophet's zakāt collector",
+      "_source": "baladhuri",
+      "_tribe_region": "Najd",
+      "_tribe_leader": "Mālik ibn Nuwayra (disputed)",
+      "_detected_terms": {
+        "qital_terms": [
+          "قاتل",
+          "قتل"
+        ],
+        "taa_terms": [
+          "سلم"
+        ],
+        "ridda_terms": []
+      },
+      "_term_mode": "MIXED",
+      "_source_name": "al-Balādhurī",
+      "_event_id": "B009",
+      "_lat": 26.0,
+      "_lon": 44.0,
+      "_region_key": "najd",
+      "_region_en": "Najd (Central Arabia)",
+      "_tribe_normalized": "Banū Tamīm",
+      "_commander_normalized": "Khālid ibn al-Walīd",
+      "_rebel_normalized": "Mālik ibn Nuwayra"
+    },
+    {
+      "tribe_arabic": "كندة",
+      "tribe_english": "Kinda",
+      "region_arabic": "حضرموت",
+      "region_english": "Ḥaḍramawt",
+      "year_ah": 12,
+      "incorporation_mode": "SUBJUGATION",
+      "commander_arabic": "زياد بن لبيد",
+      "commander_english": "Ziyād ibn Labīd",
+      "rebel_leader_arabic": "الأشعث بن قيس",
+      "rebel_leader_english": "al-Ashʿath ibn Qays",
+      "battle_site_arabic": "النجير",
+      "battle_site_english": "al-Najayr",
+      "evidence": [
+        "فانتقضت عليه كندة كلها إلا السكون فإنهم كانوا معه",
+        "فعرض لزياد ومعه فأصيب ناس من المسلمين ثم هزموهم",
+        "ففضا جمعه وأوقعا بأصحابه فقتلا منهم مقتلة عظيمة",
+        "ثم انهم لجأوا إلى النجير-وهو حصن لهم-فحصرهم المسلمون حتى جهدوا"
+      ],
+      "confidence": 0.9,
+      "notes": "Major revolt led by al-Ashʿath ibn Qays, ended with siege of al-Najayr fortress and his surrender",
+      "_source": "baladhuri",
+      "_tribe_region": "Ḥaḍramawt",
+      "_tribe_leader": "al-Ashʿath ibn Qays",
+      "_detected_terms": {
+        "qital_terms": [
+          "قتل",
+          "هزم"
+        ],
+        "taa_terms": [
+          "سلم"
+        ],
+        "ridda_terms": []
+      },
+      "_term_mode": "MIXED",
+      "_source_name": "al-Balādhurī",
+      "_event_id": "B010",
+      "_lat": 15.8,
+      "_lon": 48.5,
+      "_region_key": "hadramawt",
+      "_region_en": "Ḥaḍramawt",
+      "_tribe_normalized": "Kinda",
+      "_commander_normalized": "Ziyād ibn Labīd",
+      "_rebel_normalized": "al-Ashʿath ibn Qays",
+      "_cross_refs": [
+        "T046",
+        "T050",
+        "B029",
+        "W034",
+        "W035",
+        "W043",
+        "W046",
+        "W047",
+        "W048"
+      ]
+    },
+    {
+      "tribe_arabic": "خولان",
+      "tribe_english": "Khawlān",
+      "region_arabic": "اليمن",
+      "region_english": "al-Yaman",
+      "year_ah": 12,
+      "incorporation_mode": "MIXED",
+      "commander_arabic": "يعلى بن منية",
+      "commander_english": "Yaʿlā ibn Muniya",
+      "rebel_leader_arabic": null,
+      "rebel_leader_english": null,
+      "battle_site_arabic": null,
+      "battle_site_english": null,
+      "evidence": [
+        "وارتدت خولان باليمن فوجه أبو بكر إليهم يعلى بن منية",
+        "فظفر بهم وأصاب منهم غنيمة وسبابا",
+        "ويقال: لم يلق حربا فرجع القوم إلى الإسلام"
+      ],
+      "confidence": 0.75,
+      "notes": "Conflicting reports - either defeated in battle with spoils taken, or returned to Islam without fighting",
+      "_source": "baladhuri",
+      "_detected_terms": {
+        "qital_terms": [
+          "حرب",
+          "ظفر",
+          "ظفر بهم",
+          "غنيمة"
+        ],
+        "taa_terms": [
+          "رجع"
+        ],
+        "ridda_terms": [
+          "ارتد"
+        ]
+      },
+      "_term_mode": "MIXED",
+      "_source_name": "al-Balādhurī",
+      "_event_id": "B011",
+      "_lat": 15.35,
+      "_lon": 44.2,
+      "_region_key": "yaman",
+      "_region_en": "al-Yaman (Yemen)",
+      "_tribe_normalized": "Khawlān",
+      "_commander_normalized": "Yaʿlā ibn Munya"
+    },
+    {
+      "tribe_arabic": "كندة",
+      "tribe_english": "Kinda",
+      "region_arabic": "اليمن",
+      "region_english": "al-Yaman",
+      "year_ah": 11,
+      "incorporation_mode": "SUBJUGATION",
+      "commander_arabic": "المهاجر بن أبي أمية وزياد بن لبيد",
+      "commander_english": "al-Muhājir ibn Abī Umayya and Ziyād ibn Labīd",
+      "rebel_leader_arabic": "الأشعث بن قيس",
+      "rebel_leader_english": "al-Ashʿath ibn Qays",
+      "battle_site_arabic": "النجير",
+      "battle_site_english": "al-Nujayr",
+      "evidence": [
+        "فقاتلاهم قتالا شديدا",
+        "تحصنوا بالنجير فحاصراهم حتى جهدهم الحصار",
+        "ارتد الأشعث بن قيس الكندي فى ناس من كندة فحوصرا"
+      ],
+      "confidence": 0.95,
+      "notes": "Major siege of Kinda tribe at al-Nujayr fortress; al-Ashʿath eventually surrendered",
+      "_source": "baladhuri",
+      "_tribe_region": "Ḥaḍramawt",
+      "_tribe_leader": "al-Ashʿath ibn Qays",
+      "_detected_terms": {
+        "qital_terms": [
+          "قتال",
+          "قاتل",
+          "قتالا شديدا",
+          "حصار",
+          "حاصر"
+        ],
+        "taa_terms": [],
+        "ridda_terms": [
+          "ارتد"
+        ]
+      },
+      "_term_mode": "SUBJUGATION",
+      "_source_name": "al-Balādhurī",
+      "_event_id": "B012",
+      "_lat": 15.8,
+      "_lon": 48.5,
+      "_region_key": "hadramawt",
+      "_region_en": "Ḥaḍramawt",
+      "_tribe_normalized": "Kinda",
+      "_commander_normalized": "al-Muhājir ibn Abī Umayya",
+      "_rebel_normalized": "al-Ashʿath ibn Qays"
+    },
+    {
+      "tribe_arabic": "بنو عمرو بن معاوية",
+      "tribe_english": "Banū ʿAmr ibn Muʿāwiya",
+      "region_arabic": "اليمن",
+      "region_english": "al-Yaman",
+      "year_ah": 11,
+      "incorporation_mode": "SUBJUGATION",
+      "commander_arabic": "زياد بن لبيد",
+      "commander_english": "Ziyād ibn Labīd",
+      "rebel_leader_arabic": null,
+      "rebel_leader_english": null,
+      "battle_site_arabic": null,
+      "battle_site_english": null,
+      "evidence": [
+        "فجمع بنو عمرو بن معاوية جمعا",
+        "فبيتهم فأتى على أكثرهم وجعل بعضهم يقتل بعضا"
+      ],
+      "confidence": 0.9,
+      "notes": "Night raid by Ziyād ibn Labīd against this Kindite sub-tribe",
+      "_source": "baladhuri",
+      "_detected_terms": {
+        "qital_terms": [
+          "قتل"
+        ],
+        "taa_terms": [],
+        "ridda_terms": []
+      },
+      "_term_mode": "SUBJUGATION",
+      "_source_name": "al-Balādhurī",
+      "_event_id": "B013",
+      "_lat": 15.35,
+      "_lon": 44.2,
+      "_region_key": "yaman",
+      "_region_en": "al-Yaman (Yemen)",
+      "_commander_normalized": "Ziyād ibn Labīd"
+    },
+    {
+      "tribe_arabic": "حضرموت",
+      "tribe_english": "Ḥaḍramawt",
+      "region_arabic": "اليمن",
+      "region_english": "al-Yaman",
+      "year_ah": 11,
+      "incorporation_mode": "SUBJUGATION",
+      "commander_arabic": "زياد بن لبيد والمهاجر بن أبي أمية",
+      "commander_english": "Ziyād ibn Labīd and al-Muhājir ibn Abī Umayya",
+      "rebel_leader_arabic": null,
+      "rebel_leader_english": null,
+      "battle_site_arabic": null,
+      "battle_site_english": null,
+      "evidence": [
+        "وكانت حضرموت أتت كندة منجدة لها فواقعهم زياد والمهاجر فظفرا بهم"
+      ],
+      "confidence": 0.85,
+      "notes": "Ḥaḍramawt came to aid Kinda but were defeated",
+      "_source": "baladhuri",
+      "_detected_terms": {
+        "qital_terms": [
+          "ظفر"
+        ],
+        "taa_terms": [],
+        "ridda_terms": []
+      },
+      "_term_mode": "SUBJUGATION",
+      "_source_name": "al-Balādhurī",
+      "_event_id": "B014",
+      "_lat": 15.35,
+      "_lon": 44.2,
+      "_region_key": "yaman",
+      "_region_en": "al-Yaman (Yemen)",
+      "_commander_normalized": "al-Muhājir ibn Abī Umayya"
+    },
+    {
+      "tribe_arabic": "خولان",
+      "tribe_english": "Khawlān",
+      "region_arabic": "اليمن",
+      "region_english": "al-Yaman",
+      "year_ah": 11,
+      "incorporation_mode": "SUBJUGATION",
+      "commander_arabic": "يعلى بن منية",
+      "commander_english": "Yaʿlā ibn Munayya",
+      "rebel_leader_arabic": null,
+      "rebel_leader_english": null,
+      "battle_site_arabic": null,
+      "battle_site_english": null,
+      "evidence": [
+        "وارتدت خولان فوجه إليهم أبو بكر يعلى بن منية فقاتلهم حتى أذعنوا وأقروا بالصدقة"
+      ],
+      "confidence": 0.9,
+      "notes": "Khawlān tribe fought until they submitted and agreed to pay zakāt",
+      "_source": "baladhuri",
+      "_detected_terms": {
+        "qital_terms": [
+          "قاتل",
+          "قاتلهم"
+        ],
+        "taa_terms": [
+          "أذعن",
+          "أذعنوا"
+        ],
+        "ridda_terms": [
+          "ارتد"
+        ]
+      },
+      "_term_mode": "MIXED",
+      "_source_name": "al-Balādhurī",
+      "_event_id": "B015",
+      "_lat": 15.35,
+      "_lon": 44.2,
+      "_region_key": "yaman",
+      "_region_en": "al-Yaman (Yemen)",
+      "_tribe_normalized": "Khawlān",
+      "_commander_normalized": "Yaʿlā ibn Munya"
+    },
+    {
+      "tribe_arabic": "عنس",
+      "tribe_english": "ʿAns",
+      "region_arabic": "اليمن",
+      "region_english": "al-Yaman",
+      "year_ah": 11,
+      "incorporation_mode": "SUBJUGATION",
+      "commander_arabic": "قيس بن هبيرة المكشوح",
+      "commander_english": "Qays ibn Hubayra al-Makshūḥ",
+      "rebel_leader_arabic": "الأسود العنسي",
+      "rebel_leader_english": "al-Aswad al-ʿAnsī",
+      "battle_site_arabic": "صنعاء",
+      "battle_site_english": "Ṣanʿāʾ",
+      "evidence": [
+        "فاتبعه عنس",
+        "وأخرج خالد بن سعيد بن العاصي عنها",
+        "ووضعوا فى بقية أصحاب العنسي السيف فلم ينجح إلا من أسلم منهم"
+      ],
+      "confidence": 0.95,
+      "notes": "Major false prophet movement; al-Aswad killed by assassination before main military action",
+      "_source": "baladhuri",
+      "_tribe_region": "Yemen",
+      "_tribe_leader": "al-Aswad al-ʿAnsī",
+      "_lat": 15.35,
+      "_lon": 44.21,
+      "_detected_terms": {
+        "qital_terms": [
+          "سيف"
+        ],
+        "taa_terms": [
+          "أسلم",
+          "سلم"
+        ],
+        "ridda_terms": []
+      },
+      "_term_mode": "MIXED",
+      "_source_name": "al-Balādhurī",
+      "_event_id": "B016",
+      "_region_key": "yaman",
+      "_region_en": "al-Yaman (Yemen)",
+      "_tribe_normalized": "ʿAns",
+      "_rebel_normalized": "al-Aswad al-ʿAnsī"
+    },
+    {
+      "tribe_arabic": "الأزد",
+      "tribe_english": "al-Azd",
+      "region_arabic": "عمان",
+      "region_english": "ʿUmān",
+      "year_ah": 11,
+      "incorporation_mode": "SUBJUGATION",
+      "commander_arabic": "حذيفة بن محصن وعكرمة بن أبي جهل",
+      "commander_english": "Ḥudhayfa ibn Muḥṣin and ʿIkrima ibn Abī Jahl",
+      "rebel_leader_arabic": "لقيط بن مالك ذو التاج",
+      "rebel_leader_english": "Laqīṭ ibn Mālik Dhū al-Tāj",
+      "battle_site_arabic": "دبا",
+      "battle_site_english": "Dabbā",
+      "evidence": [
+        "ارتدت الأزد وعليها لقيط بن مالك ذو التاج",
+        "فواقعا لقيطا ومن معه فقتلاه وسبيا من أهل دبا سبيا",
+        "ثم أن الأزد راجعت الإسلام"
+      ],
+      "confidence": 0.95,
+      "notes": "Major battle at Dabbā; Azd leader killed, tribe later returned to Islam",
+      "_source": "baladhuri",
+      "_tribe_region": "Oman",
+      "_tribe_leader": "Laqīṭ ibn Mālik",
+      "_lat": 25.62,
+      "_lon": 56.27,
+      "_detected_terms": {
+        "qital_terms": [
+          "قتل",
+          "سبي"
+        ],
+        "taa_terms": [],
+        "ridda_terms": [
+          "ارتد"
+        ]
+      },
+      "_term_mode": "SUBJUGATION",
+      "_source_name": "al-Balādhurī",
+      "_event_id": "B017",
+      "_region_key": "uman",
+      "_region_en": "ʿUmān (Oman)",
+      "_tribe_normalized": "al-Azd",
+      "_commander_normalized": "ʿIkrima ibn Abī Jahl",
+      "_rebel_normalized": "Laqīṭ ibn Mālik Dhū l-Tāj"
+    },
+    {
+      "tribe_arabic": "مهرة",
+      "tribe_english": "Mahra",
+      "region_arabic": "عمان",
+      "region_english": "ʿUmān",
+      "year_ah": 11,
+      "incorporation_mode": "SUBMISSION",
+      "commander_arabic": "عكرمة بن أبي جهل",
+      "commander_english": "ʿIkrima ibn Abī Jahl",
+      "rebel_leader_arabic": null,
+      "rebel_leader_english": null,
+      "battle_site_arabic": null,
+      "battle_site_english": null,
+      "evidence": [
+        "وجمع قوم من مهرة بن حيدان جمعا فأتاهم عكرمة فلم يقاتلوه وأدوا الصدقة"
+      ],
+      "confidence": 0.9,
+      "notes": "Mahra tribe submitted without fighting when ʿIkrima approached",
+      "_source": "baladhuri",
+      "_detected_terms": {
+        "qital_terms": [
+          "قاتل"
+        ],
+        "taa_terms": [],
+        "ridda_terms": []
+      },
+      "_term_mode": "SUBJUGATION",
+      "_source_name": "al-Balādhurī",
+      "_event_id": "B018",
+      "_lat": 23.58,
+      "_lon": 58.38,
+      "_region_key": "uman",
+      "_region_en": "ʿUmān (Oman)",
+      "_commander_normalized": "ʿIkrima ibn Abī Jahl"
+    },
+    {
+      "tribe_arabic": "ربيعة",
+      "tribe_english": "Rabīʿa",
+      "region_arabic": "البحرين",
+      "region_english": "al-Baḥrayn",
+      "year_ah": 11,
+      "incorporation_mode": "SUBJUGATION",
+      "commander_arabic": "العلاء بن الحضرمي",
+      "commander_english": "al-ʿAlāʾ ibn al-Ḥaḍramī",
+      "rebel_leader_arabic": "الحطم (شريح بن ضبيعة)",
+      "rebel_leader_english": "al-Ḥuṭam (Shurayḥ ibn Ḍubayʿa)",
+      "battle_site_arabic": "جواثا",
+      "battle_site_english": "Jawāthā",
+      "evidence": [
+        "ارتد من البحرين من ولد قيس بن ثعلبة مع الحطم",
+        "فقاتلها قتالا شديدا",
+        "ثم إن العلاء خرج بالمسلمين ذات ليلة فبيت ربيعة فقاتلوا قتالا شديدا وقتل الحطم"
+      ],
+      "confidence": 0.95,
+      "notes": "Major siege at Jawāthā fortress; ended with night raid killing rebel leader al-Ḥuṭam",
+      "_source": "baladhuri",
+      "_detected_terms": {
+        "qital_terms": [
+          "قتال",
+          "قاتل",
+          "قاتلوا",
+          "قتالا شديدا",
+          "قتل"
+        ],
+        "taa_terms": [
+          "بيعة",
+          "سلم"
+        ],
+        "ridda_terms": [
+          "ارتد"
+        ]
+      },
+      "_term_mode": "MIXED",
+      "_source_name": "al-Balādhurī",
+      "_event_id": "B019",
+      "_lat": 26.0,
+      "_lon": 50.55,
+      "_region_key": "bahrayn",
+      "_region_en": "al-Baḥrayn",
+      "_tribe_normalized": "Rabīʿa",
+      "_commander_normalized": "al-ʿAlāʾ ibn al-Ḥaḍramī"
+    },
+    {
+      "tribe_arabic": "بنو حنيفة",
+      "tribe_english": "Banū Ḥanīfa",
+      "region_arabic": "اليمامة",
+      "region_english": "al-Yamāma",
+      "year_ah": 12,
+      "incorporation_mode": "SUBJUGATION",
+      "commander_arabic": "خالد بن الوليد",
+      "commander_english": "Khālid ibn al-Walīd",
+      "rebel_leader_arabic": "مسيلمة الكذاب",
+      "rebel_leader_english": "Musaylima al-Kadhdhāb",
+      "battle_site_arabic": "حديقة الموت",
+      "battle_site_english": "Ḥadīqat al-Mawt",
+      "evidence": [
+        "بعث خالد بن الوليد بن المغيرة المخزومي إلى اليمامة وأمره بمحاربة الكذاب مسيلمة",
+        "فلما شارفها ظفر بقوم من بنى حنيفة فيهم مجاعة بن مرارة بن سلمى فقتلهم",
+        "ثم التقى الناس فكان أو من لقيهم الرجال بن عنفوة فقتله الله، واستشهد وجوه الناس وقراء القرآن",
+        "ثم أن المسلمين فاءوا وثابوا فأنزل الله عليهم نصره وهزم أهل اليمامة فأتبعوهم يقتلونهم قتلا ذريعا",
+        "وقتل الله مسيلمة فى الحديقة"
+      ],
+      "confidence": 1.0,
+      "notes": "Major battle at al-Yamāma against Musaylima and Banū Ḥanīfa, ended with conquest after heavy fighting and martyrdoms. Later negotiated peace through Mujāʿa ibn Murāra's deception.",
+      "_source": "baladhuri",
+      "_tribe_region": "al-Yamāma",
+      "_tribe_leader": "Musaylima",
+      "_detected_terms": {
+        "qital_terms": [
+          "حارب",
+          "قتل",
+          "هزم",
+          "ظفر"
+        ],
+        "taa_terms": [
+          "سلم"
+        ],
+        "ridda_terms": [
+          "الكذاب",
+          "كذاب"
+        ]
+      },
+      "_term_mode": "MIXED",
+      "_source_name": "al-Balādhurī",
+      "_event_id": "B020",
+      "_lat": 24.18,
+      "_lon": 47.32,
+      "_region_key": "yamama",
+      "_region_en": "al-Yamāma",
+      "_tribe_normalized": "Banū Ḥanīfa",
+      "_commander_normalized": "Khālid ibn al-Walīd",
+      "_rebel_normalized": "Musaylima ibn Ḥabīb",
+      "_cross_refs": [
+        "W002",
+        "W012",
+        "W024",
+        "W026"
+      ]
+    },
+    {
+      "tribe_arabic": "بنو أسد",
+      "tribe_english": "Banū Asad",
+      "region_arabic": "بزاخة",
+      "region_english": "Buzākha",
+      "year_ah": 12,
+      "incorporation_mode": "SUBJUGATION",
+      "commander_arabic": "خالد بن الوليد",
+      "commander_english": "Khālid ibn al-Walīd",
+      "rebel_leader_arabic": "طليحة بن خويلد",
+      "rebel_leader_english": "Ṭulayḥa ibn Khuwaylid",
+      "battle_site_arabic": "بزاخة",
+      "battle_site_english": "Buzākha",
+      "evidence": [
+        "وأمر خالدا أن يصمد لطليحة بن خويلد الأسدى، وكان قد أدعى النبوة وهو يومئذ ببزاخة",
+        "ثم التقى المسلمون وعدوهم واقتتلوا قتالا شديدا",
+        "فانهزم الناس وظهر المسلمون وأسر عيينة بن حصن",
+        "وهرب طليحة بن خويلد فدخل خباء له فاغتسل وخرج فركب فرسه وأهل بعمرة ثم مضى إلى مكة ثم أتى المدينة مسلما"
+      ],
+      "confidence": 0.95,
+      "notes": "Battle against false prophet Ṭulayḥa at Buzākha. ʿUyayna ibn Ḥiṣn captured, Ṭulayḥa fled and later converted to Islam.",
+      "_source": "baladhuri",
+      "_tribe_region": "Najd",
+      "_tribe_leader": "Ṭulayḥa",
+      "_lat": 27.5,
+      "_lon": 43.5,
+      "_detected_terms": {
+        "qital_terms": [
+          "قتال",
+          "قتالا شديدا",
+          "هزم"
+        ],
+        "taa_terms": [
+          "سلم"
+        ],
+        "ridda_terms": [
+          "ادعى النبوة"
+        ]
+      },
+      "_term_mode": "MIXED",
+      "_source_name": "al-Balādhurī",
+      "_event_id": "B021",
+      "_region_key": "najd",
+      "_region_en": "Najd (Central Arabia)",
+      "_tribe_normalized": "Banū Asad",
+      "_commander_normalized": "Khālid ibn al-Walīd",
+      "_rebel_normalized": "Ṭulayḥa ibn Khuwaylid"
+    },
+    {
+      "tribe_arabic": "بنو فزارة",
+      "tribe_english": "Banū Fazāra",
+      "region_arabic": "بزاخة",
+      "region_english": "Buzākha",
+      "year_ah": 12,
+      "incorporation_mode": "SUBJUGATION",
+      "commander_arabic": "خالد بن الوليد",
+      "commander_english": "Khālid ibn al-Walīd",
+      "rebel_leader_arabic": "عيينة بن حصن",
+      "rebel_leader_english": "ʿUyayna ibn Ḥiṣn",
+      "battle_site_arabic": "بزاخة",
+      "battle_site_english": "Buzākha",
+      "evidence": [
+        "وكان عيينة بن حصن ابن حذيفة بن بدر مع طلحة فى سبعمائة من بنى فزارة",
+        "فلما رأى سيوف المسلمين قد استحملت المشركين",
+        "يا بنى فزارة هذا كذاب وولى عن عسكره",
+        "فانهزم الناس وظهر المسلمون وأسر عيينة بن حصن فقدم به المدينة فحقن أبو بكر دمه وخلى سبيله"
+      ],
+      "confidence": 0.9,
+      "notes": "Banū Fazāra fought alongside Ṭulayḥa at Buzākha under ʿUyayna ibn Ḥiṣn with 700 men. After defeat, ʿUyayna was captured but pardoned by Abū Bakr.",
+      "_source": "baladhuri",
+      "_lat": 27.5,
+      "_lon": 43.5,
+      "_detected_terms": {
+        "qital_terms": [
+          "هزم",
+          "سبي"
+        ],
+        "taa_terms": [
+          "سلم"
+        ],
+        "ridda_terms": [
+          "كذاب"
+        ]
+      },
+      "_term_mode": "MIXED",
+      "_source_name": "al-Balādhurī",
+      "_event_id": "B022",
+      "_region_key": "najd",
+      "_region_en": "Najd (Central Arabia)",
+      "_tribe_normalized": "Banū Fazāra",
+      "_commander_normalized": "Khālid ibn al-Walīd",
+      "_rebel_normalized": "ʿUyayna ibn Ḥiṣn"
+    },
+    {
+      "tribe_arabic": "بنو عامر بن صعصعة",
+      "tribe_english": "Banū ʿĀmir ibn Ṣaʿṣaʿa",
+      "region_arabic": "نجد",
+      "region_english": "Najd",
+      "year_ah": 12,
+      "incorporation_mode": "SUBMISSION",
+      "commander_arabic": "هشام بن العاصي",
+      "commander_english": "Hishām ibn al-ʿĀṣī",
+      "rebel_leader_arabic": "",
+      "rebel_leader_english": "",
+      "battle_site_arabic": "",
+      "battle_site_english": "",
+      "evidence": [
+        "وبعث خالد بن الوليد هشام بن العاصي بن وائل السهمي وأخا عمرو بن العاصي... إلى بنى عامر بن صعصعة",
+        "فلم يقاتلوه وأظهروا الإسلام والأذان فانصرف عنهم"
+      ],
+      "confidence": 0.85,
+      "notes": "Banū ʿĀmir ibn Ṣaʿṣaʿa submitted peacefully to Hishām ibn al-ʿĀṣī without fighting, showing Islam and performing adhān.",
+      "_source": "baladhuri",
+      "_detected_terms": {
+        "qital_terms": [
+          "قاتل"
+        ],
+        "taa_terms": [],
+        "ridda_terms": []
+      },
+      "_term_mode": "SUBJUGATION",
+      "_source_name": "al-Balādhurī",
+      "_event_id": "B023",
+      "_lat": 25.0,
+      "_lon": 45.0,
+      "_region_key": "najd",
+      "_region_en": "Najd (Central Arabia)",
+      "_tribe_normalized": "Banū ʿĀmir"
+    },
+    {
+      "tribe_arabic": "بنو سليم",
+      "tribe_english": "Banū Sulaym",
+      "region_arabic": "جو قراقر",
+      "region_english": "Jaww Qarāqir",
+      "year_ah": 12,
+      "incorporation_mode": "SUBJUGATION",
+      "commander_arabic": "خالد بن الوليد",
+      "commander_english": "Khālid ibn al-Walīd",
+      "rebel_leader_arabic": "أبو شجرة عمرو بن عبد العزى",
+      "rebel_leader_english": "Abū Shajara ʿAmr ibn ʿAbd al-ʿUzzā",
+      "battle_site_arabic": "جو قراقر",
+      "battle_site_english": "Jaww Qarāqir",
+      "evidence": [
+        "ثم أتى خالد جو قراقر، ويقال أتى النقرة وكان هناك جمع لبنى سليم عليهم أبو شجرة عمرو بن عبد العزى السلمى",
+        "فقاتلوه فاستشهد رجل من المسلمين ثم فض الله جمع المشركين",
+        "وجعل خالد يومئذ يحرق المرتدين",
+        "وأسلم أبو شجرة فقدم على عمر"
+      ],
+      "confidence": 0.9,
+      "notes": "Banū Sulaym fought Khālid at Jaww Qarāqir under Abū Shajara. After defeat, their leader converted and later met ʿUmar. Khālid burned apostates after this battle.",
+      "_source": "baladhuri",
+      "_tribe_region": "Najd",
+      "_tribe_leader": null,
+      "_detected_terms": {
+        "qital_terms": [
+          "قاتل"
+        ],
+        "taa_terms": [
+          "أسلم",
+          "سلم"
+        ],
+        "ridda_terms": [
+          "مرتد"
+        ]
+      },
+      "_term_mode": "MIXED",
+      "_source_name": "al-Balādhurī",
+      "_event_id": "B024",
+      "_lat": 25.5,
+      "_lon": 44.5,
+      "_region_key": "najd",
+      "_region_en": "Najd (Central Arabia)",
+      "_tribe_normalized": "Banū Sulaym",
+      "_commander_normalized": "Khālid ibn al-Walīd"
+    },
+    {
+      "tribe_arabic": "بنو تميم",
+      "tribe_english": "Banū Tamīm",
+      "region_arabic": "البطاح والبعوضة",
+      "region_english": "al-Biṭāḥ wa-l-Baʿūḍa",
+      "year_ah": 11,
+      "incorporation_mode": "SUBJUGATION",
+      "commander_arabic": "خالد",
+      "commander_english": "Khālid",
+      "rebel_leader_arabic": null,
+      "rebel_leader_english": null,
+      "battle_site_arabic": "البطاح والبعوضة",
+      "battle_site_english": "al-Biṭāḥ wa-l-Baʿūḍa",
+      "evidence": [
+        "ثم سار خالد إلى سن بالبطاح والبعوضة من بنى تميم فقاتلوه ففض جمعهم وقتل مالك بن نويرة"
+      ],
+      "confidence": 0.95,
+      "notes": "Khālid's campaign against Banū Tamīm at al-Biṭāḥ wa-l-Baʿūḍa, resulting in the killing of Mālik ibn Nuwayra",
+      "_source": "baladhuri",
+      "_tribe_region": "Najd",
+      "_tribe_leader": "Mālik ibn Nuwayra (disputed)",
+      "_detected_terms": {
+        "qital_terms": [
+          "قاتل",
+          "قتل"
+        ],
+        "taa_terms": [],
+        "ridda_terms": []
+      },
+      "_term_mode": "SUBJUGATION",
+      "_source_name": "al-Balādhurī",
+      "_event_id": "B025",
+      "_lat": 26.0,
+      "_lon": 44.0,
+      "_region_key": "najd",
+      "_region_en": "Najd (Central Arabia)",
+      "_tribe_normalized": "Banū Tamīm",
+      "_commander_normalized": "Khālid ibn al-Walīd"
+    },
+    {
+      "tribe_arabic": "بنو حنظلة",
+      "tribe_english": "Banū Ḥanẓala",
+      "region_arabic": "البطاح والبعوضة",
+      "region_english": "al-Biṭāḥ wa-l-Baʿūḍa",
+      "year_ah": 11,
+      "incorporation_mode": "SUBJUGATION",
+      "commander_arabic": "خالد",
+      "commander_english": "Khālid",
+      "rebel_leader_arabic": "مالك بن نويرة",
+      "rebel_leader_english": "Mālik ibn Nuwayra",
+      "battle_site_arabic": "البطاح والبعوضة",
+      "battle_site_english": "al-Biṭāḥ wa-l-Baʿūḍa",
+      "evidence": [
+        "وقتل مالك بن نويرة أخا متمم بن نويرة وكان مالك عاملا للنبي (صلى الله عليه وسلم) على صدقات بنى حنظلة، فلما قبض (صلى الله عليه وسلم) خلى ما كان فى يده من الفرائض",
+        "فاقتتلوا وأسره وجماعة معه فأتى بهم خالدا فأمر بهم فضربت أعناقهم"
+      ],
+      "confidence": 0.9,
+      "notes": "Mālik ibn Nuwayra, tax collector for Banū Ḥanẓala, withheld zakāt after Prophet's death and was executed by Khālid's forces",
+      "_source": "baladhuri",
+      "_detected_terms": {
+        "qital_terms": [
+          "قتل"
+        ],
+        "taa_terms": [
+          "سلم"
+        ],
+        "ridda_terms": []
+      },
+      "_term_mode": "MIXED",
+      "_source_name": "al-Balādhurī",
+      "_event_id": "B026",
+      "_lat": 26.0,
+      "_lon": 44.0,
+      "_region_key": "najd",
+      "_region_en": "Najd (Central Arabia)",
+      "_commander_normalized": "Khālid ibn al-Walīd",
+      "_rebel_normalized": "Mālik ibn Nuwayra"
+    },
+    {
+      "tribe_arabic": "بنو تميم",
+      "tribe_english": "Banū Tamīm",
+      "region_arabic": "الجزيرة العربية",
+      "region_english": "Arabian Peninsula",
+      "year_ah": 11,
+      "incorporation_mode": "MIXED",
+      "commander_arabic": "خالد",
+      "commander_english": "Khālid",
+      "rebel_leader_arabic": "سجاح بنت أوس",
+      "rebel_leader_english": "Sajāḥ bint Aws",
+      "battle_site_arabic": null,
+      "battle_site_english": null,
+      "evidence": [
+        "وتنبأت أم صادر سجاح بنت أوس بن أسامة بن العنبر بن يربوع ابن حنظلة بن مالك بن زيد مناة بن تميم",
+        "وتكهنت فأتبعها قوم من بنى تميم وقوم من أخوالها بنى تغلب",
+        "فأتت مسيلمة الكذاب وهو بحجر فتزوجته وجعلت دينها ودينه واحدا"
+      ],
+      "confidence": 0.85,
+      "notes": "Sajāḥ, false prophetess from Banū Tamīm, allied with Musaylima before eventually converting back to Islam",
+      "_source": "baladhuri",
+      "_tribe_region": "Najd",
+      "_tribe_leader": "Mālik ibn Nuwayra (disputed)",
+      "_detected_terms": {
+        "qital_terms": [],
+        "taa_terms": [],
+        "ridda_terms": [
+          "تنبأ",
+          "الكذاب",
+          "كذاب"
+        ]
+      },
+      "_term_mode": "UNKNOWN",
+      "_source_name": "al-Balādhurī",
+      "_event_id": "B027",
+      "_lat": 24.0,
+      "_lon": 45.0,
+      "_region_key": "arabia",
+      "_region_en": "Arabian Peninsula",
+      "_tribe_normalized": "Banū Tamīm",
+      "_commander_normalized": "Khālid ibn al-Walīd",
+      "_rebel_normalized": "Sajāḥ bint al-Ḥārith"
+    },
+    {
+      "tribe_arabic": "خولان",
+      "tribe_english": "Khawlān",
+      "region_arabic": "اليمن",
+      "region_english": "al-Yaman",
+      "year_ah": 11,
+      "incorporation_mode": "SUBJUGATION",
+      "commander_arabic": "يعلى بن منية",
+      "commander_english": "Yaʿlā ibn Muniya",
+      "rebel_leader_arabic": null,
+      "rebel_leader_english": null,
+      "battle_site_arabic": null,
+      "battle_site_english": null,
+      "evidence": [
+        "وارتدت خولان باليمن فوجه أبو بكر إليهم يعلى بن منية",
+        "نظفر بهم وأصاب منهم غنيمة وسبابا"
+      ],
+      "confidence": 0.9,
+      "notes": "Khawlān tribe in Yemen apostatized and were defeated by Yaʿlā ibn Muniya with captives and booty taken",
+      "_source": "baladhuri",
+      "_detected_terms": {
+        "qital_terms": [
+          "ظفر",
+          "ظفر بهم",
+          "غنيمة"
+        ],
+        "taa_terms": [],
+        "ridda_terms": [
+          "ارتد"
+        ]
+      },
+      "_term_mode": "SUBJUGATION",
+      "_source_name": "al-Balādhurī",
+      "_event_id": "B028",
+      "_lat": 15.35,
+      "_lon": 44.2,
+      "_region_key": "yaman",
+      "_region_en": "al-Yaman (Yemen)",
+      "_tribe_normalized": "Khawlān",
+      "_commander_normalized": "Yaʿlā ibn Munya"
+    },
+    {
+      "tribe_arabic": "كندة",
+      "tribe_english": "Kinda",
+      "region_arabic": "حضرموت",
+      "region_english": "Ḥaḍramawt",
+      "year_ah": 11,
+      "incorporation_mode": "SUBJUGATION",
+      "commander_arabic": "زياد بن لبيد والمهاجر بن أبى أمية",
+      "commander_english": "Ziyād ibn Labīd and al-Muhājir ibn Abī Umayya",
+      "rebel_leader_arabic": "الأشعث بن قيس",
+      "rebel_leader_english": "al-Ashʿath ibn Qays",
+      "battle_site_arabic": "النجير",
+      "battle_site_english": "al-Nujayr",
+      "evidence": [
+        "فانتقضت عليه كندة كلها إلا السكون",
+        "فاجتمعت عظماء كندة إلى الأشعث بن قيس",
+        "ففضا جمعه وأوقعا بأصحابه فقتلا منهم مقتلة عظيمة ثم انهم لجأوا إلى النجير",
+        "فحصرهم المسلمون حتى جهدوا"
+      ],
+      "confidence": 0.95,
+      "notes": "Major Kinda rebellion led by al-Ashʿath ibn Qays, besieged at al-Nujayr fortress before surrendering",
+      "_source": "baladhuri",
+      "_tribe_region": "Ḥaḍramawt",
+      "_tribe_leader": "al-Ashʿath ibn Qays",
+      "_detected_terms": {
+        "qital_terms": [
+          "قتل"
+        ],
+        "taa_terms": [
+          "سلم"
+        ],
+        "ridda_terms": []
+      },
+      "_term_mode": "MIXED",
+      "_source_name": "al-Balādhurī",
+      "_event_id": "B029",
+      "_lat": 15.8,
+      "_lon": 48.5,
+      "_region_key": "hadramawt",
+      "_region_en": "Ḥaḍramawt",
+      "_tribe_normalized": "Kinda",
+      "_commander_normalized": "Ziyād ibn Labīd",
+      "_rebel_normalized": "al-Ashʿath ibn Qays",
+      "_cross_refs": [
+        "T046",
+        "T050",
+        "B010",
+        "W034",
+        "W035",
+        "W043",
+        "W046",
+        "W047",
+        "W048"
+      ]
+    },
+    {
+      "tribe_arabic": "بنو وليعة",
+      "tribe_english": "Banū Walīʿa",
+      "region_arabic": "حضرموت",
+      "region_english": "Ḥaḍramawt",
+      "year_ah": 11,
+      "incorporation_mode": "SUBJUGATION",
+      "commander_arabic": "زياد بن لبيد",
+      "commander_english": "Ziyād ibn Labīd",
+      "rebel_leader_arabic": null,
+      "rebel_leader_english": null,
+      "battle_site_arabic": null,
+      "battle_site_english": null,
+      "evidence": [
+        "وجمع له بنو عمرو بن معاوية بن الحارث الكندي فبيتهم فيمن معه من المسلمين فقتل منهم بشرا فيهم مخوس ومشرح وجمد وأبضعة بنو معدى كرب بن وليعة",
+        "وكانوا وفدوا على النبي (صلى الله عليه وسلم) ثم ارتدوا"
+      ],
+      "confidence": 0.9,
+      "notes": "Banū Walīʿa, who had delegated to the Prophet, apostatized and were attacked in a night raid by Ziyād ibn Labīd",
+      "_source": "baladhuri",
+      "_detected_terms": {
+        "qital_terms": [
+          "قتل",
+          "قتل منهم"
+        ],
+        "taa_terms": [
+          "سلم"
+        ],
+        "ridda_terms": [
+          "ارتد",
+          "ارتدوا"
+        ]
+      },
+      "_term_mode": "MIXED",
+      "_source_name": "al-Balādhurī",
+      "_event_id": "B030",
+      "_lat": 15.95,
+      "_lon": 48.78,
+      "_region_key": "hadramawt",
+      "_region_en": "Ḥaḍramawt",
+      "_commander_normalized": "Ziyād ibn Labīd"
+    },
+    {
+      "tribe_arabic": "عنس",
+      "tribe_english": "ʿAns",
+      "region_arabic": "اليمن",
+      "region_english": "al-Yaman",
+      "year_ah": 11,
+      "incorporation_mode": "SUBJUGATION",
+      "commander_arabic": "قيس بن هبيرة المرادي وفيروز بن الديلمي",
+      "commander_english": "Qays ibn Hubayra al-Murādī and Fayrūz ibn al-Daylamī",
+      "rebel_leader_arabic": "الأسود العنسي",
+      "rebel_leader_english": "al-Aswad al-ʿAnsī",
+      "battle_site_arabic": "صنعاء",
+      "battle_site_english": "Ṣanʿāʾ",
+      "evidence": [
+        "كان الأسود بن كعب بن عوف العنسي قد تكهن وادعى النبوة فاتبعه عنس",
+        "فدخلوا عليه فى السحر وهو سكران نائم فذبحه قيس ذبحا",
+        "ووضعوا فى بقية أصحاب العنسي السيف فلم ينجح إلا من أسلم منهم"
+      ],
+      "confidence": 0.95,
+      "notes": "ʿAns tribe followed the false prophet al-Aswad al-ʿAnsī who was assassinated by Muslim agents in Ṣanʿāʾ",
+      "_source": "baladhuri",
+      "_tribe_region": "Yemen",
+      "_tribe_leader": "al-Aswad al-ʿAnsī",
+      "_lat": 15.35,
+      "_lon": 44.21,
+      "_detected_terms": {
+        "qital_terms": [
+          "سيف"
+        ],
+        "taa_terms": [
+          "أسلم",
+          "سلم"
+        ],
+        "ridda_terms": [
+          "ادعى النبوة"
+        ]
+      },
+      "_term_mode": "MIXED",
+      "_source_name": "al-Balādhurī",
+      "_event_id": "B031",
+      "_region_key": "yaman",
+      "_region_en": "al-Yaman (Yemen)",
+      "_tribe_normalized": "ʿAns",
+      "_commander_normalized": "Fayrūz al-Daylamī",
+      "_rebel_normalized": "al-Aswad al-ʿAnsī"
+    },
+    {
+      "tribe_arabic": "بنو حنيفة",
+      "tribe_english": "Banū Ḥanīfa",
+      "region_arabic": "اليمامة",
+      "region_english": "al-Yamāma",
+      "year_ah": 11,
+      "incorporation_mode": "SUBJUGATION",
+      "commander_arabic": null,
+      "commander_english": null,
+      "rebel_leader_arabic": "مسيلمة الكذاب",
+      "rebel_leader_english": "Musaylima al-Kadhdhāb",
+      "battle_site_arabic": null,
+      "battle_site_english": null,
+      "evidence": [
+        "وعظم المصائب علينا أن مسيلمة الكذاب خرج بأرض اليمامة برعد وبرق",
+        "وقد تعلمون أنه كان يدعي النبوة في حياة نبينا صلى الله عليه وآله وسلم",
+        "وأرعد كذاب اليمامة جهده وأكلب فينا باللسان وباليد",
+        "وأمسى مسيلم في اليمامة غالبا على الناس طرا بالقنا والمهند"
+      ],
+      "confidence": 0.85,
+      "notes": "Musaylima's rebellion with Banū Ḥanīfa in al-Yamāma is clearly identified as an active threat requiring military subjugation. The text indicates armed resistance ('بالقنا والمهند') but this excerpt covers the initial threat assessment rather than the actual campaign resolution.",
+      "_source": "waqidi",
+      "_tribe_region": "al-Yamāma",
+      "_tribe_leader": "Musaylima",
+      "_detected_terms": {
+        "qital_terms": [],
+        "taa_terms": [
+          "سلم"
+        ],
+        "ridda_terms": [
+          "الكذاب",
+          "كذاب"
+        ]
+      },
+      "_term_mode": "SUBMISSION",
+      "_event_id": "W002",
+      "_lat": 24.0,
+      "_lon": 46.7,
+      "_region_key": "yamama",
+      "_region_en": "al-Yamāma",
+      "_source_name": "al-Wāqidī",
+      "_cross_refs": [
+        "B003",
+        "B020"
+      ],
+      "_is_cross_ref": true
+    },
+    {
+      "tribe_arabic": "بنو أسد",
+      "tribe_english": "Banū Asad",
+      "region_arabic": "نجد",
+      "region_english": "Najd",
+      "year_ah": 11,
+      "incorporation_mode": "SUBJUGATION",
+      "commander_arabic": null,
+      "commander_english": null,
+      "rebel_leader_arabic": "طليحة بن خويلد الأسدي",
+      "rebel_leader_english": "Ṭulayḥa ibn Khuwaylid al-Asadī",
+      "battle_site_arabic": null,
+      "battle_site_english": null,
+      "evidence": [
+        "والآن قد بلغني أن طليحة بن خويلد الأسدي أيضا قد ادعى النبوة ببلاد نجد",
+        "وداناه فيما قال غير مقصر أخو الجهل حقا طلحة بن خويلد"
+      ],
+      "confidence": 0.8,
+      "notes": "Ṭulayḥa ibn Khuwaylid's false prophecy claim with Banū Asad in Najd is identified as requiring military action. The text presents this as part of the initial threat assessment during the succession crisis, indicating the scope of rebellions that would need to be addressed through armed campaigns.",
+      "_source": "waqidi",
+      "_tribe_region": "Najd",
+      "_tribe_leader": "Ṭulayḥa",
+      "_detected_terms": {
+        "qital_terms": [],
+        "taa_terms": [],
+        "ridda_terms": [
+          "ادعى النبوة"
+        ]
+      },
+      "_term_mode": "UNKNOWN",
+      "_event_id": "W003",
+      "_lat": 24.5,
+      "_lon": 45.5,
+      "_region_key": "najd",
+      "_region_en": "Najd",
+      "_source_name": "al-Wāqidī"
+    },
+    {
+      "tribe_arabic": "بنو أسد",
+      "tribe_english": "Banū Asad",
+      "region_arabic": "أرض بني أسد",
+      "region_english": "Arḍ Banī Asad",
+      "year_ah": 11,
+      "incorporation_mode": "SUBJUGATION",
+      "commander_arabic": null,
+      "commander_english": null,
+      "rebel_leader_arabic": "طليحة بن خويلد الأسدي",
+      "rebel_leader_english": "Ṭulayḥa ibn Khuwaylid al-Asadī",
+      "battle_site_arabic": null,
+      "battle_site_english": null,
+      "evidence": [
+        "فارتدت بنو أسد ورأسوا على أنفسهم طليحة بن خويلد الأسدي، وهو الذي ادعى النبوة في أرض بني أسد"
+      ],
+      "confidence": 0.95,
+      "notes": "Ṭulayḥa claimed prophethood among Banū Asad; text indicates future military campaigns planned against them",
+      "_source": "waqidi",
+      "_tribe_region": "Najd",
+      "_tribe_leader": "Ṭulayḥa",
+      "_detected_terms": {
+        "qital_terms": [],
+        "taa_terms": [],
+        "ridda_terms": [
+          "ارتد",
+          "ادعى النبوة"
+        ]
+      },
+      "_term_mode": "UNKNOWN",
+      "_event_id": "W004",
+      "_source_name": "al-Wāqidī",
+      "_lat": 27.5,
+      "_lon": 41.5,
+      "_region_key": "najd",
+      "_region_en": "Najd"
+    },
+    {
+      "tribe_arabic": "فزارة",
+      "tribe_english": "Fazāra",
+      "region_arabic": "نجد",
+      "region_english": "Najd",
+      "year_ah": 11,
+      "incorporation_mode": "SUBJUGATION",
+      "commander_arabic": null,
+      "commander_english": null,
+      "rebel_leader_arabic": "عيينة بن حصن الفزاري",
+      "rebel_leader_english": "ʿUyayna ibn Ḥiṣn al-Fazārī",
+      "battle_site_arabic": null,
+      "battle_site_english": null,
+      "evidence": [
+        "وارتدت فزارة ورأسوا عليهم عيينة بن حصن الفزاري"
+      ],
+      "confidence": 0.9,
+      "notes": "Fazāra tribe apostatized under ʿUyayna ibn Ḥiṣn's leadership",
+      "_source": "waqidi",
+      "_detected_terms": {
+        "qital_terms": [],
+        "taa_terms": [],
+        "ridda_terms": [
+          "ارتد"
+        ]
+      },
+      "_term_mode": "UNKNOWN",
+      "_event_id": "W005",
+      "_source_name": "al-Wāqidī",
+      "_lat": 27.5,
+      "_lon": 41.5,
+      "_region_key": "najd",
+      "_region_en": "Najd"
+    },
+    {
+      "tribe_arabic": "بنو عامر",
+      "tribe_english": "Banū ʿĀmir",
+      "region_arabic": "نجد",
+      "region_english": "Najd",
+      "year_ah": 11,
+      "incorporation_mode": "SUBJUGATION",
+      "commander_arabic": null,
+      "commander_english": null,
+      "rebel_leader_arabic": "قرة بن سلمة القشيري",
+      "rebel_leader_english": "Qurra ibn Salama al-Qushayrī",
+      "battle_site_arabic": null,
+      "battle_site_english": null,
+      "evidence": [
+        "وارتدت بنو عامر وغطفان، ورأسوا على أنفسهم قرة بن سلمة القشيري"
+      ],
+      "confidence": 0.9,
+      "notes": "Banū ʿĀmir and Ghaṭafān apostatized together under Qurra's leadership",
+      "_source": "waqidi",
+      "_tribe_region": "Najd",
+      "_tribe_leader": null,
+      "_detected_terms": {
+        "qital_terms": [],
+        "taa_terms": [
+          "سلم"
+        ],
+        "ridda_terms": [
+          "ارتد"
+        ]
+      },
+      "_term_mode": "SUBMISSION",
+      "_event_id": "W006",
+      "_source_name": "al-Wāqidī",
+      "_lat": 25.0,
+      "_lon": 44.0,
+      "_region_key": "najd",
+      "_region_en": "Najd"
+    },
+    {
+      "tribe_arabic": "غطفان",
+      "tribe_english": "Ghaṭafān",
+      "region_arabic": "نجد",
+      "region_english": "Najd",
+      "year_ah": 11,
+      "incorporation_mode": "SUBJUGATION",
+      "commander_arabic": null,
+      "commander_english": null,
+      "rebel_leader_arabic": "قرة بن سلمة القشيري",
+      "rebel_leader_english": "Qurra ibn Salama al-Qushayrī",
+      "battle_site_arabic": null,
+      "battle_site_english": null,
+      "evidence": [
+        "وارتدت بنو عامر وغطفان، ورأسوا على أنفسهم قرة بن سلمة القشيري"
+      ],
+      "confidence": 0.9,
+      "notes": "Ghaṭafān apostatized together with Banū ʿĀmir",
+      "_source": "waqidi",
+      "_detected_terms": {
+        "qital_terms": [],
+        "taa_terms": [
+          "سلم"
+        ],
+        "ridda_terms": [
+          "ارتد"
+        ]
+      },
+      "_term_mode": "SUBMISSION",
+      "_event_id": "W007",
+      "_source_name": "al-Wāqidī",
+      "_lat": 26.0,
+      "_lon": 42.0,
+      "_region_key": "najd",
+      "_region_en": "Najd"
+    },
+    {
+      "tribe_arabic": "بنو سليم",
+      "tribe_english": "Banū Sulaym",
+      "region_arabic": "نجد",
+      "region_english": "Najd",
+      "year_ah": 11,
+      "incorporation_mode": "SUBJUGATION",
+      "commander_arabic": null,
+      "commander_english": null,
+      "rebel_leader_arabic": "الفجاءة بن عبد ياليل السلمي",
+      "rebel_leader_english": "al-Fujāʾa ibn ʿAbd Yālīl al-Sulamī",
+      "battle_site_arabic": null,
+      "battle_site_english": null,
+      "evidence": [
+        "وارتدت بنو سليم ورأسوا على أنفسهم الفجاءة بن عبد ياليل السلمي"
+      ],
+      "confidence": 0.9,
+      "notes": "Banū Sulaym apostatized under al-Fujāʾa's leadership",
+      "_source": "waqidi",
+      "_tribe_region": "Najd",
+      "_tribe_leader": null,
+      "_detected_terms": {
+        "qital_terms": [],
+        "taa_terms": [
+          "سلم"
+        ],
+        "ridda_terms": [
+          "ارتد"
+        ]
+      },
+      "_term_mode": "SUBMISSION",
+      "_event_id": "W008",
+      "_source_name": "al-Wāqidī",
+      "_lat": 24.5,
+      "_lon": 41.0,
+      "_region_key": "najd",
+      "_region_en": "Najd"
+    },
+    {
+      "tribe_arabic": "بنو تميم",
+      "tribe_english": "Banū Tamīm",
+      "region_arabic": "نجد",
+      "region_english": "Najd",
+      "year_ah": 11,
+      "incorporation_mode": "SUBJUGATION",
+      "commander_arabic": null,
+      "commander_english": null,
+      "rebel_leader_arabic": "سجاح",
+      "rebel_leader_english": "Sajāḥ",
+      "battle_site_arabic": null,
+      "battle_site_english": null,
+      "evidence": [
+        "وارتدت طائفة من بني تميم ورأسوا عليهم امرأة يقال لها سجاح"
+      ],
+      "confidence": 0.9,
+      "notes": "Part of Banū Tamīm apostatized under the female false prophet Sajāḥ",
+      "_source": "waqidi",
+      "_tribe_region": "Najd",
+      "_tribe_leader": "Mālik ibn Nuwayra (disputed)",
+      "_detected_terms": {
+        "qital_terms": [],
+        "taa_terms": [],
+        "ridda_terms": [
+          "ارتد"
+        ]
+      },
+      "_term_mode": "UNKNOWN",
+      "_event_id": "W009",
+      "_source_name": "al-Wāqidī",
+      "_lat": 25.5,
+      "_lon": 45.0,
+      "_region_key": "najd",
+      "_region_en": "Najd"
+    },
+    {
+      "tribe_arabic": "كندة",
+      "tribe_english": "Kinda",
+      "region_arabic": "حضرموت",
+      "region_english": "Ḥaḍramawt",
+      "year_ah": 11,
+      "incorporation_mode": "SUBJUGATION",
+      "commander_arabic": null,
+      "commander_english": null,
+      "rebel_leader_arabic": "الأشعث بن قيس",
+      "rebel_leader_english": "al-Ashʿath ibn Qays",
+      "battle_site_arabic": null,
+      "battle_site_english": null,
+      "evidence": [
+        "وارتدت طائفة من كندة ورأسوا على أنفسهم الأشعث بن قيس وغيره من ملوك كندة"
+      ],
+      "confidence": 0.9,
+      "notes": "Part of Kinda tribe apostatized under al-Ashʿath ibn Qays and other Kindite kings",
+      "_source": "waqidi",
+      "_tribe_region": "Ḥaḍramawt",
+      "_tribe_leader": "al-Ashʿath ibn Qays",
+      "_detected_terms": {
+        "qital_terms": [],
+        "taa_terms": [],
+        "ridda_terms": [
+          "ارتد"
+        ]
+      },
+      "_term_mode": "UNKNOWN",
+      "_event_id": "W010",
+      "_source_name": "al-Wāqidī",
+      "_lat": 15.9,
+      "_lon": 49.0,
+      "_region_key": "hadramawt",
+      "_region_en": "Ḥaḍramawt"
+    },
+    {
+      "tribe_arabic": "بنو بكر بن وائل",
+      "tribe_english": "Banū Bakr ibn Wāʾil",
+      "region_arabic": "البحرين",
+      "region_english": "al-Baḥrayn",
+      "year_ah": 11,
+      "incorporation_mode": "SUBJUGATION",
+      "commander_arabic": null,
+      "commander_english": null,
+      "rebel_leader_arabic": "الحكم بن زيد",
+      "rebel_leader_english": "al-Ḥakam ibn Zayd",
+      "battle_site_arabic": null,
+      "battle_site_english": null,
+      "evidence": [
+        "وارتدت بنو بكر بن وائل بأرض البحرين، ورأسوا على أنفسهم الحكم بن زيد من بني قيس بن ثعلبة"
+      ],
+      "confidence": 0.9,
+      "notes": "Banū Bakr ibn Wāʾil in Baḥrayn region apostatized under al-Ḥakam ibn Zayd",
+      "_source": "waqidi",
+      "_detected_terms": {
+        "qital_terms": [],
+        "taa_terms": [],
+        "ridda_terms": [
+          "ارتد"
+        ]
+      },
+      "_term_mode": "UNKNOWN",
+      "_event_id": "W011",
+      "_lat": 26.0,
+      "_lon": 50.5,
+      "_region_key": "bahrayn",
+      "_region_en": "al-Baḥrayn",
+      "_source_name": "al-Wāqidī",
+      "_cross_refs": [
+        "T033",
+        "T035"
+      ],
+      "_is_cross_ref": true
+    },
+    {
+      "tribe_arabic": "بنو حنيفة",
+      "tribe_english": "Banū Ḥanīfa",
+      "region_arabic": "اليمامة",
+      "region_english": "al-Yamāma",
+      "year_ah": 11,
+      "incorporation_mode": "SUBJUGATION",
+      "commander_arabic": null,
+      "commander_english": null,
+      "rebel_leader_arabic": "مسيلمة الكذاب",
+      "rebel_leader_english": "Musaylima al-Kadhdhāb",
+      "battle_site_arabic": null,
+      "battle_site_english": null,
+      "evidence": [
+        "واجتمعت بنو حنيفة إلى مسيلمة الكذاب بأرض اليمامة، فقلدوه أمرهم وادعى أنه نبيهم"
+      ],
+      "confidence": 0.95,
+      "notes": "Banū Ḥanīfa gathered around Musaylima the Liar in al-Yamāma, accepting his claim to prophethood",
+      "_source": "waqidi",
+      "_tribe_region": "al-Yamāma",
+      "_tribe_leader": "Musaylima",
+      "_detected_terms": {
+        "qital_terms": [],
+        "taa_terms": [],
+        "ridda_terms": [
+          "الكذاب",
+          "كذاب"
+        ]
+      },
+      "_term_mode": "UNKNOWN",
+      "_event_id": "W012",
+      "_lat": 24.0,
+      "_lon": 46.7,
+      "_region_key": "yamama",
+      "_region_en": "al-Yamāma",
+      "_source_name": "al-Wāqidī",
+      "_cross_refs": [
+        "B003",
+        "B020"
+      ],
+      "_is_cross_ref": true
+    },
+    {
+      "tribe_arabic": "طيء",
+      "tribe_english": "Ṭayyiʾ",
+      "region_arabic": "نجد",
+      "region_english": "Najd",
+      "year_ah": 11,
+      "incorporation_mode": "SUBMISSION",
+      "commander_arabic": null,
+      "commander_english": null,
+      "rebel_leader_arabic": null,
+      "rebel_leader_english": null,
+      "battle_site_arabic": null,
+      "battle_site_english": null,
+      "evidence": [
+        "وهمت قبائل طيء أن يرتدوا عن دين الإسلام، فقام سيدهم عدي بن حاتم الطائي",
+        "فأجابته قبائل طيء إلى جميع ما أحب",
+        "وجمع عدي بن حاتم وزيد الخيل ما كان قبلهما من إبل الصدقة وغيرها، حتى قدما على أبي بكر"
+      ],
+      "confidence": 0.9,
+      "notes": "Ṭayyiʾ tribes considered apostasy but were convinced by ʿAdī ibn Ḥātim to remain loyal and pay zakāt",
+      "_source": "waqidi",
+      "_detected_terms": {
+        "qital_terms": [],
+        "taa_terms": [],
+        "ridda_terms": []
+      },
+      "_term_mode": "UNKNOWN",
+      "_event_id": "W013",
+      "_source_name": "al-Wāqidī",
+      "_lat": 27.5,
+      "_lon": 42.0,
+      "_region_key": "najd",
+      "_region_en": "Najd"
+    },
+    {
+      "tribe_arabic": "بنو أسد",
+      "tribe_english": "Banū Asad",
+      "region_arabic": "البزاخة",
+      "region_english": "al-Bazākha",
+      "year_ah": 11,
+      "incorporation_mode": "SUBJUGATION",
+      "commander_arabic": "خالد بن الوليد",
+      "commander_english": "Khālid ibn al-Walīd",
+      "rebel_leader_arabic": "طليحة بن خويلد",
+      "rebel_leader_english": "Ṭulayḥa ibn Khuwaylid",
+      "battle_site_arabic": "أرض بني أسد",
+      "battle_site_english": "arḍ Banī Asad",
+      "evidence": [
+        "سر نحو طليحة بن خويلد الأسدي ومن معه من بني أسد وغطفان وفزارة",
+        "وقد بلغني رجوع من رجع منكم عن دينه بعد الإقرار بالإسلام",
+        "فقد أمرته أن يقاتله أشد القتال",
+        "فسار خالد بن الوليد إلى أهل الردة",
+        "يريد طليحة بن خويلد الأسدي وأصحابه"
+      ],
+      "confidence": 0.95,
+      "notes": "Military campaign against Banū Asad led by the false prophet Ṭulayḥa ibn Khuwaylid. Text contains detailed preparation and instructions from Abū Bakr to Khālid for fighting the apostate tribe.",
+      "_source": "waqidi",
+      "_tribe_region": "Najd",
+      "_tribe_leader": "Ṭulayḥa",
+      "_detected_terms": {
+        "qital_terms": [
+          "قتال",
+          "قاتل"
+        ],
+        "taa_terms": [
+          "رجع"
+        ],
+        "ridda_terms": [
+          "ردة"
+        ]
+      },
+      "_term_mode": "MIXED",
+      "_event_id": "W014",
+      "_source_name": "al-Wāqidī",
+      "_lat": 27.5,
+      "_lon": 41.5,
+      "_region_key": "najd",
+      "_region_en": "Buzākha (Najd)"
+    },
+    {
+      "tribe_arabic": "غطفان",
+      "tribe_english": "Ghaṭafān",
+      "region_arabic": "البزاخة",
+      "region_english": "al-Bazākha",
+      "year_ah": 11,
+      "incorporation_mode": "MIXED",
+      "commander_arabic": "خالد بن الوليد",
+      "commander_english": "Khālid ibn al-Walīd",
+      "rebel_leader_arabic": "طليحة بن خويلد",
+      "rebel_leader_english": "Ṭulayḥa ibn Khuwaylid",
+      "battle_site_arabic": "أرض بني أسد",
+      "battle_site_english": "arḍ Banī Asad",
+      "evidence": [
+        "سر نحو طليحة بن خويلد الأسدي ومن معه من بني أسد وغطفان وفزارة",
+        "ندمت بنو غطفان على اتباعهم طليحة بن خويلد",
+        "فهرب في جوف الليل مع جماعة من بني عمه إلى خالد بن الوليد"
+      ],
+      "confidence": 0.85,
+      "notes": "Ghaṭafān initially allied with Ṭulayḥa but later showed regret and some defected to Khālid, representing both military conflict and voluntary submission elements.",
+      "_source": "waqidi",
+      "_detected_terms": {
+        "qital_terms": [],
+        "taa_terms": [],
+        "ridda_terms": []
+      },
+      "_term_mode": "UNKNOWN",
+      "_event_id": "W015",
+      "_source_name": "al-Wāqidī",
+      "_lat": 27.5,
+      "_lon": 41.5,
+      "_region_key": "najd",
+      "_region_en": "Buzākha (Najd)"
+    },
+    {
+      "tribe_arabic": "فزارة",
+      "tribe_english": "Fazāra",
+      "region_arabic": "البزاخة",
+      "region_english": "al-Bazākha",
+      "year_ah": 11,
+      "incorporation_mode": "SUBJUGATION",
+      "commander_arabic": "خالد بن الوليد",
+      "commander_english": "Khālid ibn al-Walīd",
+      "rebel_leader_arabic": "عيينة بن حصن",
+      "rebel_leader_english": "ʿUyayna ibn Ḥiṣn",
+      "battle_site_arabic": "البزاخة",
+      "battle_site_english": "al-Bazākha",
+      "evidence": [
+        "سر نحو طليحة بن خويلد الأسدي ومن معه من بني أسد وغطفان وفزارة",
+        "وكتب الغطفاني إلى عيينة بن حصن الفزاري",
+        "إن تحتشد تسلم، فزارة كلها",
+        "فلما وصل هذا الشعر إلى عيينة بن حصن الفزاري"
+      ],
+      "confidence": 0.85,
+      "notes": "Fazāra tribe under ʿUyayna ibn Ḥiṣn allied with Ṭulayḥa against Muslim forces. Text shows military preparation against them.",
+      "_source": "waqidi",
+      "_detected_terms": {
+        "qital_terms": [],
+        "taa_terms": [
+          "سلم"
+        ],
+        "ridda_terms": []
+      },
+      "_term_mode": "SUBMISSION",
+      "_event_id": "W016",
+      "_source_name": "al-Wāqidī",
+      "_cross_refs": [
+        "T018"
+      ],
+      "_is_cross_ref": true,
+      "_lat": 27.5,
+      "_lon": 41.5,
+      "_region_key": "najd",
+      "_region_en": "Buzākha (Najd)"
+    },
+    {
+      "tribe_arabic": "بنو سليم",
+      "tribe_english": "Banū Sulaym",
+      "region_arabic": "دار بني سليم",
+      "region_english": "dār Banī Sulaym",
+      "year_ah": 11,
+      "incorporation_mode": "SUBJUGATION",
+      "commander_arabic": "معاذ بن واثلة",
+      "commander_english": "Muʿādh ibn Wāthila",
+      "rebel_leader_arabic": "الفجاءة بن عبد ياليل",
+      "rebel_leader_english": "al-Fujāʾa ibn ʿAbd Yālīl",
+      "battle_site_arabic": "أرض بني سليم",
+      "battle_site_english": "arḍ Banī Sulaym",
+      "evidence": [
+        "ثم عطف إلى دار بني سليم",
+        "فأرسل إلى قوم منهم، ودعاهم فأجابوا، فعطفهم على هؤلاء العشرة",
+        "اقتتلوا قتالا شديدا",
+        "فأخذهم السيف، فقتل منهم من قتل",
+        "فأخذ أسيرا"
+      ],
+      "confidence": 0.9,
+      "notes": "Al-Fujāʾa from Banū Sulaym deceived Abū Bakr, took weapons and horses, then turned apostate. Military campaign led by Muʿādh ibn Wāthila resulted in battle, capture of al-Fujāʾa, and his execution by burning.",
+      "_source": "waqidi",
+      "_tribe_region": "Najd",
+      "_tribe_leader": null,
+      "_detected_terms": {
+        "qital_terms": [
+          "قتال",
+          "قتالا شديدا",
+          "سيف",
+          "قتل",
+          "قتل منهم"
+        ],
+        "taa_terms": [],
+        "ridda_terms": []
+      },
+      "_term_mode": "SUBJUGATION",
+      "_event_id": "W017",
+      "_source_name": "al-Wāqidī",
+      "_lat": 24.5,
+      "_lon": 41.0,
+      "_region_key": "najd",
+      "_region_en": "Najd"
+    },
+    {
+      "tribe_arabic": "بنو عامر بن صعصعة",
+      "tribe_english": "Banū ʿĀmir ibn Ṣaʿṣaʿa",
+      "region_arabic": "أرض بني عامر",
+      "region_english": "arḍ Banī ʿĀmir",
+      "year_ah": 11,
+      "incorporation_mode": "SUBJUGATION",
+      "commander_arabic": "خالد بن الوليد",
+      "commander_english": "Khālid ibn al-Walīd",
+      "rebel_leader_arabic": "عامر بن الطفيل",
+      "rebel_leader_english": "ʿĀmir ibn al-Ṭufayl",
+      "battle_site_arabic": null,
+      "battle_site_english": null,
+      "evidence": [
+        "وردكم عامر بن الطفيل عن دين الإسلام",
+        "فأنتم قتلتم بالأمس المنذر بن عمرو الساعدي",
+        "وأنتم غدا نهب لجيش أبي بكر",
+        "لا تأمنوا اليوم خالدا يصبكم غدا منه بقاصمة الظهر"
+      ],
+      "confidence": 0.8,
+      "notes": "Banū ʿĀmir ibn Ṣaʿṣaʿa turned away from Islam by ʿĀmir ibn al-Ṭufayl, killed Muslim companion al-Mundhir ibn ʿAmr. Text shows preparation for military campaign against them.",
+      "_source": "waqidi",
+      "_detected_terms": {
+        "qital_terms": [
+          "قتل"
+        ],
+        "taa_terms": [
+          "أمن"
+        ],
+        "ridda_terms": []
+      },
+      "_term_mode": "MIXED",
+      "_event_id": "W018",
+      "_source_name": "al-Wāqidī",
+      "_lat": 25.0,
+      "_lon": 44.0,
+      "_region_key": "najd",
+      "_region_en": "Najd"
+    },
+    {
+      "tribe_arabic": "بنو أسد",
+      "tribe_english": "Banū Asad",
+      "region_arabic": "بزاخة",
+      "region_english": "Bazākha",
+      "year_ah": 11,
+      "incorporation_mode": "SUBJUGATION",
+      "commander_arabic": "خالد بن الوليد",
+      "commander_english": "Khālid ibn al-Walīd",
+      "rebel_leader_arabic": "طليحة بن خويلد",
+      "rebel_leader_english": "Ṭulayḥa ibn Khuwaylid",
+      "battle_site_arabic": "بزاخة",
+      "battle_site_english": "Bazākha",
+      "evidence": [
+        "عزم خالد على حرب القوم، وزحف إليهم، فوافاهم بأرض يقال لها بزاخة",
+        "واختلط القوم، واقتتلوا، فقتل من الفريقين جماعة",
+        "وحملت بنو أسد وغطفان وفزارة فقاتلوا بين يدي طليحة أشد القتال"
+      ],
+      "confidence": 1.0,
+      "notes": "Major battle at Bazākha against false prophet Ṭulayḥa and his tribal coalition",
+      "_source": "waqidi",
+      "_tribe_region": "Najd",
+      "_tribe_leader": "Ṭulayḥa",
+      "_lat": 27.5,
+      "_lon": 41.5,
+      "_detected_terms": {
+        "qital_terms": [
+          "قتال",
+          "قاتل",
+          "قاتلوا",
+          "حرب",
+          "قتل"
+        ],
+        "taa_terms": [],
+        "ridda_terms": []
+      },
+      "_term_mode": "SUBJUGATION",
+      "_event_id": "W019",
+      "_region_key": "najd",
+      "_region_en": "Buzākha (Najd)",
+      "_source_name": "al-Wāqidī"
+    },
+    {
+      "tribe_arabic": "غطفان",
+      "tribe_english": "Ghaṭafān",
+      "region_arabic": "بزاخة",
+      "region_english": "Bazākha",
+      "year_ah": 11,
+      "incorporation_mode": "SUBJUGATION",
+      "commander_arabic": "خالد بن الوليد",
+      "commander_english": "Khālid ibn al-Walīd",
+      "rebel_leader_arabic": "طليحة بن خويلد",
+      "rebel_leader_english": "Ṭulayḥa ibn Khuwaylid",
+      "battle_site_arabic": "بزاخة",
+      "battle_site_english": "Bazākha",
+      "evidence": [
+        "وحملت بنو أسد وغطفان وفزارة فقاتلوا بين يدي طليحة أشد القتال",
+        "ثم ولى عيينة بن حصن منهزما مع بني عمه من فزارة، وانهزمت بنو أسد وغطفان"
+      ],
+      "confidence": 1.0,
+      "notes": "Part of tribal coalition supporting Ṭulayḥa at Bazākha",
+      "_source": "waqidi",
+      "_lat": 27.5,
+      "_lon": 41.5,
+      "_detected_terms": {
+        "qital_terms": [
+          "قتال",
+          "قاتل",
+          "قاتلوا",
+          "هزم"
+        ],
+        "taa_terms": [],
+        "ridda_terms": []
+      },
+      "_term_mode": "SUBJUGATION",
+      "_event_id": "W020",
+      "_region_key": "najd",
+      "_region_en": "Buzākha (Najd)",
+      "_source_name": "al-Wāqidī"
+    },
+    {
+      "tribe_arabic": "فزارة",
+      "tribe_english": "Fazāra",
+      "region_arabic": "بزاخة",
+      "region_english": "Bazākha",
+      "year_ah": 11,
+      "incorporation_mode": "SUBJUGATION",
+      "commander_arabic": "خالد بن الوليد",
+      "commander_english": "Khālid ibn al-Walīd",
+      "rebel_leader_arabic": "عيينة بن حصن",
+      "rebel_leader_english": "ʿUyayna ibn Ḥiṣn",
+      "battle_site_arabic": "بزاخة",
+      "battle_site_english": "Bazākha",
+      "evidence": [
+        "وحملت بنو أسد وغطفان وفزارة فقاتلوا بين يدي طليحة أشد القتال",
+        "فأسر عيينة بن حصن الفزاري، وأسر معه جماعة من بني عمه"
+      ],
+      "confidence": 1.0,
+      "notes": "Led by ʿUyayna ibn Ḥiṣn who was captured; later submitted to Abū Bakr",
+      "_source": "waqidi",
+      "_lat": 27.5,
+      "_lon": 41.5,
+      "_detected_terms": {
+        "qital_terms": [
+          "قتال",
+          "قاتل",
+          "قاتلوا"
+        ],
+        "taa_terms": [],
+        "ridda_terms": []
+      },
+      "_term_mode": "SUBJUGATION",
+      "_event_id": "W021",
+      "_region_key": "najd",
+      "_region_en": "Buzākha (Najd)",
+      "_source_name": "al-Wāqidī",
+      "_cross_refs": [
+        "T018"
+      ],
+      "_is_cross_ref": true
+    },
+    {
+      "tribe_arabic": "بنو تميم",
+      "tribe_english": "Banū Tamīm",
+      "region_arabic": "البطاح",
+      "region_english": "al-Biṭāḥ",
+      "year_ah": 11,
+      "incorporation_mode": "SUBJUGATION",
+      "commander_arabic": "خالد بن الوليد",
+      "commander_english": "Khālid ibn al-Walīd",
+      "rebel_leader_arabic": "مالك بن نويرة",
+      "rebel_leader_english": "Mālik ibn Nuwayra",
+      "battle_site_arabic": "البطاح",
+      "battle_site_english": "al-Biṭāḥ",
+      "evidence": [
+        "ثم سار خالد بمن معه من المهاجرين يريد أرض بني تميم",
+        "فأخذوه أسيرا، وأخذوا امرأته معه",
+        "فأمر خالد بضرب أعناق بني عمه بديا",
+        "ثم قدم خالد مالك بن نويرة ليضرب عنقه"
+      ],
+      "confidence": 1.0,
+      "notes": "Campaign against Mālik ibn Nuwayra who refused zakāt; executed by Khālid",
+      "_source": "waqidi",
+      "_tribe_region": "Najd",
+      "_tribe_leader": "Mālik ibn Nuwayra (disputed)",
+      "_lat": 26.5,
+      "_lon": 44.0,
+      "_detected_terms": {
+        "qital_terms": [],
+        "taa_terms": [],
+        "ridda_terms": []
+      },
+      "_term_mode": "UNKNOWN",
+      "_event_id": "W022",
+      "_region_key": "najd",
+      "_region_en": "al-Buṭāḥ (Najd)",
+      "_source_name": "al-Wāqidī",
+      "_cross_refs": [
+        "T025"
+      ],
+      "_is_cross_ref": true
+    },
+    {
+      "tribe_arabic": "بنو حنيفة",
+      "tribe_english": "Banū Ḥanīfa",
+      "region_arabic": "اليمامة",
+      "region_english": "al-Yamāma",
+      "year_ah": 11,
+      "incorporation_mode": "SUBJUGATION",
+      "commander_arabic": "خالد بن الوليد",
+      "commander_english": "Khālid ibn al-Walīd",
+      "rebel_leader_arabic": "مسيلمة بن حبيب",
+      "rebel_leader_english": "Musaylima ibn Ḥabīb",
+      "battle_site_arabic": "اليمامة",
+      "battle_site_english": "al-Yamāma",
+      "evidence": [
+        "وجعل مسيلمة بن حبيب الكذاب يعلو أمره باليمامة يوما بعد يوم",
+        "يا بني حنيفة، أريد أن تخبروني بماذا صارت قريش أحق بالنبوة والإمامة منكم",
+        "فأقبل قوم من أشراف بني حنيفة إلى الرجال بن نهشل ومحكم بن الطفيل"
+      ],
+      "confidence": 0.9,
+      "notes": "Campaign against false prophet Musaylima mentioned but battle details not fully described in this excerpt",
+      "_source": "waqidi",
+      "_tribe_region": "al-Yamāma",
+      "_tribe_leader": "Musaylima",
+      "_detected_terms": {
+        "qital_terms": [],
+        "taa_terms": [],
+        "ridda_terms": [
+          "الكذاب",
+          "كذاب"
+        ]
+      },
+      "_term_mode": "UNKNOWN",
+      "_event_id": "W023",
+      "_lat": 24.0,
+      "_lon": 46.7,
+      "_region_key": "yamama",
+      "_region_en": "al-Yamāma",
+      "_source_name": "al-Wāqidī"
+    },
+    {
+      "tribe_arabic": "بنو حنيفة",
+      "tribe_english": "Banū Ḥanīfa",
+      "region_arabic": "اليمامة",
+      "region_english": "al-Yamāma",
+      "year_ah": 12,
+      "incorporation_mode": "SUBJUGATION",
+      "commander_arabic": "خالد بن الوليد",
+      "commander_english": "Khālid ibn al-Walīd",
+      "rebel_leader_arabic": "مسيلمة",
+      "rebel_leader_english": "Musaylima",
+      "battle_site_arabic": "عقرباء",
+      "battle_site_english": "ʿAqrabāʾ",
+      "evidence": [
+        "سر نحو بني حنيفة مسيلمة الكذاب",
+        "فإذا قدمت عليهم فلا تبدأهم بقتال حتى تدعوهم إلى داعية الإسلام",
+        "فمن أبى فاستعمل فيه السيف",
+        "واشتبك الحرب بين الفريقين، فقتل من المسلمين على زهاء ثلاث مائة رجل، ومن بني حنيفة أضعافهم",
+        "حتى قتل منهم جماعة وكشفوهم كشفة فاضحة"
+      ],
+      "confidence": 0.95,
+      "notes": "Major battle at ʿAqrabāʾ in al-Yamāma between Khālid's forces and Banū Ḥanīfa following Musaylima. Text shows clear military campaign with extensive battle descriptions and casualties on both sides.",
+      "_source": "waqidi",
+      "_tribe_region": "al-Yamāma",
+      "_tribe_leader": "Musaylima",
+      "_lat": 24.0,
+      "_lon": 46.7,
+      "_detected_terms": {
+        "qital_terms": [
+          "قتال",
+          "حرب",
+          "سيف",
+          "قتل",
+          "قتل منهم"
+        ],
+        "taa_terms": [
+          "سلم"
+        ],
+        "ridda_terms": [
+          "الكذاب",
+          "كذاب"
+        ]
+      },
+      "_term_mode": "MIXED",
+      "_event_id": "W024",
+      "_region_key": "yamama",
+      "_region_en": "ʿAqrabāʾ (al-Yamāma)",
+      "_source_name": "al-Wāqidī",
+      "_cross_refs": [
+        "B003",
+        "B004",
+        "B020",
+        "T026",
+        "T028",
+        "T029",
+        "T031",
+        "T051"
+      ],
+      "_is_cross_ref": true
+    },
+    {
+      "tribe_arabic": "بنو تميم",
+      "tribe_english": "Banū Tamīm",
+      "region_arabic": "نجد",
+      "region_english": "Najd",
+      "year_ah": 12,
+      "incorporation_mode": "MIXED",
+      "commander_arabic": "خالد بن الوليد",
+      "commander_english": "Khālid ibn al-Walīd",
+      "rebel_leader_arabic": "سجاح بنت المنذر",
+      "rebel_leader_english": "Sajāḥ bint al-Mundhir",
+      "battle_site_arabic": null,
+      "battle_site_english": null,
+      "evidence": [
+        "وقد كانت ادعت النبوة وتبعها رجال من قومها: غيلان بن خرشنة، والحارث بن الأهتم، وجماعة من بني تميم",
+        "وكان لها مؤذن يؤذن لها ويقول: أشهد أن سجاح نبية الله",
+        "فسارت سجاح هذه إلى مسيلمة الكذاب"
+      ],
+      "confidence": 0.85,
+      "notes": "Banū Tamīm followers of false prophetess Sajāḥ who later allied with Musaylima. Shows both rebellion (following false prophet) and eventual submission when Sajāḥ went to Musaylima.",
+      "_source": "waqidi",
+      "_tribe_region": "Najd",
+      "_tribe_leader": "Mālik ibn Nuwayra (disputed)",
+      "_detected_terms": {
+        "qital_terms": [],
+        "taa_terms": [],
+        "ridda_terms": [
+          "الكذاب",
+          "كذاب"
+        ]
+      },
+      "_term_mode": "UNKNOWN",
+      "_event_id": "W025",
+      "_lat": 24.5,
+      "_lon": 45.5,
+      "_region_key": "najd",
+      "_region_en": "Najd",
+      "_source_name": "al-Wāqidī"
+    },
+    {
+      "tribe_arabic": "بنو حنيفة",
+      "tribe_english": "Banū Ḥanīfa",
+      "region_arabic": "اليمامة",
+      "region_english": "al-Yamāma",
+      "year_ah": 12,
+      "incorporation_mode": "SUBMISSION",
+      "commander_arabic": "خالد بن الوليد",
+      "commander_english": "Khālid ibn al-Walīd",
+      "rebel_leader_arabic": null,
+      "rebel_leader_english": null,
+      "battle_site_arabic": null,
+      "battle_site_english": null,
+      "evidence": [
+        "ثم خرج ثمامة بن أثال في جوف الليل، في نفر من بني حنيفة، حتى صار إلى خالد فاستأمن إليه، فأمنه خالد وأمن أصحابه",
+        "قال: فقال له ثمامة: (ويحكم يا بني حنيفة، اسمعوا قولي تهتدوا وأطيعوا أمري ترشدوا، واعلموا أن محمد بن عبد الله نبي مرسل لا شك في نبوته، وهذا مسيلمة رجل كذاب)",
+        "فقال القوم: (نحن معك يا أبا عامر، فكن من ذلك على علم)"
+      ],
+      "confidence": 0.9,
+      "notes": "Voluntary submission of Thumāma ibn Athāl and a group from Banū Ḥanīfa who sought amnesty from Khālid and rejected Musaylima's false prophethood.",
+      "_source": "waqidi",
+      "_tribe_region": "al-Yamāma",
+      "_tribe_leader": "Musaylima",
+      "_detected_terms": {
+        "qital_terms": [],
+        "taa_terms": [
+          "أمن",
+          "استأمن"
+        ],
+        "ridda_terms": [
+          "كذاب"
+        ]
+      },
+      "_term_mode": "SUBMISSION",
+      "_event_id": "W026",
+      "_lat": 24.0,
+      "_lon": 46.7,
+      "_region_key": "yamama",
+      "_region_en": "al-Yamāma",
+      "_source_name": "al-Wāqidī",
+      "_cross_refs": [
+        "B003",
+        "B004",
+        "B020",
+        "T026",
+        "T028",
+        "T029",
+        "T031",
+        "T051"
+      ],
+      "_is_cross_ref": true
+    },
+    {
+      "tribe_arabic": "بنو حنيفة",
+      "tribe_english": "Banū Ḥanīfa",
+      "region_arabic": "اليمامة",
+      "region_english": "al-Yamāma",
+      "year_ah": 11,
+      "incorporation_mode": "SUBJUGATION",
+      "commander_arabic": "خالد بن الوليد",
+      "commander_english": "Khālid ibn al-Walīd",
+      "rebel_leader_arabic": "مسيلمة",
+      "rebel_leader_english": "Musaylima",
+      "battle_site_arabic": "الحديقة",
+      "battle_site_english": "al-Ḥadīqa",
+      "evidence": [
+        "دعانا أبو بكر رضي الله عنه إلى قتال بني حنيفة، فلما قاتلناهم علمنا أنهم أولوا بأس شديد",
+        "ثم إن المسلمين اجتمعت آراؤهم أن يحملوا بأجمعهم على بني حنيفة حملة واحدة",
+        "فحملوا عليهم فكشفوهم، حتى ألجئوهم إلى حديقة لهم",
+        "فلم يزل يقاتل في جوف الحديقة حتى قتل",
+        "واقتحم المسلمون بأجمعهم إلى مسيلمة وأصحابه، فقاتلوهم حتى احمرت أرض الحديقة من الدماء",
+        "فوقعت الحربة في خاصرته فسقط مسيلمة عدو الله عن فرسه قتيلا"
+      ],
+      "confidence": 1.0,
+      "notes": "Major battle at the Garden (al-Ḥadīqa) where Musaylima was killed by Waḥshī and ʿAbd Allāh ibn Zayd. Text mentions heavy casualties on both sides, with over 700 Qurʾān reciters killed among Muslims. After Musaylima's death, Mujāʿa ibn Murāra negotiated a peace treaty through deception.",
+      "_source": "waqidi",
+      "_tribe_region": "al-Yamāma",
+      "_tribe_leader": "Musaylima",
+      "_detected_terms": {
+        "qital_terms": [
+          "قتال",
+          "قاتل",
+          "حرب",
+          "قتل",
+          "اقتحم"
+        ],
+        "taa_terms": [
+          "سلم"
+        ],
+        "ridda_terms": []
+      },
+      "_term_mode": "MIXED",
+      "_event_id": "W027",
+      "_lat": 24.0,
+      "_lon": 46.7,
+      "_region_key": "yamama",
+      "_region_en": "al-Yamāma",
+      "_source_name": "al-Wāqidī",
+      "_cross_refs": [
+        "B004",
+        "T026",
+        "T028",
+        "T031",
+        "T051"
+      ],
+      "_is_cross_ref": true
+    },
+    {
+      "tribe_arabic": "بنو حنيفة",
+      "tribe_english": "Banū Ḥanīfa",
+      "region_arabic": "اليمامة",
+      "region_english": "al-Yamāma",
+      "year_ah": 11,
+      "incorporation_mode": "MIXED",
+      "commander_arabic": "خالد بن الوليد",
+      "commander_english": "Khālid ibn al-Walīd",
+      "rebel_leader_arabic": "مجاعة بن مرارة",
+      "rebel_leader_english": "Mujāʿa ibn Murāra",
+      "battle_site_arabic": null,
+      "battle_site_english": null,
+      "evidence": [
+        "فصالحه خالد على ما ظهر من الصفراء والبيضاء من الذهب والفضة، وعلى ثلث الكراع وربع من السبي",
+        "وقد صالحت القوم صلح مكر، فلا تبرحن عن مواضعكن حتى يتم الصلح",
+        "فأتمم للقوم ما صالحتهم عليه، ولا تغدر بهم",
+        "لم يحب أن ينقض الصلح الذي كان بينه وبين مجاعة"
+      ],
+      "confidence": 0.9,
+      "notes": "Peace treaty negotiated by Mujāʿa ibn Murāra after military defeat. Mujāʿa deceived Khālid by dressing women as warriors on the fortress walls to appear stronger. Treaty terms included gold, silver, one-third of horses, and one-fourth of captives.",
+      "_source": "waqidi",
+      "_tribe_region": "al-Yamāma",
+      "_tribe_leader": "Musaylima",
+      "_detected_terms": {
+        "qital_terms": [
+          "سبي"
+        ],
+        "taa_terms": [
+          "صالح",
+          "صلح"
+        ],
+        "ridda_terms": []
+      },
+      "_term_mode": "MIXED",
+      "_event_id": "W028",
+      "_lat": 24.0,
+      "_lon": 46.7,
+      "_region_key": "yamama",
+      "_region_en": "al-Yamāma",
+      "_source_name": "al-Wāqidī",
+      "_cross_refs": [
+        "T029"
+      ],
+      "_is_cross_ref": true
+    },
+    {
+      "tribe_arabic": "بكر بن وائل",
+      "tribe_english": "Bakr ibn Wāʾil",
+      "region_arabic": "البحرين",
+      "region_english": "al-Baḥrayn",
+      "year_ah": 12,
+      "incorporation_mode": "SUBJUGATION",
+      "commander_arabic": null,
+      "commander_english": null,
+      "rebel_leader_arabic": "المنذر بن النعمان",
+      "rebel_leader_english": "al-Mundhir ibn al-Nuʿmān",
+      "battle_site_arabic": null,
+      "battle_site_english": null,
+      "evidence": [
+        "وكان من سبب أهل البحرين وارتدادهم عن دين الإسلام، أن نفرا من بكر بن وائل كانوا يعادون قبائل عبد القيس",
+        "تعالوا حتى نرد الملك في دار النعمان ابن المنذر، فإنه أحق بهذا الأمر من ابن أبي قحافة",
+        "فأرسل كسرى إلى المنذر بن النعمان، فدعاه وهو يومئذ غلام حدث السن حين بقل وجهه فخلع عليه بخلع، وتوجه بتاج وحمله على مائة من الخيل، وضم إليه سبعة آلاف فارس وراجل"
+      ],
+      "confidence": 0.8,
+      "notes": "Bakr ibn Wāʾil apostatized in Baḥrayn region, allied with Sassanian Persia and installed al-Mundhir ibn al-Nuʿmān as ruler. They opposed the loyal ʿAbd al-Qays tribe. Text breaks off before describing the actual military campaign resolution.",
+      "_source": "waqidi",
+      "_tribe_region": "al-Baḥrayn",
+      "_tribe_leader": "al-Ḥuṭam",
+      "_detected_terms": {
+        "qital_terms": [],
+        "taa_terms": [],
+        "ridda_terms": [
+          "ارتد"
+        ]
+      },
+      "_term_mode": "UNKNOWN",
+      "_event_id": "W029",
+      "_lat": 26.0,
+      "_lon": 50.5,
+      "_region_key": "bahrayn",
+      "_region_en": "al-Baḥrayn",
+      "_source_name": "al-Wāqidī"
+    },
+    {
+      "tribe_arabic": "بنو بكر بن وائل",
+      "tribe_english": "Banū Bakr ibn Wāʾil",
+      "region_arabic": "البحرين",
+      "region_english": "al-Baḥrayn",
+      "year_ah": 11,
+      "incorporation_mode": "SUBJUGATION",
+      "commander_arabic": "العلاء بن الحضرمي",
+      "commander_english": "al-ʿAlāʾ ibn al-Ḥaḍramī",
+      "rebel_leader_arabic": "المنذر بن النعمان",
+      "rebel_leader_english": "al-Mundhir ibn al-Nuʿmān",
+      "battle_site_arabic": "جواثي",
+      "battle_site_english": "Jawāthī",
+      "evidence": [
+        "توسطت بنو بكر بن وائل أرض البحرين",
+        "فاقتتل القوم قتالا شديدا، فكانت الدائرة على بكر بن وائل",
+        "أقبلت بنو بكر بن وائل والفرس حتى نزلوا على الحصن فأحدقوا به، فحاصروا عبد القيس حصارا شديدا",
+        "وقد ارتدوا عن دين الإسلام",
+        "فلم يشعر الفرس ومن معهم من العرب إلا وحوافر الخيل تطؤهم",
+        "وانهزمت بنو بكر بن وائل، فلحقوا بالبراري والفلوات هائمين من سيوف المهاجرين والأنصار"
+      ],
+      "confidence": 0.95,
+      "notes": "Major Ridda campaign in Bahrain. Banū Bakr allied with Persians, installed al-Mundhir as king, besieged loyal ʿAbd al-Qays tribe at Jawāthī fortress. Al-ʿAlāʾ conducted night attack, defeated them decisively.",
+      "_source": "waqidi",
+      "_detected_terms": {
+        "qital_terms": [
+          "قتال",
+          "قتالا شديدا",
+          "هزم",
+          "حصار",
+          "حاصر"
+        ],
+        "taa_terms": [],
+        "ridda_terms": [
+          "ارتد",
+          "ارتدوا"
+        ]
+      },
+      "_term_mode": "SUBJUGATION",
+      "_event_id": "W030",
+      "_lat": 26.0,
+      "_lon": 50.5,
+      "_region_key": "bahrayn",
+      "_region_en": "al-Baḥrayn",
+      "_source_name": "al-Wāqidī",
+      "_cross_refs": [
+        "T033",
+        "T035"
+      ],
+      "_is_cross_ref": true
+    },
+    {
+      "tribe_arabic": "عبد القيس",
+      "tribe_english": "ʿAbd al-Qays",
+      "region_arabic": "البحرين",
+      "region_english": "al-Baḥrayn",
+      "year_ah": 11,
+      "incorporation_mode": "SUBMISSION",
+      "commander_arabic": "العلاء بن الحضرمي",
+      "commander_english": "al-ʿAlāʾ ibn al-Ḥaḍramī",
+      "rebel_leader_arabic": null,
+      "rebel_leader_english": null,
+      "battle_site_arabic": "جواثي",
+      "battle_site_english": "Jawāthī",
+      "evidence": [
+        "واجتمعت عبد القيس إلى رئيس من رؤسائهم يقال له: الجارود بن المعلى العبدي في أربعة ألف من عبد القيس",
+        "واستأمن عامة عبد القيس إلى بكر بن وائل",
+        "واجتمعت عبد القيس إلى العلاء بن الحضرمي من جميع نواحي البحرين"
+      ],
+      "confidence": 0.9,
+      "notes": "ʿAbd al-Qays remained loyal to Islam but were besieged by apostate Banū Bakr. After rescue by al-ʿAlāʾ, they rallied to support the Muslim cause.",
+      "_source": "waqidi",
+      "_tribe_region": "al-Baḥrayn",
+      "_tribe_leader": "al-Jārūd",
+      "_detected_terms": {
+        "qital_terms": [],
+        "taa_terms": [
+          "أمن",
+          "استأمن"
+        ],
+        "ridda_terms": []
+      },
+      "_term_mode": "SUBMISSION",
+      "_event_id": "W031",
+      "_lat": 26.0,
+      "_lon": 50.5,
+      "_region_key": "bahrayn",
+      "_region_en": "al-Baḥrayn",
+      "_source_name": "al-Wāqidī",
+      "_cross_refs": [
+        "T032"
+      ],
+      "_is_cross_ref": true
+    },
+    {
+      "tribe_arabic": "بنو حنيفة",
+      "tribe_english": "Banū Ḥanīfa",
+      "region_arabic": "اليمامة",
+      "region_english": "al-Yamāma",
+      "year_ah": 11,
+      "incorporation_mode": "SUBMISSION",
+      "commander_arabic": "العلاء بن الحضرمي",
+      "commander_english": "al-ʿAlāʾ ibn al-Ḥaḍramī",
+      "rebel_leader_arabic": null,
+      "rebel_leader_english": null,
+      "battle_site_arabic": null,
+      "battle_site_english": null,
+      "evidence": [
+        "فاستقبله ثمامة بن أثال الحنفي، وكان مسلما تقيا",
+        "أنت تعلم أن قومي قريب عهدهم بالردة مع مسيلمة الكذاب",
+        "وسار ثمامة بن أثال مع العلاء بن الحضرمي في نفر من بني عمه",
+        "ومعه ثمامة بن أثال، وقيس بن عاصم المنقري، في جماعة من بني تميم، وبني حنيفة"
+      ],
+      "confidence": 0.85,
+      "notes": "Partial submission - Thumāma ibn Uthāl and some Ḥanīfa joined al-ʿAlāʾ's campaign, though most of the tribe refused due to their recent involvement with Musaylima.",
+      "_source": "waqidi",
+      "_tribe_region": "al-Yamāma",
+      "_tribe_leader": "Musaylima",
+      "_detected_terms": {
+        "qital_terms": [],
+        "taa_terms": [
+          "سلم"
+        ],
+        "ridda_terms": [
+          "ردة",
+          "الكذاب",
+          "كذاب"
+        ]
+      },
+      "_term_mode": "SUBMISSION",
+      "_event_id": "W032",
+      "_lat": 24.0,
+      "_lon": 46.7,
+      "_region_key": "yamama",
+      "_region_en": "al-Yamāma",
+      "_source_name": "al-Wāqidī"
+    },
+    {
+      "tribe_arabic": "بنو تميم",
+      "tribe_english": "Banū Tamīm",
+      "region_arabic": "نجد",
+      "region_english": "Najd",
+      "year_ah": 11,
+      "incorporation_mode": "SUBMISSION",
+      "commander_arabic": "العلاء بن الحضرمي",
+      "commander_english": "al-ʿAlāʾ ibn al-Ḥaḍramī",
+      "rebel_leader_arabic": null,
+      "rebel_leader_english": null,
+      "battle_site_arabic": null,
+      "battle_site_english": null,
+      "evidence": [
+        "لقيه قيس بن عاصم المنقري التميمي، فسلم عليه ورحب به",
+        "فسار العلاء بن الحضرمي ومعه قيس بن عاصم المنقري في عشرين فارسا من بني تميم",
+        "فكان لا ينتهي إلى ماء من مياه بني سعد إلا تلقوه بالقرى والإنزال والعلوفة",
+        "في جماعة من بني تميم، وبني حنيفة"
+      ],
+      "confidence": 0.9,
+      "notes": "Voluntary support - Qays ibn ʿĀṣim provided safe passage and military support to al-ʿAlāʾ's expedition through Tamīm territory.",
+      "_source": "waqidi",
+      "_tribe_region": "Najd",
+      "_tribe_leader": "Mālik ibn Nuwayra (disputed)",
+      "_detected_terms": {
+        "qital_terms": [],
+        "taa_terms": [
+          "سلم"
+        ],
+        "ridda_terms": []
+      },
+      "_term_mode": "SUBMISSION",
+      "_event_id": "W033",
+      "_lat": 24.5,
+      "_lon": 45.5,
+      "_region_key": "najd",
+      "_region_en": "Najd",
+      "_source_name": "al-Wāqidī"
+    },
+    {
+      "tribe_arabic": "كندة",
+      "tribe_english": "Kinda",
+      "region_arabic": "حضرموت",
+      "region_english": "Ḥaḍramawt",
+      "year_ah": 11,
+      "incorporation_mode": "MIXED",
+      "commander_arabic": "زياد بن لبيد",
+      "commander_english": "Ziyād ibn Labīd",
+      "rebel_leader_arabic": "الأشعث بن قيس",
+      "rebel_leader_english": "al-Ashʿath ibn Qays",
+      "battle_site_arabic": null,
+      "battle_site_english": null,
+      "evidence": [
+        "عزم على محاربة أهل حضرموت من كندة",
+        "فقال له الأشعث بن قيس: يا هذا، إنا قد سمعنا كلامك ودعائك إلى هذا الرجل",
+        "وافترق القوم فرقتين، فرقة أقاموا على دين الإسلام، فلم يرجعوا وعزموا على إقام الصلاة وإيتاء الزكاة، وفرقة عزموا على منع الزكاة والعصيان",
+        "أطعنا رسول الله إذ كان وسطنا فيا عجبا ممن يطيع أبا بكر",
+        "وما لبني تيم بن مرة إمرة علينا"
+      ],
+      "confidence": 0.9,
+      "notes": "Mixed situation - Kinda split into two factions: one remained loyal to Islam, another led by al-Ashʿath rejected zakāt payment and Abū Bakr's authority. Text cuts off before resolution.",
+      "_source": "waqidi",
+      "_tribe_region": "Ḥaḍramawt",
+      "_tribe_leader": "al-Ashʿath ibn Qays",
+      "_detected_terms": {
+        "qital_terms": [
+          "حارب"
+        ],
+        "taa_terms": [
+          "رجع",
+          "رجعوا",
+          "الزكاة"
+        ],
+        "ridda_terms": [
+          "منع الزكاة"
+        ]
+      },
+      "_term_mode": "MIXED",
+      "_event_id": "W034",
+      "_lat": 15.9,
+      "_lon": 49.0,
+      "_region_key": "hadramawt",
+      "_region_en": "Ḥaḍramawt",
+      "_source_name": "al-Wāqidī",
+      "_cross_refs": [
+        "B010",
+        "B029",
+        "T046",
+        "T048",
+        "T050"
+      ],
+      "_is_cross_ref": true
+    },
+    {
+      "tribe_arabic": "كندة",
+      "tribe_english": "Kinda",
+      "region_arabic": "حضرموت",
+      "region_english": "Ḥaḍramawt",
+      "year_ah": 11,
+      "incorporation_mode": "SUBJUGATION",
+      "commander_arabic": "زياد بن لبيد",
+      "commander_english": "Ziyād ibn Labīd",
+      "rebel_leader_arabic": "الأشعث بن قيس",
+      "rebel_leader_english": "al-Ashʿath ibn Qays",
+      "battle_site_arabic": "تريم",
+      "battle_site_english": "Tarīm",
+      "evidence": [
+        "فاغتم أبو بكر رضي الله عنه لذلك غما شديدا، فقال له بعض المسلمين: يا خليفة رسول الله، هذا خالد بن الوليد مقيم بأرض اليمامة، وقد تعلم أنه رجل مظفر، فوجه به إليهم",
+        "ثم جمع أبو بكر جيشا فضمهم إلى زياد بن لبيد، وأمره بالمسير إلى القوم، فسار زياد من المدينة في أربعة ألف من المهاجرين والأنصار يريد حضرموت",
+        "فوضعوا فيهم السيوف، وقتلوا أختا لهم يقال لها العمردة واحتووا على أموالهم وقليلهم وكثيرهم",
+        "فاقتتلوا هنالك ساعة، ووقعت الهزيمة على زياد ومن معه من المسلمين، وقتل منهم على نيف من ثلاث مائة رجل"
+      ],
+      "confidence": 0.95,
+      "notes": "Major Ridda campaign against Kinda tribe led by al-Ashʿath. Initial defeat of Muslim forces, followed by siege at Tarīm. Eventually resolved through negotiation.",
+      "_source": "waqidi",
+      "_tribe_region": "Ḥaḍramawt",
+      "_tribe_leader": "al-Ashʿath ibn Qays",
+      "_detected_terms": {
+        "qital_terms": [
+          "قتل",
+          "قتلوا",
+          "قتل منهم",
+          "هزيمة",
+          "ظفر"
+        ],
+        "taa_terms": [
+          "سلم"
+        ],
+        "ridda_terms": [
+          "ردة"
+        ]
+      },
+      "_term_mode": "MIXED",
+      "_event_id": "W035",
+      "_lat": 15.9,
+      "_lon": 49.0,
+      "_region_key": "hadramawt",
+      "_region_en": "Ḥaḍramawt",
+      "_source_name": "al-Wāqidī",
+      "_cross_refs": [
+        "B010",
+        "B029",
+        "T046",
+        "T048",
+        "T050"
+      ],
+      "_is_cross_ref": true
+    },
+    {
+      "tribe_arabic": "بنو هند",
+      "tribe_english": "Banū Hind",
+      "region_arabic": "حضرموت",
+      "region_english": "Ḥaḍramawt",
+      "year_ah": 11,
+      "incorporation_mode": "SUBJUGATION",
+      "commander_arabic": "زياد بن لبيد",
+      "commander_english": "Ziyād ibn Labīd",
+      "rebel_leader_arabic": null,
+      "rebel_leader_english": null,
+      "battle_site_arabic": null,
+      "battle_site_english": null,
+      "evidence": [
+        "وسار زياد إلى حي من أحياء كندة يقال لهم بنو هند، فكبسهم وقاتلهم فوقعت الهزيمة عليهم، فقتل منهم جماعة، وولوا الأدبار، واحتوى المسلمون على نسائهم وذراريهم وأموالهم"
+      ],
+      "confidence": 0.9,
+      "notes": "Sub-tribe of Kinda defeated by Ziyād's forces during Ridda campaign",
+      "_source": "waqidi",
+      "_detected_terms": {
+        "qital_terms": [
+          "قاتل",
+          "قاتلهم",
+          "قتل",
+          "قتل منهم",
+          "هزيمة"
+        ],
+        "taa_terms": [
+          "سلم"
+        ],
+        "ridda_terms": []
+      },
+      "_term_mode": "MIXED",
+      "_event_id": "W036",
+      "_lat": 15.9,
+      "_lon": 49.0,
+      "_region_key": "hadramawt",
+      "_region_en": "Ḥaḍramawt",
+      "_source_name": "al-Wāqidī"
+    },
+    {
+      "tribe_arabic": "بنو العاتك",
+      "tribe_english": "Banū al-ʿĀtik",
+      "region_arabic": "حضرموت",
+      "region_english": "Ḥaḍramawt",
+      "year_ah": 11,
+      "incorporation_mode": "SUBJUGATION",
+      "commander_arabic": "زياد بن لبيد",
+      "commander_english": "Ziyād ibn Labīd",
+      "rebel_leader_arabic": null,
+      "rebel_leader_english": null,
+      "battle_site_arabic": null,
+      "battle_site_english": null,
+      "evidence": [
+        "ثم سار زياد بن لبيد إلى حي من أحياء كندة يقال لهم بنو العاتك، فوافاهم وهم غافلون، فلما أشرفت الخيل عليهم تصايحت النساء وخرج الرجال إلى الحرب، فاقتتلوا ساعة، ووقعت الهزيمة عليهم، فانهزموا وأسلموا ديارهم ونساءهم وأموالهم"
+      ],
+      "confidence": 0.9,
+      "notes": "Another Kinda sub-tribe subjugated through military action",
+      "_source": "waqidi",
+      "_detected_terms": {
+        "qital_terms": [
+          "حرب",
+          "هزم",
+          "هزيمة",
+          "انهزموا"
+        ],
+        "taa_terms": [
+          "أسلم",
+          "أسلموا",
+          "سلم",
+          "سلموا"
+        ],
+        "ridda_terms": []
+      },
+      "_term_mode": "MIXED",
+      "_event_id": "W037",
+      "_lat": 15.9,
+      "_lon": 49.0,
+      "_region_key": "hadramawt",
+      "_region_en": "Ḥaḍramawt",
+      "_source_name": "al-Wāqidī"
+    },
+    {
+      "tribe_arabic": "بنو حجر",
+      "tribe_english": "Banū Ḥajar",
+      "region_arabic": "حضرموت",
+      "region_english": "Ḥaḍramawt",
+      "year_ah": 11,
+      "incorporation_mode": "SUBJUGATION",
+      "commander_arabic": "زياد بن لبيد",
+      "commander_english": "Ziyād ibn Labīd",
+      "rebel_leader_arabic": null,
+      "rebel_leader_english": null,
+      "battle_site_arabic": null,
+      "battle_site_english": null,
+      "evidence": [
+        "ثم سار زياد بن لبيد إلى حي من أحياء كندة يقال لهم بنو حجر، وهم يومئذ جمرات كندة وفرسانهم، فلم يشعروا إلا والخيل قد كبستهم في جوف الليل، فاقتتل القوم ساعة، وقتل من بني حجر مائتا رجل، وأسر منهم خمسون رجلا، وولى الباقون الأدبار"
+      ],
+      "confidence": 0.9,
+      "notes": "Described as the elite warriors of Kinda (جمرات كندة وفرسانهم). Heavy casualties: 200 killed, 50 captured",
+      "_source": "waqidi",
+      "_detected_terms": {
+        "qital_terms": [
+          "قتل"
+        ],
+        "taa_terms": [],
+        "ridda_terms": []
+      },
+      "_term_mode": "SUBJUGATION",
+      "_event_id": "W038",
+      "_lat": 15.9,
+      "_lon": 49.0,
+      "_region_key": "hadramawt",
+      "_region_en": "Ḥaḍramawt",
+      "_source_name": "al-Wāqidī"
+    },
+    {
+      "tribe_arabic": "بنو جمر",
+      "tribe_english": "Banū Jamar",
+      "region_arabic": "حضرموت",
+      "region_english": "Ḥaḍramawt",
+      "year_ah": 11,
+      "incorporation_mode": "SUBJUGATION",
+      "commander_arabic": "زياد بن لبيد",
+      "commander_english": "Ziyād ibn Labīd",
+      "rebel_leader_arabic": null,
+      "rebel_leader_english": null,
+      "battle_site_arabic": null,
+      "battle_site_english": null,
+      "evidence": [
+        "ثم سار زياد بن لبيد إلى حي من أحياء كندة يقال لهم بنو جمر، وهم فرسان وأبطال، فالتقى القوم للقتال، فقتل من المسلمين عشرون رجلا، وقتل من بني جمر قريب من ذلك، ووقعت الهزيمة عليهم، فولوا الأدبار، وأسلموا الديار"
+      ],
+      "confidence": 0.9,
+      "notes": "Notable for causing Muslim casualties (20 killed) before being defeated",
+      "_source": "waqidi",
+      "_detected_terms": {
+        "qital_terms": [
+          "قتال",
+          "قتل",
+          "هزيمة"
+        ],
+        "taa_terms": [
+          "أسلم",
+          "أسلموا",
+          "سلم",
+          "سلموا"
+        ],
+        "ridda_terms": []
+      },
+      "_term_mode": "MIXED",
+      "_event_id": "W039",
+      "_lat": 15.9,
+      "_lon": 49.0,
+      "_region_key": "hadramawt",
+      "_region_en": "Ḥaḍramawt",
+      "_source_name": "al-Wāqidī"
+    },
+    {
+      "tribe_arabic": "السكاسك",
+      "tribe_english": "al-Sakāsik",
+      "region_arabic": "حضرموت",
+      "region_english": "Ḥaḍramawt",
+      "year_ah": 11,
+      "incorporation_mode": "SUBMISSION",
+      "commander_arabic": "زياد بن لبيد",
+      "commander_english": "Ziyād ibn Labīd",
+      "rebel_leader_arabic": null,
+      "rebel_leader_english": null,
+      "battle_site_arabic": null,
+      "battle_site_english": null,
+      "evidence": [
+        "واتصل هذا الخبر بالسكاسك والسكون، وهما قبيلتان من قبائل كندة، فكأنهم اتقوا على أنفسهم، فركبوا في جوف الليل وساروا إلى زياد بن لبيد، فاستأمنوا إليه وعزموا على نصرته"
+      ],
+      "confidence": 0.85,
+      "notes": "Voluntarily submitted and sought protection (استأمنوا) after hearing of other defeats",
+      "_source": "waqidi",
+      "_detected_terms": {
+        "qital_terms": [],
+        "taa_terms": [
+          "أمن",
+          "استأمن"
+        ],
+        "ridda_terms": []
+      },
+      "_term_mode": "SUBMISSION",
+      "_event_id": "W040",
+      "_lat": 15.9,
+      "_lon": 49.0,
+      "_region_key": "hadramawt",
+      "_region_en": "Ḥaḍramawt",
+      "_source_name": "al-Wāqidī"
+    },
+    {
+      "tribe_arabic": "السكون",
+      "tribe_english": "al-Sukūn",
+      "region_arabic": "حضرموت",
+      "region_english": "Ḥaḍramawt",
+      "year_ah": 11,
+      "incorporation_mode": "SUBMISSION",
+      "commander_arabic": "زياد بن لبيد",
+      "commander_english": "Ziyād ibn Labīd",
+      "rebel_leader_arabic": null,
+      "rebel_leader_english": null,
+      "battle_site_arabic": null,
+      "battle_site_english": null,
+      "evidence": [
+        "واتصل هذا الخبر بالسكاسك والسكون، وهما قبيلتان من قبائل كندة، فكأنهم اتقوا على أنفسهم، فركبوا في جوف الليل وساروا إلى زياد بن لبيد، فاستأمنوا إليه وعزموا على نصرته"
+      ],
+      "confidence": 0.85,
+      "notes": "Submitted together with al-Sakāsik, both described as sub-tribes of Kinda",
+      "_source": "waqidi",
+      "_detected_terms": {
+        "qital_terms": [],
+        "taa_terms": [
+          "أمن",
+          "استأمن"
+        ],
+        "ridda_terms": []
+      },
+      "_term_mode": "SUBMISSION",
+      "_event_id": "W041",
+      "_lat": 15.9,
+      "_lon": 49.0,
+      "_region_key": "hadramawt",
+      "_region_en": "Ḥaḍramawt",
+      "_source_name": "al-Wāqidī"
+    },
+    {
+      "tribe_arabic": "بنو ذهل بن معاوية",
+      "tribe_english": "Banū Dhuhl ibn Muʿāwiya",
+      "region_arabic": "حضرموت",
+      "region_english": "Ḥaḍramawt",
+      "year_ah": 11,
+      "incorporation_mode": "SUBJUGATION",
+      "commander_arabic": "زياد بن لبيد",
+      "commander_english": "Ziyād ibn Labīd",
+      "rebel_leader_arabic": "الحارث بن معاوية",
+      "rebel_leader_english": "al-Ḥārith ibn Muʿāwiya",
+      "battle_site_arabic": null,
+      "battle_site_english": null,
+      "evidence": [
+        "ثم إنه سار إلى حي من أحياء كندة، يقال لهم بنو ذهل بن معاوية، فخبرهم بما كان من قومهم إليه، ودعاهم إلى السمع والطاعة",
+        "ثم وثبوا إلى زياد وأخرجوه من ديارهم، وهموا بقتله"
+      ],
+      "confidence": 0.8,
+      "notes": "Rejected Ziyād's call to submission and expelled him from their territory, nearly killing him",
+      "_source": "waqidi",
+      "_detected_terms": {
+        "qital_terms": [
+          "قتل"
+        ],
+        "taa_terms": [
+          "طاعة"
+        ],
+        "ridda_terms": []
+      },
+      "_term_mode": "MIXED",
+      "_event_id": "W042",
+      "_lat": 15.9,
+      "_lon": 49.0,
+      "_region_key": "hadramawt",
+      "_region_en": "Ḥaḍramawt",
+      "_source_name": "al-Wāqidī"
+    },
+    {
+      "tribe_arabic": "كندة",
+      "tribe_english": "Kinda",
+      "region_arabic": "حضرموت",
+      "region_english": "Ḥaḍramawt",
+      "year_ah": 11,
+      "incorporation_mode": "SUBJUGATION",
+      "commander_arabic": "زياد بن لبيد",
+      "commander_english": "Ziyād ibn Labīd",
+      "rebel_leader_arabic": "الأشعث بن قيس",
+      "rebel_leader_english": "al-Ashʿath ibn Qays",
+      "battle_site_arabic": "الرقان",
+      "battle_site_english": "al-Raqān",
+      "evidence": [
+        "فالتقوا بواد يقال له الرقان قريبا من مدينة تريم، فاقتتلوا هنالك ساعة",
+        "ثم حمل الأشعث بن قيس وأصحابه على جميع المسلمين، فهزمهم حتى أدخلهم مدينة تريم",
+        "ثم أقبل الأشعث بأصحابه حتى أحدقوا بالمدينة ونزلوا عليها، وحصروا زياد بن لبيد وأصحابه"
+      ],
+      "confidence": 0.9,
+      "notes": "Initial battle where al-Ashʿath defeats Muslim forces and besieges them in Tarīm",
+      "_source": "waqidi",
+      "_tribe_region": "Ḥaḍramawt",
+      "_tribe_leader": "al-Ashʿath ibn Qays",
+      "_detected_terms": {
+        "qital_terms": [
+          "هزم",
+          "هزمهم"
+        ],
+        "taa_terms": [
+          "سلم"
+        ],
+        "ridda_terms": []
+      },
+      "_term_mode": "MIXED",
+      "_event_id": "W043",
+      "_lat": 15.9,
+      "_lon": 49.0,
+      "_region_key": "hadramawt",
+      "_region_en": "Ḥaḍramawt",
+      "_source_name": "al-Wāqidī",
+      "_cross_refs": [
+        "B010",
+        "B029",
+        "T046",
+        "T048",
+        "T050"
+      ],
+      "_is_cross_ref": true
+    },
+    {
+      "tribe_arabic": "أهل دبا",
+      "tribe_english": "Ahl Dubā",
+      "region_arabic": "دبا",
+      "region_english": "Dubā",
+      "year_ah": 11,
+      "incorporation_mode": "SUBJUGATION",
+      "commander_arabic": "عكرمة بن أبي جهل",
+      "commander_english": "ʿIkrima ibn Abī Jahl",
+      "rebel_leader_arabic": null,
+      "rebel_leader_english": null,
+      "battle_site_arabic": "دبا",
+      "battle_site_english": "Dubā",
+      "evidence": [
+        "فعزموا على ذلك ووثبوا على [حذيفة بن عمرو] عامل لهم من جهة أبي بكر، فطردوه عن بلدهم",
+        "فلما ورد الكتاب على عكرمة، سار بأصحابه إلى دبا، قال: ودنا القوم بعضهم من بعض فاقتتلوا، ورزق الله الظفر لعكرمة فهزموهم",
+        "ونزل بهم عكرمة وحاصرهم وضيق عليهم، واشتد عليهم الحصار"
+      ],
+      "confidence": 0.95,
+      "notes": "Campaign against people of Dubā who expelled their governor and were subsequently defeated and besieged by ʿIkrima",
+      "_source": "waqidi",
+      "_lat": 25.62,
+      "_lon": 56.26,
+      "_detected_terms": {
+        "qital_terms": [
+          "هزم",
+          "ظفر",
+          "حصار",
+          "حاصر",
+          "حاصرهم"
+        ],
+        "taa_terms": [
+          "تاب"
+        ],
+        "ridda_terms": []
+      },
+      "_term_mode": "MIXED",
+      "_event_id": "W044",
+      "_region_key": "uman",
+      "_region_en": "Dabā (ʿUmān)",
+      "_source_name": "al-Wāqidī"
+    },
+    {
+      "tribe_arabic": "أهل دبا",
+      "tribe_english": "Ahl Dubā",
+      "region_arabic": "دبا",
+      "region_english": "Dubā",
+      "year_ah": 11,
+      "incorporation_mode": "SUBMISSION",
+      "commander_arabic": "عكرمة بن أبي جهل",
+      "commander_english": "ʿIkrima ibn Abī Jahl",
+      "rebel_leader_arabic": null,
+      "rebel_leader_english": null,
+      "battle_site_arabic": "دبا",
+      "battle_site_english": "Dubā",
+      "evidence": [
+        "فأرسلوا إلى عاملهم حذيفة بن عمرو، ويسألونه الصلح على أنهم يؤدون الزكاة ويرجعون إلى محبته",
+        "قال: فأجابوه إلى ذلك، فأرسل إليهم: أن اخرجوا الآن عن مدينتكم بلا سلاح، ففعلوا ذلك"
+      ],
+      "confidence": 0.9,
+      "notes": "Subsequent submission of Dubā after siege, agreeing to pay zakāt and surrender without weapons",
+      "_source": "waqidi",
+      "_lat": 25.62,
+      "_lon": 56.26,
+      "_detected_terms": {
+        "qital_terms": [],
+        "taa_terms": [
+          "رجع",
+          "صلح",
+          "الزكاة"
+        ],
+        "ridda_terms": []
+      },
+      "_term_mode": "SUBMISSION",
+      "_event_id": "W045",
+      "_region_key": "uman",
+      "_region_en": "Dabā (ʿUmān)",
+      "_source_name": "al-Wāqidī"
+    },
+    {
+      "tribe_arabic": "كندة",
+      "tribe_english": "Kinda",
+      "region_arabic": "حضرموت",
+      "region_english": "Ḥaḍramawt",
+      "year_ah": 11,
+      "incorporation_mode": "SUBJUGATION",
+      "commander_arabic": "زياد بن لبيد وعكرمة بن أبي جهل",
+      "commander_english": "Ziyād ibn Labīd wa-ʿIkrima ibn Abī Jahl",
+      "rebel_leader_arabic": "الأشعث بن قيس",
+      "rebel_leader_english": "al-Ashʿath ibn Qays",
+      "battle_site_arabic": "النجير",
+      "battle_site_english": "al-Najīr",
+      "evidence": [
+        "واختلطت خيل عكرمة وخيل زياد، فصاروا في موضع واحد، واجتمعوا وحملوا على الأشعث وأصحابه",
+        "ثم حملوا على الأشعث وأصحابه، كحملة رجل واحد، فهزموهم حتى ألجئوهم إلى حصنهم الأعظم",
+        "فدخل الأشعث وأصحابه إلى ذلك الحصن وأغلقوا عليهم الباب"
+      ],
+      "confidence": 0.95,
+      "notes": "Major battle where combined Muslim forces under Ziyād and ʿIkrima defeat al-Ashʿath and besiege him in fortress al-Najīr",
+      "_source": "waqidi",
+      "_tribe_region": "Ḥaḍramawt",
+      "_tribe_leader": "al-Ashʿath ibn Qays",
+      "_detected_terms": {
+        "qital_terms": [
+          "هزم"
+        ],
+        "taa_terms": [],
+        "ridda_terms": []
+      },
+      "_term_mode": "SUBJUGATION",
+      "_event_id": "W046",
+      "_lat": 15.9,
+      "_lon": 49.0,
+      "_region_key": "hadramawt",
+      "_region_en": "Ḥaḍramawt",
+      "_source_name": "al-Wāqidī",
+      "_cross_refs": [
+        "B010",
+        "B029",
+        "T046",
+        "T048",
+        "T050"
+      ],
+      "_is_cross_ref": true
+    },
+    {
+      "tribe_arabic": "كندة",
+      "tribe_english": "Kinda",
+      "region_arabic": "حضرموت",
+      "region_english": "Ḥaḍramawt",
+      "year_ah": 12,
+      "incorporation_mode": "MIXED",
+      "commander_arabic": "زياد بن لبيد",
+      "commander_english": "Ziyād ibn Labīd",
+      "rebel_leader_arabic": "الأشعث بن قيس",
+      "rebel_leader_english": "al-Ashʿath ibn Qays",
+      "battle_site_arabic": "النجير",
+      "battle_site_english": "al-Najīr",
+      "evidence": [
+        "فأرسل الأشعث إلى زياد أن يعطيه الأمان ولأهل بيته ولعشرة من وجوه أصحابه، فأجابه زياد إلى ذلك، وكتب بينهم الكتاب",
+        "اقتتلوا على باب الحصن قتالا لم يقاتلوا مثله في يوم من أيامهم، حتى قتل من الفريقين بشر كثير",
+        "وأثخن الأشعث بالجراحات، فولى منهزما هو وأصحابه، حتى دخلوا الحصن"
+      ],
+      "confidence": 0.9,
+      "notes": "Final phase involving both fierce fighting at fortress gate and negotiated surrender with amān for al-Ashʿath and select followers",
+      "_source": "waqidi",
+      "_tribe_region": "Ḥaḍramawt",
+      "_tribe_leader": "al-Ashʿath ibn Qays",
+      "_detected_terms": {
+        "qital_terms": [
+          "قتال",
+          "قاتل",
+          "قاتلوا",
+          "قتل",
+          "هزم"
+        ],
+        "taa_terms": [
+          "تاب",
+          "أمان"
+        ],
+        "ridda_terms": []
+      },
+      "_term_mode": "MIXED",
+      "_event_id": "W047",
+      "_lat": 15.9,
+      "_lon": 49.0,
+      "_region_key": "hadramawt",
+      "_region_en": "Ḥaḍramawt",
+      "_source_name": "al-Wāqidī",
+      "_cross_refs": [
+        "B010",
+        "B029",
+        "T046",
+        "T048",
+        "T050"
+      ],
+      "_is_cross_ref": true
+    },
+    {
+      "tribe_arabic": "كندة",
+      "tribe_english": "Kinda",
+      "region_arabic": "حضرموت",
+      "region_english": "Ḥaḍramawt",
+      "year_ah": 11,
+      "incorporation_mode": "SUBJUGATION",
+      "commander_arabic": "زياد بن لبيد",
+      "commander_english": "Ziyād ibn Labīd",
+      "rebel_leader_arabic": "الأشعث بن قيس",
+      "rebel_leader_english": "al-Ashʿath ibn Qays",
+      "battle_site_arabic": "الحصن",
+      "battle_site_english": "al-Ḥiṣn",
+      "evidence": [
+        "فجعل يأخذ المقاتلة ويضرب رقابهم صبرا",
+        "فلم أشبههم إلا بقتل قريظة",
+        "ثم جمع زياد بن لبيد من بقي من بقايا ملوك كندة، وهم ثمانون رجلا، فصفدهم في الحديد",
+        "واذكر وقائع حضرموت فإنها تشفي غليل الهائم المتحير"
+      ],
+      "confidence": 0.95,
+      "notes": "The Kinda tribe under al-Ashʿath ibn Qays was subjugated after a siege. Despite negotiations for safe conduct (amān), Ziyād killed many of the defenders and sent the surviving nobles as prisoners to Abū Bakr. Al-Ashʿath was later pardoned and married to Abū Bakr's sister.",
+      "_source": "waqidi",
+      "_tribe_region": "Ḥaḍramawt",
+      "_tribe_leader": "al-Ashʿath ibn Qays",
+      "_detected_terms": {
+        "qital_terms": [
+          "قاتل",
+          "قتل"
+        ],
+        "taa_terms": [],
+        "ridda_terms": []
+      },
+      "_term_mode": "SUBJUGATION",
+      "_event_id": "W048",
+      "_lat": 15.9,
+      "_lon": 49.0,
+      "_region_key": "hadramawt",
+      "_region_en": "Ḥaḍramawt",
+      "_source_name": "al-Wāqidī",
+      "_cross_refs": [
+        "B010",
+        "B029",
+        "T046",
+        "T048",
+        "T050"
+      ],
+      "_is_cross_ref": true
+    }
+  ],
+  "enrichment": {
+    "version": "2.1",
+    "date": "2026-01-08T13:14:45.612341",
+    "geocoded": 90,
+    "normalized": 70,
+    "cross_referenced": 9,
+    "unmapped": 1
+  }
+}

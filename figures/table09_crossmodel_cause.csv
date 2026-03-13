@@ -1,0 +1,15 @@
+Comparison,Cohen's κ,Interpretation
+Claude ↔ Gemini,0.436,Moderate
+Claude ↔ Qwen,0.293,Fair
+Claude ↔ GPT,0.459,Moderate
+Claude ↔ Human,0.317,Fair
+Gemini ↔ Qwen,0.794,Substantial
+Gemini ↔ GPT,0.853,Almost Perfect
+Gemini ↔ Human,0.719,Substantial
+Qwen ↔ GPT,0.706,Substantial
+Qwen ↔ Human,0.581,Moderate
+GPT ↔ Human,0.673,Substantial
+,,
+Fleiss' κ (4 LLMs),0.566,Moderate
+Fleiss' κ (5-way),0.568,Moderate
+Human vs LLM majority,80.0%,24/30

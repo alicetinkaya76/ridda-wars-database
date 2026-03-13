@@ -1,0 +1,629 @@
+# ==============================================================================
+# RIDDA WARS DATABASE - TRIBES & LOCATIONS GAZETTEER
+# ==============================================================================
+# Comprehensive database of Arabian tribes involved in the Ridda Wars (11-12 AH)
+# Coordinates based on al-Turayyā (Thuriyya) Gazetteer
+# Brill Encyclopaedia of Islam (EI3) transliteration standard
+
+version: '1.0'
+created: '2025-01'
+
+# ==============================================================================
+# MAJOR TRIBES IN RIDDA WARS
+# ==============================================================================
+
+tribes:
+  # ---------------------------------------------------------------------------
+  # NAJD REGION TRIBES
+  # ---------------------------------------------------------------------------
+  
+  banu_hanifa:
+    arabic: "بنو حنيفة"
+    english: "Banū Ḥanīfa"
+    region: "al-Yamāma"
+    region_arabic: "اليمامة"
+    territory_lat: 24.0
+    territory_lon: 46.7
+    rebel_leader: "Musaylima al-Kadhdhāb"
+    rebel_leader_arabic: "مسيلمة الكذاب"
+    outcome: "SUBJUGATION"
+    key_battle: "ʿAqrabāʾ"
+    key_battle_arabic: "عقرباء"
+    commander: "Khālid ibn al-Walīd"
+    year_ah: 12
+    notes: "Major battle - heaviest Muslim casualties, Musaylima killed"
+    population_estimate: "Large - dominant tribe of al-Yamāma"
+
+  banu_asad:
+    arabic: "بنو أسد"
+    english: "Banū Asad"
+    region: "Najd"
+    region_arabic: "نجد"
+    territory_lat: 27.5
+    territory_lon: 41.5
+    rebel_leader: "Ṭulayḥa ibn Khuwaylid"
+    rebel_leader_arabic: "طليحة بن خويلد"
+    outcome: "SUBJUGATION"
+    key_battle: "Buzākha"
+    key_battle_arabic: "بزاخة"
+    commander: "Khālid ibn al-Walīd"
+    year_ah: 11
+    notes: "Ṭulayḥa fled, later converted to Islam"
+    alliance: "Allied with Banū Ghaṭafān"
+
+  banu_tamim:
+    arabic: "بنو تميم"
+    english: "Banū Tamīm"
+    region: "Najd"
+    region_arabic: "نجد"
+    territory_lat: 26.5
+    territory_lon: 44.0
+    rebel_leader: "Mālik ibn Nuwayra (disputed)"
+    rebel_leader_arabic: "مالك بن نويرة"
+    outcome: "MIXED"
+    key_site: "al-Buṭāḥ"
+    key_site_arabic: "البطاح"
+    commander: "Khālid ibn al-Walīd"
+    year_ah: 11
+    notes: "Controversial - Mālik's status as rebel disputed. Khālid executed him."
+    sub_tribes:
+      - "Banū Yarbūʿ"
+      - "Banū Mujāshiʿ"
+      - "Banū Saʿd"
+
+  banu_ghatafan:
+    arabic: "بنو غطفان"
+    english: "Banū Ghaṭafān"
+    region: "Najd"
+    region_arabic: "نجد"
+    territory_lat: 26.0
+    territory_lon: 40.0
+    rebel_leader: "ʿUyayna ibn Ḥiṣn"
+    rebel_leader_arabic: "عيينة بن حصن"
+    outcome: "SUBJUGATION"
+    key_battle: "Buzākha"
+    commander: "Khālid ibn al-Walīd"
+    year_ah: 11
+    notes: "Allied with Banū Asad under Ṭulayḥa"
+    sub_tribes:
+      - "Banū Fazāra"
+      - "Banū ʿAbs"
+      - "Banū Dhubiyān"
+
+  banu_sulaym:
+    arabic: "بنو سليم"
+    english: "Banū Sulaym"
+    region: "Najd"
+    region_arabic: "نجد"
+    territory_lat: 24.5
+    territory_lon: 39.5
+    rebel_leader: null
+    outcome: "SUBMISSION"
+    year_ah: 11
+    notes: "Returned quickly to Islam without major fighting"
+    commander: null
+
+  banu_amir:
+    arabic: "بنو عامر"
+    english: "Banū ʿĀmir"
+    region: "Najd"
+    region_arabic: "نجد"
+    territory_lat: 25.0
+    territory_lon: 44.0
+    rebel_leader: null
+    outcome: "MIXED"
+    year_ah: 11
+    notes: "Some sections rebelled, others remained loyal"
+    sub_tribes:
+      - "Banū Kilāb"
+      - "Banū Numayr"
+      - "Banū Hilāl"
+
+  # ---------------------------------------------------------------------------
+  # YEMEN REGION TRIBES
+  # ---------------------------------------------------------------------------
+
+  ans:
+    arabic: "عنس"
+    english: "ʿAns"
+    region: "Yemen"
+    region_arabic: "اليمن"
+    territory_lat: 15.5
+    territory_lon: 44.2
+    rebel_leader: "al-Aswad al-ʿAnsī"
+    rebel_leader_arabic: "الأسود العنسي"
+    outcome: "SUBJUGATION"
+    key_site: "Ṣanʿāʾ"
+    key_site_arabic: "صنعاء"
+    commander: "al-Muhājir ibn Abī Umayya"
+    year_ah: 11
+    notes: "al-Aswad was assassinated before main campaigns began"
+
+  madhhij:
+    arabic: "مذحج"
+    english: "Madhḥij"
+    region: "Yemen"
+    region_arabic: "اليمن"
+    territory_lat: 14.5
+    territory_lon: 45.0
+    rebel_leader: "Qays ibn Makshūḥ"
+    rebel_leader_arabic: "قيس بن مكشوح"
+    outcome: "SUBJUGATION"
+    commander: "al-Muhājir ibn Abī Umayya"
+    year_ah: 11
+    notes: "Major Yemeni confederation"
+
+  himyar:
+    arabic: "حمير"
+    english: "Ḥimyar"
+    region: "Yemen"
+    region_arabic: "اليمن"
+    territory_lat: 14.0
+    territory_lon: 44.5
+    outcome: "MIXED"
+    year_ah: 11
+    notes: "Ancient Yemeni kingdom, some factions rebelled"
+
+  # ---------------------------------------------------------------------------
+  # HADRAMAWT REGION
+  # ---------------------------------------------------------------------------
+
+  kinda:
+    arabic: "كندة"
+    english: "Kinda"
+    region: "Ḥaḍramawt"
+    region_arabic: "حضرموت"
+    territory_lat: 15.9
+    territory_lon: 49.0
+    rebel_leader: "al-Ashʿath ibn Qays"
+    rebel_leader_arabic: "الأشعث بن قيس"
+    outcome: "SUBJUGATION"
+    commander: "ʿIkrima ibn Abī Jahl"
+    year_ah: 12
+    notes: "al-Ashʿath later converted and joined futūḥāt"
+
+  # ---------------------------------------------------------------------------
+  # OMAN REGION
+  # ---------------------------------------------------------------------------
+
+  azd_oman:
+    arabic: "الأزد"
+    english: "Azd"
+    region: "Oman"
+    region_arabic: "عمان"
+    territory_lat: 23.0
+    territory_lon: 57.0
+    rebel_leader: "Laqīṭ ibn Mālik (Dhū al-Tāj)"
+    rebel_leader_arabic: "لقيط بن مالك ذو التاج"
+    outcome: "SUBJUGATION"
+    key_battle: "Dabā"
+    key_battle_arabic: "دبا"
+    commander: "Ḥudhayfa ibn Miḥṣan / ʿIkrima ibn Abī Jahl"
+    year_ah: 11
+    notes: "Battle of Dabā was decisive for Oman"
+
+  # ---------------------------------------------------------------------------
+  # AL-BAHRAYN REGION
+  # ---------------------------------------------------------------------------
+
+  abd_al_qays:
+    arabic: "عبد القيس"
+    english: "ʿAbd al-Qays"
+    region: "al-Baḥrayn"
+    region_arabic: "البحرين"
+    territory_lat: 26.0
+    territory_lon: 50.0
+    rebel_leader: null
+    outcome: "SUBMISSION"
+    commander: "al-ʿAlāʾ ibn al-Ḥaḍramī"
+    year_ah: 11
+    notes: "Remained largely loyal under al-Jārūd"
+    loyal_leader: "al-Jārūd ibn Bishr"
+    loyal_leader_arabic: "الجارود بن بشر"
+
+  bakr_ibn_wail:
+    arabic: "بكر بن وائل"
+    english: "Bakr ibn Wāʾil"
+    region: "al-Baḥrayn"
+    region_arabic: "البحرين"
+    territory_lat: 26.5
+    territory_lon: 50.5
+    rebel_leader: "al-Ḥuṭam ibn Ḍubayʿa"
+    rebel_leader_arabic: "الحطم بن ضبيعة"
+    outcome: "SUBJUGATION"
+    commander: "al-ʿAlāʾ ibn al-Ḥaḍramī"
+    year_ah: 11
+    notes: "Part of tribe rebelled"
+
+  # ---------------------------------------------------------------------------
+  # MAHRA REGION
+  # ---------------------------------------------------------------------------
+
+  mahra:
+    arabic: "مهرة"
+    english: "Mahra"
+    region: "Mahra"
+    region_arabic: "مهرة"
+    territory_lat: 16.5
+    territory_lon: 52.0
+    outcome: "SUBJUGATION"
+    commander: "ʿIkrima ibn Abī Jahl / ʿArfaja ibn Harthama"
+    year_ah: 12
+    notes: "Remote region, pacified after Oman"
+
+# ==============================================================================
+# BATTLE SITES (al-Turayyā coordinates)
+# ==============================================================================
+
+battle_sites:
+  aqraba:
+    arabic: "عقرباء"
+    english: "ʿAqrabāʾ"
+    lat: 24.0
+    lon: 46.7
+    region: "al-Yamāma"
+    year_ah: 12
+    commander: "Khālid ibn al-Walīd"
+    opponent: "Musaylima"
+    tribe: "Banū Ḥanīfa"
+    outcome: "Muslim victory"
+    significance: "Decisive battle - Musaylima killed, many ḥuffāẓ martyred"
+    casualties: "High on both sides - estimated 1200 Muslim martyrs"
+
+  buzakha:
+    arabic: "بزاخة"
+    english: "Buzākha"
+    lat: 27.5
+    lon: 41.5
+    region: "Najd"
+    year_ah: 11
+    commander: "Khālid ibn al-Walīd"
+    opponent: "Ṭulayḥa ibn Khuwaylid"
+    tribe: "Banū Asad / Banū Ghaṭafān"
+    outcome: "Muslim victory"
+    significance: "First major Ridda battle - Ṭulayḥa fled"
+
+  butah:
+    arabic: "البطاح"
+    english: "al-Buṭāḥ"
+    lat: 26.5
+    lon: 44.0
+    region: "Najd"
+    year_ah: 11
+    commander: "Khālid ibn al-Walīd"
+    opponent: "Mālik ibn Nuwayra"
+    tribe: "Banū Tamīm"
+    outcome: "Controversial"
+    significance: "Mālik executed by Khālid - later investigated"
+
+  daba:
+    arabic: "دبا"
+    english: "Dabā"
+    lat: 25.6
+    lon: 56.3
+    region: "Oman"
+    year_ah: 11
+    commander: "Ḥudhayfa ibn Miḥṣan / ʿIkrima"
+    opponent: "Laqīṭ ibn Mālik"
+    tribe: "Azd"
+    outcome: "Muslim victory"
+    significance: "Pacification of Oman"
+
+  sanaa:
+    arabic: "صنعاء"
+    english: "Ṣanʿāʾ"
+    lat: 15.35
+    lon: 44.21
+    region: "Yemen"
+    year_ah: 11
+    notes: "Held by al-Aswad al-ʿAnsī before his assassination"
+
+  hajar:
+    arabic: "هجر"
+    english: "Hajar"
+    lat: 25.4
+    lon: 49.6
+    region: "al-Baḥrayn"
+    year_ah: 11
+    commander: "al-ʿAlāʾ ibn al-Ḥaḍramī"
+    significance: "Center of al-Baḥrayn operations"
+
+  dhul_qassa:
+    arabic: "ذو القصة"
+    english: "Dhū al-Qaṣṣa"
+    lat: 25.0
+    lon: 46.0
+    region: "Near Medina"
+    year_ah: 11
+    commander: "Abū Bakr / Usāma's army"
+    significance: "Initial gathering point, early skirmishes"
+
+# ==============================================================================
+# FALSE PROPHETS / REBEL LEADERS
+# ==============================================================================
+
+rebel_leaders:
+  musaylima:
+    arabic: "مسيلمة الكذاب"
+    english: "Musaylima al-Kadhdhāb"
+    tribe: "Banū Ḥanīfa"
+    tribe_arabic: "بنو حنيفة"
+    region: "al-Yamāma"
+    epithet: "al-Kadhdhāb (the Liar)"
+    epithet_arabic: "الكذاب"
+    claim: "Prophet"
+    death_year: 12
+    death_location: "ʿAqrabāʾ"
+    killed_by: "Waḥshī ibn Ḥarb"
+    notes: "Most powerful false prophet, married Sajāḥ"
+
+  aswad_ansi:
+    arabic: "الأسود العنسي"
+    english: "al-Aswad al-ʿAnsī"
+    tribe: "ʿAns"
+    tribe_arabic: "عنس"
+    region: "Yemen"
+    epithet: "Dhū al-Khimār (of the Veil)"
+    epithet_arabic: "ذو الخمار"
+    claim: "Prophet"
+    death_year: 11
+    death_location: "Ṣanʿāʾ"
+    notes: "Assassinated before main Ridda campaigns"
+
+  tulayha:
+    arabic: "طليحة بن خويلد"
+    english: "Ṭulayḥa ibn Khuwaylid"
+    tribe: "Banū Asad"
+    tribe_arabic: "بنو أسد"
+    region: "Najd"
+    epithet: "al-Asadī"
+    epithet_arabic: "الأسدي"
+    claim: "Prophet"
+    death_year: null
+    notes: "Escaped from Buzākha, later converted and joined futūḥāt, died at Nihāwand"
+
+  sajah:
+    arabic: "سجاح بنت الحارث"
+    english: "Sajāḥ bint al-Ḥārith"
+    tribe: "Banū Tamīm"
+    tribe_arabic: "بنو تميم"
+    region: "al-Yamāma"
+    epithet: "bint al-Ḥārith"
+    claim: "Prophetess"
+    death_year: null
+    notes: "Female prophetess, married Musaylima, later converted to Islam"
+
+  laqit:
+    arabic: "لقيط بن مالك ذو التاج"
+    english: "Laqīṭ ibn Mālik Dhū al-Tāj"
+    tribe: "Azd"
+    tribe_arabic: "الأزد"
+    region: "Oman"
+    epithet: "Dhū al-Tāj (of the Crown)"
+    epithet_arabic: "ذو التاج"
+    claim: "King/leader"
+    death_year: 11
+    death_location: "Dabā"
+    notes: "Led apostasy in Oman"
+
+  malik_nuwayra:
+    arabic: "مالك بن نويرة"
+    english: "Mālik ibn Nuwayra"
+    tribe: "Banū Tamīm"
+    tribe_arabic: "بنو تميم"
+    region: "Najd"
+    epithet: "al-Yarbūʿī"
+    death_year: 11
+    death_location: "al-Buṭāḥ"
+    notes: "Controversial figure - status as apostate disputed, executed by Khālid"
+
+# ==============================================================================
+# MUSLIM COMMANDERS
+# ==============================================================================
+
+commanders:
+  khalid:
+    arabic: "خالد بن الوليد"
+    english: "Khālid ibn al-Walīd"
+    epithet: "Sayf Allāh (Sword of God)"
+    epithet_arabic: "سيف الله"
+    campaigns:
+      - battle: "Buzākha"
+        opponent: "Ṭulayḥa"
+        year: 11
+      - battle: "al-Buṭāḥ"
+        opponent: "Mālik ibn Nuwayra"
+        year: 11
+      - battle: "ʿAqrabāʾ"
+        opponent: "Musaylima"
+        year: 12
+    notes: "Supreme commander of Ridda campaigns in Najd and Yamāma"
+
+  ikrima:
+    arabic: "عكرمة بن أبي جهل"
+    english: "ʿIkrima ibn Abī Jahl"
+    campaigns:
+      - region: "Oman"
+        year: 11
+      - region: "Mahra"
+        year: 12
+      - region: "Yemen"
+        year: 12
+    notes: "Son of Abū Jahl, commanded eastern campaigns"
+
+  muhajir:
+    arabic: "المهاجر بن أبي أمية"
+    english: "al-Muhājir ibn Abī Umayya"
+    campaigns:
+      - region: "Yemen"
+        year: 11
+    notes: "Brother of Umm Salama, commanded Yemen campaign"
+
+  alaa:
+    arabic: "العلاء بن الحضرمي"
+    english: "al-ʿAlāʾ ibn al-Ḥaḍramī"
+    campaigns:
+      - region: "al-Baḥrayn"
+        year: 11
+    notes: "Commanded al-Baḥrayn campaign"
+
+  hudhayfa:
+    arabic: "حذيفة بن محصن"
+    english: "Ḥudhayfa ibn Miḥṣan"
+    epithet: "al-Ghālifānī"
+    campaigns:
+      - region: "Oman"
+        year: 11
+    notes: "Led initial Oman campaign, joined by ʿIkrima"
+
+  arfaja:
+    arabic: "عرفجة بن هرثمة"
+    english: "ʿArfaja ibn Harthama"
+    campaigns:
+      - region: "Mahra"
+        year: 12
+    notes: "Commanded Mahra campaign"
+
+  shurahbil:
+    arabic: "شرحبيل بن حسنة"
+    english: "Shurahbīl ibn Ḥasana"
+    campaigns:
+      - battle: "ʿAqrabāʾ"
+        year: 12
+    notes: "Participated in Yamāma campaign"
+
+  suwayd:
+    arabic: "سويد بن مقرن"
+    english: "Suwayd ibn Muqarrin"
+    campaigns:
+      - region: "Tihāma"
+        year: 11
+    notes: "Commanded Tihāma operations"
+
+# ==============================================================================
+# REGIONS WITH COORDINATES
+# ==============================================================================
+
+regions:
+  najd:
+    arabic: "نجد"
+    english: "Najd"
+    center_lat: 24.5
+    center_lon: 45.5
+    bounds:
+      lat_min: 22.0
+      lat_max: 30.0
+      lon_min: 38.0
+      lon_max: 48.0
+    tribes:
+      - "Banū Asad"
+      - "Banū Tamīm"
+      - "Banū Ghaṭafān"
+      - "Banū Sulaym"
+      - "Banū ʿĀmir"
+    key_battles:
+      - "Buzākha"
+      - "al-Buṭāḥ"
+
+  yamama:
+    arabic: "اليمامة"
+    english: "al-Yamāma"
+    center_lat: 24.0
+    center_lon: 46.7
+    bounds:
+      lat_min: 22.5
+      lat_max: 26.0
+      lon_min: 45.0
+      lon_max: 48.0
+    tribes:
+      - "Banū Ḥanīfa"
+    key_battles:
+      - "ʿAqrabāʾ"
+
+  yemen:
+    arabic: "اليمن"
+    english: "al-Yaman"
+    center_lat: 15.5
+    center_lon: 44.2
+    bounds:
+      lat_min: 12.0
+      lat_max: 18.0
+      lon_min: 42.0
+      lon_max: 48.0
+    tribes:
+      - "ʿAns"
+      - "Madhḥij"
+      - "Ḥimyar"
+    key_sites:
+      - "Ṣanʿāʾ"
+      - "Najrān"
+
+  hadramawt:
+    arabic: "حضرموت"
+    english: "Ḥaḍramawt"
+    center_lat: 15.9
+    center_lon: 49.0
+    bounds:
+      lat_min: 14.0
+      lat_max: 18.0
+      lon_min: 48.0
+      lon_max: 53.0
+    tribes:
+      - "Kinda"
+
+  oman:
+    arabic: "عمان"
+    english: "ʿUmān"
+    center_lat: 23.0
+    center_lon: 57.0
+    bounds:
+      lat_min: 20.0
+      lat_max: 26.0
+      lon_min: 52.0
+      lon_max: 60.0
+    tribes:
+      - "Azd"
+    key_battles:
+      - "Dabā"
+
+  bahrayn:
+    arabic: "البحرين"
+    english: "al-Baḥrayn"
+    center_lat: 26.0
+    center_lon: 50.5
+    bounds:
+      lat_min: 24.0
+      lat_max: 28.0
+      lon_min: 48.0
+      lon_max: 52.0
+    tribes:
+      - "ʿAbd al-Qays"
+      - "Bakr ibn Wāʾil"
+    key_sites:
+      - "Hajar"
+      - "al-Qaṭīf"
+
+  mahra:
+    arabic: "مهرة"
+    english: "Mahra"
+    center_lat: 16.5
+    center_lon: 52.0
+    bounds:
+      lat_min: 15.0
+      lat_max: 18.0
+      lon_min: 50.0
+      lon_max: 55.0
+    tribes:
+      - "Mahra"
+
+  tihama:
+    arabic: "تهامة"
+    english: "Tihāma"
+    center_lat: 20.0
+    center_lon: 41.0
+    bounds:
+      lat_min: 15.0
+      lat_max: 25.0
+      lon_min: 38.0
+      lon_max: 43.0
+    notes: "Coastal plain of western Arabia"

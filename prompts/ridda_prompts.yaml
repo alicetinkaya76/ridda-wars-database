@@ -1,0 +1,484 @@
+# ==============================================================================
+# RIDDA WARS DATABASE PIPELINE v1.0 - LLM PROMPTS
+# ==============================================================================
+# Prompts for extracting structured information from classical Arabic 
+# historical texts about the Ridda Wars (حروب الردة) of 11-12 AH.
+#
+# TERMINOLOGY: Brill Encyclopaedia of Islam (EI3) standard
+#   SUBJUGATION (qitāl) - Military campaign against rebellious tribe
+#   SUBMISSION (ṭāʿa) - Voluntary return to Islamic authority
+#   MIXED - Combined elements
+#
+# OUTPUT: ALL fields must have BOTH Arabic and English versions
+
+# =============================================================================
+# EXTRACTION PROMPTS
+# =============================================================================
+
+extraction:
+  # Main extraction prompt for Ridda Wars
+  main: |
+    You are an expert in early Islamic history, specializing in the Ridda Wars (حروب الردة) 
+    of 11-12 AH / 632-633 CE - the "Wars of Apostasy" following the death of Prophet Muhammad.
+
+    Extract TRIBAL INTERACTION EVENTS from this Arabic text about the Ridda Wars.
+
+    CONTEXT: After the Prophet's death in 11 AH, many Arabian tribes:
+    - Withdrew from Islam (ارتدوا)
+    - Refused to pay zakāt (منعوا الزكاة)
+    - Followed false prophets (مسيلمة، طليحة، سجاح، الأسود)
+    
+    Caliph Abū Bakr sent military expeditions to restore authority over the Peninsula.
+
+    EXTRACT: Events describing:
+    1. Military campaigns (qitāl) against rebellious tribes
+    2. Voluntary submissions (ṭāʿa) of tribes returning to Islam
+    3. Battles against false prophets and their followers
+    4. Negotiations and treaties with tribal leaders
+
+    *** CRITICAL: ALL FIELDS MUST HAVE BOTH ARABIC AND ENGLISH VERSIONS ***
+
+    REQUIRED FIELDS (ALL bilingual):
+    - tribe_arabic: Tribe name in Arabic script (e.g., بنو حنيفة)
+    - tribe_english: Brill EI3 transliteration (e.g., Banū Ḥanīfa)
+    - region_arabic: Region in Arabic (e.g., اليمامة، نجد، اليمن، عمان، البحرين)
+    - region_english: Region in English (e.g., al-Yamāma, Najd, Yemen, Oman, al-Baḥrayn)
+    - year_ah: Hijri year (11 or 12)
+    - year_ce: Common Era year (632 or 633)
+    - incorporation_mode_arabic: التصنيف (إخضاع / طاعة / مختلط)
+    - incorporation_mode_english: SUBJUGATION / SUBMISSION / MIXED
+    - commander_arabic: Muslim commander in Arabic (e.g., خالد بن الوليد)
+    - commander_english: Transliterated (e.g., Khālid ibn al-Walīd)
+    - rebel_leader_arabic: Rebel/false prophet in Arabic (e.g., مسيلمة الكذاب)
+    - rebel_leader_english: Transliterated (e.g., Musaylima al-Kadhdhāb)
+    - battle_site_arabic: Location in Arabic (e.g., عقرباء)
+    - battle_site_english: Transliterated (e.g., ʿAqrabāʾ)
+    - outcome_arabic: نتيجة المعركة أو الحدث
+    - outcome_english: Battle/event outcome
+    - evidence_arabic: Array of Arabic quotes from source text
+    - evidence_english: Array of English translations of quotes
+    - notes_arabic: ملاحظات إضافية
+    - notes_english: Additional notes
+    - confidence: 0.0 to 1.0
+
+    INCORPORATION MODE VALUES:
+    - SUBJUGATION / إخضاع = qitāl - military campaign, battle, armed conflict
+      Arabic indicators: قتال، قاتل، حرب، غزا، سيف، قتل، هزم، ظفر، غنم، سبي، فتح، حصار
+    - SUBMISSION / طاعة = ṭāʿa - voluntary return to Islam, negotiated peace
+      Arabic indicators: طاعة، أطاع، رجع، تاب، أسلم، بايع، صالح، أمان، سلم، أدى الزكاة
+    - MIXED / مختلط = both elements present
+
+    KEY FIGURES (Arabic / English):
+    False prophets:
+    - مسيلمة الكذاب / Musaylima al-Kadhdhāb (Banū Ḥanīfa)
+    - طليحة بن خويلد / Ṭulayḥa ibn Khuwaylid (Banū Asad)
+    - سجاح بنت الحارث / Sajāḥ bint al-Ḥārith (Banū Tamīm)
+    - الأسود العنسي / al-Aswad al-ʿAnsī (ʿAns, Yemen)
+    - لقيط بن مالك / Laqīṭ ibn Mālik (Azd, Oman)
+
+    Commanders:
+    - خالد بن الوليد / Khālid ibn al-Walīd
+    - عكرمة بن أبي جهل / ʿIkrima ibn Abī Jahl
+    - المهاجر بن أبي أمية / al-Muhājir ibn Abī Umayya
+    - العلاء بن الحضرمي / al-ʿAlāʾ ibn al-Ḥaḍramī
+    - شرحبيل بن حسنة / Shurahbīl ibn Ḥasana
+    - حذيفة بن محصن / Ḥudhayfa ibn Miḥṣan
+
+    REGIONS (Arabic / English):
+    - نجد / Najd: Banū Asad, Banū Tamīm, Banū Ghaṭafān
+    - اليمامة / al-Yamāma: Banū Ḥanīfa, site of ʿAqrabāʾ battle
+    - اليمن / Yemen: ʿAns tribe, al-Aswad al-ʿAnsī
+    - عمان / Oman: Azd, Laqīṭ ibn Mālik, Battle of Dabā
+    - البحرين / al-Baḥrayn: ʿAbd al-Qays, Bakr ibn Wāʾil
+    - حضرموت / Ḥaḍramawt: Kinda
+    - مهرة / Mahra: Mahra tribe
+    - تهامة / Tihāma: Coastal plain
+
+    MAJOR TRIBES (Arabic / English):
+    - بنو حنيفة / Banū Ḥanīfa
+    - بنو أسد / Banū Asad
+    - بنو تميم / Banū Tamīm
+    - بنو غطفان / Banū Ghaṭafān
+    - بنو سليم / Banū Sulaym
+    - كندة / Kinda
+    - الأزد / Azd
+    - عبد القيس / ʿAbd al-Qays
+    - بكر بن وائل / Bakr ibn Wāʾil
+    - مذحج / Madhḥij
+
+    BATTLE SITES (Arabic / English):
+    - عقرباء / ʿAqrabāʾ (al-Yamāma, Year 12)
+    - بزاخة / Buzākha (Najd, Year 11)
+    - البطاح / al-Buṭāḥ (Najd, Year 11)
+    - دبا / Dabā (Oman, Year 11)
+    - صنعاء / Ṣanʿāʾ (Yemen)
+
+    Text to analyze:
+    {text}
+
+    Respond with valid JSON only:
+    {{
+      "events": [
+        {{
+          "tribe_arabic": "...",
+          "tribe_english": "...",
+          "region_arabic": "...",
+          "region_english": "...",
+          "year_ah": 11,
+          "year_ce": 632,
+          "incorporation_mode_arabic": "إخضاع",
+          "incorporation_mode_english": "SUBJUGATION",
+          "commander_arabic": "...",
+          "commander_english": "...",
+          "rebel_leader_arabic": "...",
+          "rebel_leader_english": "...",
+          "battle_site_arabic": "...",
+          "battle_site_english": "...",
+          "outcome_arabic": "...",
+          "outcome_english": "...",
+          "evidence_arabic": ["..."],
+          "evidence_english": ["..."],
+          "notes_arabic": "...",
+          "notes_english": "...",
+          "confidence": 0.95
+        }}
+      ],
+      "skipped": []
+    }}
+
+  # Prompt for al-Ṭabarī (annalistic structure)
+  tabari: |
+    You are extracting Ridda Wars data from al-Ṭabarī's Tārīkh al-Rusul wa-l-Mulūk.
+    
+    This source is organized YEAR-BY-YEAR (annalistic structure).
+    Focus on sections mentioning:
+    - سنة إحدى عشرة (Year 11 AH)
+    - سنة اثنتي عشرة (Year 12 AH)
+    - ذكر الردة (Mention of apostasy)
+    - أخبار الردة (News of apostasy)
+    - خلافة أبي بكر (Caliphate of Abū Bakr)
+
+    EXTRACT tribal interaction events where:
+    1. Muslim armies campaign against apostate tribes (SUBJUGATION / إخضاع)
+    2. Tribes voluntarily return to Islam (SUBMISSION / طاعة)
+    3. Battles against false prophets (مسيلمة، طليحة، سجاح)
+
+    IMPORTANT: al-Ṭabarī provides multiple chains of transmission (isnād).
+    Extract the core events, noting if accounts differ.
+
+    *** ALL FIELDS MUST HAVE BOTH ARABIC AND ENGLISH VERSIONS ***
+
+    REQUIRED FIELDS:
+    - tribe_arabic / tribe_english
+    - region_arabic / region_english
+    - year_ah / year_ce
+    - incorporation_mode_arabic / incorporation_mode_english
+    - commander_arabic / commander_english
+    - rebel_leader_arabic / rebel_leader_english
+    - battle_site_arabic / battle_site_english
+    - outcome_arabic / outcome_english
+    - evidence_arabic / evidence_english
+    - notes_arabic / notes_english
+    - confidence: 0.0-1.0
+
+    INCORPORATION MODE INDICATORS:
+    SUBJUGATION (إخضاع): قتال، قاتل، حرب، غزا، سيف، قتل، هزم، ظفر، غنم، سبي
+    SUBMISSION (طاعة): طاعة، رجع إلى الإسلام، تاب، صالح، بايع، أدى الزكاة
+
+    Text:
+    {text}
+
+    JSON only: {{"events": [...], "skipped": [...]}}
+
+  # Prompt for al-Balādhurī (geographic structure)
+  baladhuri: |
+    You are extracting Ridda Wars data from al-Balādhurī's Futūḥ al-Buldān.
+    
+    This source is organized GEOGRAPHICALLY by region.
+    Look for chapters on:
+    - ردة أهل اليمامة (Apostasy of al-Yamāma people)
+    - ردة أهل البحرين (Apostasy of al-Baḥrayn people)
+    - ردة أهل عمان (Apostasy of Oman people)
+    - ردة أهل اليمن (Apostasy of Yemen people)
+    - ردة بني حنيفة (Apostasy of Banū Ḥanīfa)
+
+    al-Balādhurī often provides:
+    - Explicit categorization of how tribes were incorporated
+    - Treaty terms and negotiations
+    - Details on zakāt payment agreements
+
+    *** ALL FIELDS MUST HAVE BOTH ARABIC AND ENGLISH VERSIONS ***
+
+    REQUIRED FIELDS:
+    - tribe_arabic / tribe_english
+    - region_arabic / region_english
+    - year_ah / year_ce
+    - incorporation_mode_arabic / incorporation_mode_english
+    - commander_arabic / commander_english
+    - rebel_leader_arabic / rebel_leader_english (if applicable)
+    - battle_site_arabic / battle_site_english
+    - outcome_arabic / outcome_english
+    - evidence_arabic / evidence_english
+    - notes_arabic / notes_english
+    - confidence: 0.0-1.0
+
+    Text:
+    {text}
+
+    JSON only: {{"events": [...], "skipped": [...]}}
+
+# =============================================================================
+# CLASSIFICATION PROMPTS
+# =============================================================================
+
+classification:
+  # Determine incorporation mode only
+  incorporation_mode: |
+    Classify this Arabic text about a Ridda Wars tribal interaction using Brill EI3 terminology.
+    
+    Categories:
+    - SUBJUGATION / إخضاع (qitāl): Military campaign, armed conflict
+      Keywords: قتال، قاتل، حرب، غزا، سيف، قتل، هزم، ظفر، غنم، سبي
+    - SUBMISSION / طاعة (ṭāʿa): Voluntary return to Islam
+      Keywords: طاعة، أطاع، رجع، تاب، أسلم، بايع، صالح، أمان، الزكاة
+    - MIXED / مختلط: Both elements present
+    - UNKNOWN / غير معروف: Cannot determine
+    
+    Text: {text}
+    
+    Respond with JSON: {{"mode_english": "SUBJUGATION", "mode_arabic": "إخضاع"}}
+
+  # Verify if text is about Ridda Wars
+  is_ridda: |
+    Is this Arabic text describing a Ridda Wars event (11-12 AH)?
+    
+    YES if: 
+    - Describes apostasy (ردة) from Islam after Prophet's death
+    - Mentions false prophets (مسيلمة، طليحة، سجاح، الأسود)
+    - Describes campaigns under Abū Bakr against rebel tribes
+    - Mentions refusal to pay zakāt
+    
+    NO if:
+    - Describes conquests outside Arabia (futūḥāt)
+    - Events before 11 AH or after 12 AH
+    - Internal Muslim conflicts unrelated to apostasy
+    
+    Text: {text}
+    
+    Respond: YES or NO
+
+# =============================================================================
+# FEW-SHOT EXAMPLES (Bilingual)
+# =============================================================================
+
+few_shot:
+  examples:
+    - input: |
+        فسار خالد بن الوليد إلى اليمامة لقتال مسيلمة وبني حنيفة
+        فالتقى الجمعان بعقرباء وكانت وقعة عظيمة
+        وقاتل المسلمون قتالا شديدا حتى هزموا المرتدين وقتل مسيلمة
+      output:
+        tribe_arabic: "بنو حنيفة"
+        tribe_english: "Banū Ḥanīfa"
+        region_arabic: "اليمامة"
+        region_english: "al-Yamāma"
+        year_ah: 12
+        year_ce: 633
+        incorporation_mode_arabic: "إخضاع"
+        incorporation_mode_english: "SUBJUGATION"
+        commander_arabic: "خالد بن الوليد"
+        commander_english: "Khālid ibn al-Walīd"
+        rebel_leader_arabic: "مسيلمة الكذاب"
+        rebel_leader_english: "Musaylima al-Kadhdhāb"
+        battle_site_arabic: "عقرباء"
+        battle_site_english: "ʿAqrabāʾ"
+        outcome_arabic: "انتصار المسلمين ومقتل مسيلمة"
+        outcome_english: "Muslim victory, Musaylima killed"
+        evidence_arabic:
+          - "سار خالد بن الوليد إلى اليمامة لقتال مسيلمة"
+          - "قاتل المسلمون قتالا شديدا حتى هزموا المرتدين"
+          - "وقتل مسيلمة"
+        evidence_english:
+          - "Khālid ibn al-Walīd marched to al-Yamāma to fight Musaylima"
+          - "The Muslims fought fiercely until they defeated the apostates"
+          - "Musaylima was killed"
+        notes_arabic: "معركة عقرباء - أكبر معركة في حروب الردة"
+        notes_english: "Battle of ʿAqrabāʾ - largest battle of the Ridda Wars"
+        confidence: 0.95
+
+    - input: |
+        وأما بنو سليم فإنهم لم يقاتلوا وأسلموا ورجعوا إلى الطاعة وأدوا الزكاة
+      output:
+        tribe_arabic: "بنو سليم"
+        tribe_english: "Banū Sulaym"
+        region_arabic: "نجد"
+        region_english: "Najd"
+        year_ah: 11
+        year_ce: 632
+        incorporation_mode_arabic: "طاعة"
+        incorporation_mode_english: "SUBMISSION"
+        commander_arabic: ""
+        commander_english: ""
+        rebel_leader_arabic: ""
+        rebel_leader_english: ""
+        battle_site_arabic: ""
+        battle_site_english: ""
+        outcome_arabic: "رجعوا إلى الإسلام طوعاً"
+        outcome_english: "Returned to Islam voluntarily"
+        evidence_arabic:
+          - "بنو سليم فإنهم لم يقاتلوا"
+          - "أسلموا ورجعوا إلى الطاعة وأدوا الزكاة"
+        evidence_english:
+          - "Banū Sulaym did not fight"
+          - "They submitted and returned to obedience and paid the zakāt"
+        notes_arabic: "عادوا بدون قتال"
+        notes_english: "Returned without fighting"
+        confidence: 0.90
+
+    - input: |
+        وبعث أبو بكر العلاء بن الحضرمي إلى البحرين
+        وكان أهل البحرين قد ارتدوا إلا عبد القيس فإنهم ثبتوا على الإسلام
+        فقاتل العلاء المرتدين حتى ظفر بهم
+      output:
+        tribe_arabic: "بكر بن وائل"
+        tribe_english: "Bakr ibn Wāʾil"
+        region_arabic: "البحرين"
+        region_english: "al-Baḥrayn"
+        year_ah: 11
+        year_ce: 632
+        incorporation_mode_arabic: "إخضاع"
+        incorporation_mode_english: "SUBJUGATION"
+        commander_arabic: "العلاء بن الحضرمي"
+        commander_english: "al-ʿAlāʾ ibn al-Ḥaḍramī"
+        rebel_leader_arabic: "الحطم بن ضبيعة"
+        rebel_leader_english: "al-Ḥuṭam ibn Ḍubayʿa"
+        battle_site_arabic: "هجر"
+        battle_site_english: "Hajar"
+        outcome_arabic: "انتصر العلاء على المرتدين"
+        outcome_english: "al-ʿAlāʾ defeated the apostates"
+        evidence_arabic:
+          - "بعث أبو بكر العلاء بن الحضرمي إلى البحرين"
+          - "قاتل العلاء المرتدين حتى ظفر بهم"
+        evidence_english:
+          - "Abū Bakr sent al-ʿAlāʾ ibn al-Ḥaḍramī to al-Baḥrayn"
+          - "al-ʿAlāʾ fought the apostates until he defeated them"
+        notes_arabic: "عبد القيس ثبتوا على الإسلام"
+        notes_english: "ʿAbd al-Qays remained steadfast in Islam"
+        confidence: 0.85
+
+# =============================================================================
+# OUTPUT FIELD DEFINITIONS
+# =============================================================================
+
+output_fields:
+  required:
+    # Tribe identification (bilingual)
+    - name: tribe_arabic
+      type: string
+      description: "Tribe name in Arabic script"
+      example: "بنو حنيفة"
+    - name: tribe_english
+      type: string
+      description: "Tribe name in Brill EI3 transliteration"
+      example: "Banū Ḥanīfa"
+    
+    # Region (bilingual)
+    - name: region_arabic
+      type: string
+      description: "Region in Arabic"
+      example: "اليمامة"
+    - name: region_english
+      type: string
+      description: "Region in English"
+      example: "al-Yamāma"
+    
+    # Year (both calendars)
+    - name: year_ah
+      type: integer
+      description: "Hijri year (11 or 12)"
+      example: 12
+    - name: year_ce
+      type: integer
+      description: "Common Era year (632 or 633)"
+      example: 633
+    
+    # Incorporation mode (bilingual)
+    - name: incorporation_mode_arabic
+      type: string
+      enum: ["إخضاع", "طاعة", "مختلط", "غير معروف"]
+      description: "Classification in Arabic"
+    - name: incorporation_mode_english
+      type: string
+      enum: ["SUBJUGATION", "SUBMISSION", "MIXED", "UNKNOWN"]
+      description: "Classification in English"
+    
+    # Commander (bilingual)
+    - name: commander_arabic
+      type: string
+      description: "Muslim commander in Arabic"
+      example: "خالد بن الوليد"
+    - name: commander_english
+      type: string
+      description: "Muslim commander transliterated"
+      example: "Khālid ibn al-Walīd"
+    
+    # Rebel leader (bilingual)
+    - name: rebel_leader_arabic
+      type: string
+      description: "Rebel/false prophet in Arabic"
+      example: "مسيلمة الكذاب"
+    - name: rebel_leader_english
+      type: string
+      description: "Rebel/false prophet transliterated"
+      example: "Musaylima al-Kadhdhāb"
+    
+    # Battle site (bilingual)
+    - name: battle_site_arabic
+      type: string
+      description: "Battle location in Arabic"
+      example: "عقرباء"
+    - name: battle_site_english
+      type: string
+      description: "Battle location transliterated"
+      example: "ʿAqrabāʾ"
+    
+    # Outcome (bilingual)
+    - name: outcome_arabic
+      type: string
+      description: "Event outcome in Arabic"
+    - name: outcome_english
+      type: string
+      description: "Event outcome in English"
+    
+    # Evidence (bilingual)
+    - name: evidence_arabic
+      type: array
+      description: "Arabic quotes from source"
+    - name: evidence_english
+      type: array
+      description: "English translations of evidence"
+    
+    # Notes (bilingual)
+    - name: notes_arabic
+      type: string
+      description: "Additional notes in Arabic"
+    - name: notes_english
+      type: string
+      description: "Additional notes in English"
+    
+    # Confidence
+    - name: confidence
+      type: float
+      description: "Confidence score 0.0-1.0"
+
+  # Geocoding fields (added by pipeline)
+  geocoding:
+    - name: _lat
+      type: float
+      description: "Latitude from al-Turayyā"
+    - name: _lon
+      type: float
+      description: "Longitude from al-Turayyā"
+    - name: _source
+      type: string
+      description: "Source identifier (tabari/baladhuri)"

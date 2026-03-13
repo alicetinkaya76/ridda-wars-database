@@ -1,0 +1,399 @@
+# ==============================================================================
+# RIDDA WARS DATABASE PIPELINE v1.0 - CONFIGURATION
+# ==============================================================================
+# Computational Analysis of Tribal Unification in Early Islam (11-12 AH)
+# 
+# Based on the paper: "The Ridda Wars Database: A Computational Analysis 
+# of Tribal Unification in Early Islam using Large Language Models"
+
+# API Configuration
+api:
+  anthropic:
+    # Set your API key here or use ANTHROPIC_API_KEY environment variable
+    api_key: ""
+    model: "claude-sonnet-4-20250514"
+
+# ==============================================================================
+# OPENITI SOURCE FILES
+# ==============================================================================
+# These files contain the relevant Ridda Wars sections extracted from OpenITI
+
+sources:
+  tabari:
+    name: "al-Ṭabarī"
+    name_ar: "الطبري"
+    full_title: "Tārīkh al-Rusul wa-l-Mulūk"
+    full_title_ar: "تاريخ الرسل والملوك"
+    death_year: 310
+    structure: "annalistic"
+    # Use the extracted Ridda section (much smaller, ~17 chunks vs ~446)
+    openiti_file: "tabari_ridda_section.txt"
+    # Original full file (if you want to process everything):
+    # openiti_file: "0310Tabari.Tarikh.Masaha001963Vols-ara1"
+    openiti_id: "0310Tabari"
+    corpus: "Masaha"
+    notes: "Extracted Ridda Wars section (Year 11-12 AH) from full Tabari"
+    ridda_relevant_sections:
+      - "ذكر الردة"
+      - "أخبار الردة"
+      - "سنة إحدى عشرة"
+      - "سنة اثنتي عشرة"
+      - "خلافة أبي بكر"
+
+  baladhuri:
+    name: "al-Balādhurī"
+    name_ar: "البلاذري"
+    full_title: "Futūḥ al-Buldān"
+    full_title_ar: "فتوح البلدان"
+    death_year: 279
+    structure: "geographic"
+    # Use the extracted Ridda section (much smaller, ~3 chunks vs ~66)
+    openiti_file: "baladhuri_ridda_section.txt"
+    # Original full file (if you want to process everything):
+    # openiti_file: "0279Baladhuri.FutuhBuldan.Masaha002329Vols-ara1"
+    openiti_id: "0279Baladhuri"
+    corpus: "Masaha"
+    notes: "Extracted Ridda Wars section from Futūḥ al-Buldān"
+    ridda_relevant_sections:
+      - "فتح عمان"
+      - "غزوة البحرين"
+      - "دعوة النبي أهل اليمامة"
+      - "خبر ردة العرب"
+      - "ردة بني وليعة"
+      - "أمر الأسود العنسي"
+
+  waqidi:
+    name: "al-Wāqidī"
+    name_ar: "الواقدي"
+    full_title: "Kitāb al-Ridda"
+    full_title_ar: "كتاب الردة"
+    death_year: 207
+    structure: "narrative"
+    # Extracted Ridda section (excluding Futūḥ al-ʿIrāq appendix)
+    openiti_file: "waqidi_ridda_section.txt"
+    # Original full file:
+    # openiti_file: "0207Waqidi_Ridda_Shamela0012222-ara1.mARkdown"
+    openiti_id: "0207Waqidi"
+    corpus: "Shamela"
+    notes: >
+      Dedicated Ridda monograph, earliest of the three sources (d. 207).
+      Transmitted via Ibn al-Aʿtham al-Kūfī redaction.
+      Editor: Yaḥyā al-Jabbūrī (Dār al-Gharb al-Islāmī, Beirut, 1990).
+      Does NOT cover al-Aswad al-ʿAnsī in Yemen (begins with post-succession events).
+      Strong on Najd (Ṭulayḥa, Fujāʾa), Yamāma (Musaylima), Bahrain, and Ḥaḍramawt (Kinda).
+    ridda_relevant_sections:
+      - "اضطراب امر الناس عند وفاة النبي"
+      - "أخبار سقيفة بني ساعدة"
+      - "ذكر أخبار الردة"
+      - "ذكر خروج أسامة بن زيد"
+      - "ذكر فجاءة بن عبد ياليل"
+      - "خبر مالك بن نويرة ومسيلمة الكذاب"
+      - "ذكر ردة أهل البحرين"
+      - "ذكر ارتداد أهل حضرموت من كندة وغيرها"
+
+# ==============================================================================
+# EXTRACTION SETTINGS (Ridda Wars specific)
+# ==============================================================================
+
+extraction:
+  min_year: 11        # Start of Ridda Wars (death of Prophet)
+  max_year: 12        # End of Ridda Wars (completion of campaigns)
+  chunk_size: 20000   # Characters per API call
+  overlap: 2000       # Overlap between chunks for context continuity
+  delay: 1.5          # Seconds between API calls (rate limiting)
+  max_retries: 3      # Retry failed API calls
+
+# ==============================================================================
+# TERMINOLOGY (Brill EI3 Standard)
+# ==============================================================================
+# SUBJUGATION (qitāl) - Military campaign against rebellious tribe
+#   Arabic indicators: قتال، حرب، غزو، سيف، قتل، هزم، ظفر، غنم، سبي
+#   Characteristics: Armed conflict, casualties, prisoners
+#
+# SUBMISSION (ṭāʿa) - Voluntary return to Islamic authority  
+#   Arabic indicators: طاعة، أطاع، رجع، تاب، أسلم، بايع، صالح، أمان
+#   Characteristics: Peaceful return, oath of allegiance, zakāt payment
+#
+# MIXED - Combined elements of both military and diplomatic resolution
+
+terminology:
+  subjugation:
+    brill_term: "SUBJUGATION"
+    arabic_term: "qitāl"
+    arabic_script: "قتال"
+    indicators:
+      - "قتال"
+      - "قاتل"
+      - "قاتلهم"
+      - "حرب"
+      - "حارب"
+      - "غزو"
+      - "غزا"
+      - "سيف"
+      - "بالسيف"
+      - "قتل"
+      - "قتلوا"
+      - "هزم"
+      - "هزمهم"
+      - "ظفر"
+      - "غنم"
+      - "سبي"
+      - "سبايا"
+      - "فتح"
+      - "حصار"
+
+  submission:
+    brill_term: "SUBMISSION"
+    arabic_term: "ṭāʿa"
+    arabic_script: "طاعة"
+    indicators:
+      - "طاعة"
+      - "أطاع"
+      - "أطاعوا"
+      - "رجع"
+      - "رجعوا"
+      - "تاب"
+      - "تابوا"
+      - "أسلم"
+      - "أسلموا"
+      - "بايع"
+      - "بايعوا"
+      - "صالح"
+      - "صلح"
+      - "أمان"
+      - "سلم"
+      - "سلموا"
+      - "أدى الزكاة"
+
+  ridda_specific:
+    description: "Terms specific to apostasy/rebellion"
+    indicators:
+      - "ردة"
+      - "ارتد"
+      - "ارتدوا"
+      - "مرتد"
+      - "كفر"
+      - "كفروا"
+      - "منع الزكاة"
+      - "منعوا الزكاة"
+      - "تنبأ"
+      - "متنبئ"
+      - "ادعى النبوة"
+      - "الكذاب"
+
+# ==============================================================================
+# ARABIAN PENINSULA REGIONS (Ridda Wars Geography)
+# ==============================================================================
+
+regions:
+  najd:
+    en: "Najd"
+    ar: "نجد"
+    center_lat: 24.5
+    center_lon: 45.5
+    tribes:
+      - "Banū Asad"
+      - "Banū Tamīm"
+      - "Banū Ghaṭafān"
+      - "Banū Sulaym"
+    key_sites:
+      - "Buzākha"
+      - "al-Buṭāḥ"
+
+  yamama:
+    en: "al-Yamāma"
+    ar: "اليمامة"
+    center_lat: 24.0
+    center_lon: 46.7
+    tribes:
+      - "Banū Ḥanīfa"
+    key_sites:
+      - "ʿAqrabāʾ"
+      - "al-Yamāma"
+    notes: "Site of major battle against Musaylima"
+
+  yemen:
+    en: "Yemen"
+    ar: "اليمن"
+    center_lat: 15.5
+    center_lon: 44.2
+    tribes:
+      - "ʿAns"
+      - "Madhḥij"
+    key_sites:
+      - "Ṣanʿāʾ"
+      - "Najrān"
+
+  hadramawt:
+    en: "Ḥaḍramawt"
+    ar: "حضرموت"
+    center_lat: 15.9
+    center_lon: 49.0
+    tribes:
+      - "Kinda"
+    key_sites:
+      - "Ḥaḍramawt"
+
+  oman:
+    en: "Oman"
+    ar: "عمان"
+    center_lat: 23.0
+    center_lon: 57.0
+    tribes:
+      - "Azd"
+    key_sites:
+      - "Dabā"
+      - "Ṣuḥār"
+
+  bahrayn:
+    en: "al-Baḥrayn"
+    ar: "البحرين"
+    center_lat: 26.0
+    center_lon: 50.5
+    tribes:
+      - "ʿAbd al-Qays"
+      - "Bakr ibn Wāʾil"
+    key_sites:
+      - "Hajar"
+      - "al-Qaṭīf"
+
+  mahra:
+    en: "Mahra"
+    ar: "مهرة"
+    center_lat: 16.5
+    center_lon: 52.0
+    tribes:
+      - "Mahra"
+
+  tihama:
+    en: "Tihāma"
+    ar: "تهامة"
+    center_lat: 20.0
+    center_lon: 41.0
+
+# ==============================================================================
+# KEY FIGURES
+# ==============================================================================
+
+false_prophets:
+  musaylima:
+    name_ar: "مسيلمة الكذاب"
+    name_en: "Musaylima al-Kadhdhāb"
+    tribe: "Banū Ḥanīfa"
+    region: "al-Yamāma"
+    epithet: "al-Kadhdhāb (the Liar)"
+    death_year: 12
+    death_battle: "ʿAqrabāʾ"
+
+  aswad:
+    name_ar: "الأسود العنسي"
+    name_en: "al-Aswad al-ʿAnsī"
+    tribe: "ʿAns"
+    region: "Yemen"
+    epithet: "Dhū al-Khimār"
+    death_year: 11
+    notes: "Killed before main Ridda campaigns began"
+
+  tulayha:
+    name_ar: "طليحة بن خويلد"
+    name_en: "Ṭulayḥa ibn Khuwaylid"
+    tribe: "Banū Asad"
+    region: "Najd"
+    epithet: "al-Asadī"
+    notes: "Later converted to Islam and participated in futūḥāt"
+
+  sajah:
+    name_ar: "سجاح بنت الحارث"
+    name_en: "Sajāḥ bint al-Ḥārith"
+    tribe: "Banū Tamīm"
+    region: "al-Yamāma"
+    notes: "Female prophetess, married Musaylima"
+
+commanders:
+  khalid:
+    name_ar: "خالد بن الوليد"
+    name_en: "Khālid ibn al-Walīd"
+    epithet: "Sayf Allāh (Sword of God)"
+    campaigns:
+      - "Buzākha (vs. Ṭulayḥa)"
+      - "al-Buṭāḥ (vs. Mālik ibn Nuwayra)"
+      - "ʿAqrabāʾ (vs. Musaylima)"
+
+  ikrima:
+    name_ar: "عكرمة بن أبي جهل"
+    name_en: "ʿIkrima ibn Abī Jahl"
+    campaigns:
+      - "Oman"
+      - "Mahra"
+      - "Yemen"
+
+  muhajir:
+    name_ar: "المهاجر بن أبي أمية"
+    name_en: "al-Muhājir ibn Abī Umayya"
+    campaigns:
+      - "Yemen"
+
+  alaa:
+    name_ar: "العلاء بن الحضرمي"
+    name_en: "al-ʿAlāʾ ibn al-Ḥaḍramī"
+    campaigns:
+      - "al-Baḥrayn"
+
+# ==============================================================================
+# OUTPUT SETTINGS
+# ==============================================================================
+
+output:
+  # Default output directory
+  directory: "./output/llm_results"
+  
+  json_indent: 2
+  include_source_text: true
+  include_validation: true
+  
+  # CSV fields (all bilingual)
+  csv_fields:
+    # Tribe (bilingual)
+    - "tribe_arabic"
+    - "tribe_english"
+    # Region (bilingual)
+    - "region_arabic"
+    - "region_english"
+    # Year (both calendars)
+    - "year_ah"
+    - "year_ce"
+    # Incorporation mode (bilingual)
+    - "incorporation_mode_arabic"
+    - "incorporation_mode_english"
+    # Commander (bilingual)
+    - "commander_arabic"
+    - "commander_english"
+    # Rebel leader (bilingual)
+    - "rebel_leader_arabic"
+    - "rebel_leader_english"
+    # Battle site (bilingual)
+    - "battle_site_arabic"
+    - "battle_site_english"
+    # Outcome (bilingual)
+    - "outcome_arabic"
+    - "outcome_english"
+    # Evidence (bilingual)
+    - "evidence_arabic"
+    - "evidence_english"
+    # Notes (bilingual)
+    - "notes_arabic"
+    - "notes_english"
+    # Confidence and geocoding
+    - "confidence"
+    - "_lat"
+    - "_lon"
+    - "_source"
+
+# ==============================================================================
+# LOGGING
+# ==============================================================================
+
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(levelname)s - %(message)s"
+  file: "ridda_pipeline.log"

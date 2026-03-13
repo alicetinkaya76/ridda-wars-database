@@ -1,0 +1,17 @@
+Comparison,Cohen's κ,Po (%),Interpretation
+Claude ↔ Gemini,0.662,80,Substantial
+Claude ↔ Qwen,0.807,90,Substantial
+Claude ↔ GPT,0.763,87,Substantial
+Claude ↔ Human,0.774,87,Substantial
+Gemini ↔ Qwen,0.658,80,Substantial
+Gemini ↔ GPT,0.891,93,Almost Perfect
+Gemini ↔ Human,0.679,80,Substantial
+Qwen ↔ GPT,0.757,87,Substantial
+Qwen ↔ Human,0.660,80,Substantial
+GPT ↔ Human,0.673,80,Substantial
+,,,
+Fleiss' κ (4 LLMs),0.755,,Substantial
+Fleiss' κ (5-way),0.730,,Substantial
+Unanimous (5/5),,73,22/30
+Consensus (≥4/5),,83,25/30
+Human vs LLM majority,,83,25/30
